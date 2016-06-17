@@ -67,7 +67,7 @@
         switch (indexPath.row) {
             case 0:
             {
-                cell.textLabel.text = @"我的账户列表";
+                cell.textLabel.text = NSLocalizedString(@"My Accounts List", nil);
             }
                 break;
             case 1:
