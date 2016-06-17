@@ -72,12 +72,12 @@
                 break;
             case 1:
             {
-                cell.textLabel.text = @"交易分类";
+                cell.textLabel.text = NSLocalizedString(@"Transaction Type List", nil);
             }
                 break;
             case 2:
             {
-                cell.textLabel.text = @"货币类型";
+                cell.textLabel.text =  NSLocalizedString(@"Currency type List", nil);
             }
                 break;
             default:
