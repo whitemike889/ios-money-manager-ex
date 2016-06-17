@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "next step"; ObjectID = "8Ys-dF-Ofw"; */
+"8Ys-dF-Ofw.normalTitle" = "下一步";
+
+/* Class = "UILabel"; text = "input your acount name"; ObjectID = "J4Z-Ib-VtM"; */
+"J4Z-Ib-VtM.text" = "请输入您的昵称,进入app后可以修改此昵称";
+
+/* Class = "UITextField"; placeholder = "your account name"; ObjectID = "zvb-Fv-Uh8"; */
+"zvb-Fv-Uh8.placeholder" = "请输入您的昵称";

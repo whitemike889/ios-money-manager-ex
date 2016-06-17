@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  MoneyManagerEx
+
+  Created by taotao on 15/11/7.
+  Copyright © 2015年 taotao. All rights reserved.
+*/
+"create new count title" = "新帐号";
+
+"Assets Summary" = "资产总览";
+
+"Contacts" = "联系人";
+
+"Add Transaction" = "添加交易";
+
+"My Account" = "我";
+
+"Select default currency" = "选择货币类型";
+
+"next" = "下一步";
+
+"set favorite sub account" = "设置默认银行账户";
+
+// Assets
+"All Assets" = "总资产";
+
+"All Liabilities" = "总负债";
+
+"Balance" = "结余";
+
+"Reconciled" = "核实";
+
+// Contacts
+
+// Account

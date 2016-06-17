@@ -7,6 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "UserDefaultKeyDefine.h"
+//#import "MMEXCreateFirstAccountGuideViewController.h"
+#import "MMEXStartPageViewController.h"
+#import "MMEXMyAccountViewController.h"
+#import "MMEXContactsViewController.h"
+#import "MMEXAddTransactionViewController.h"
+#import "MMEXAssetsViewController.h"
+#import "KeyboardManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +25,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    NSNumber *firstStart = [[NSUserDefaults standardUserDefaults] objectForKey:MMEX_APP_FIRST_START];
+    //firstStart = [NSNumber numberWithBool:YES];
+    if ([firstStart boolValue]) {
+        [self showGuidePage];
+    }
+    else {
+        [self showHomePage];
+    }
+    
+    [self.window makeKeyAndVisible];
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
     return YES;
 }
 
@@ -41,5 +63,60 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - start app show pages
+- (void)showGuidePage
+{
+    MMEXStartPageViewController *startPage = [[MMEXStartPageViewController alloc] initWithNibName:@"MMEXStartPageViewController" bundle:nil];
+
+    self.window.rootViewController = startPage;
+}
+
+- (void)showHomePage
+{
+    // 1. create UITabBarController
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    // 2. set to window rootViewController
+    [self _setNewRootViewController:tabBarController];
+    
+    // 3. add new controller to tabBarController
+    MMEXAssetsViewController *assetsPage = [[MMEXAssetsViewController alloc] initWithNibName:@"MMEXAssetsViewController" bundle:nil];
+    UINavigationController *navAssets = [[UINavigationController alloc] initWithRootViewController:assetsPage];
+    navAssets.tabBarItem.title = NSLocalizedString(@"Assets Summary", nil);
+    
+    MMEXContactsViewController *contactsPage = [[MMEXContactsViewController alloc] initWithNibName:@"MMEXContactsViewController" bundle:nil];
+    UINavigationController *navContacts = [[UINavigationController alloc] initWithRootViewController:contactsPage];
+    navContacts.tabBarItem.title = NSLocalizedString(@"Contacts", nil);
+    /*
+    MMEXAddTransactionViewController *addTransactionPage = [[MMEXAddTransactionViewController alloc] initWithNibName:@"MMEXAddTransactionViewController" bundle:nil];
+    UINavigationController *navAddTransaction = [[UINavigationController alloc] initWithRootViewController:addTransactionPage];
+    navAddTransaction.tabBarItem.title = NSLocalizedString(@"Add Transaction", nil);
+    */
+    MMEXMyAccountViewController *myAccountPage = [[MMEXMyAccountViewController alloc] initWithNibName:@"MMEXMyAccountViewController" bundle:nil];
+    UINavigationController *navMyAccount = [[UINavigationController alloc] initWithRootViewController:myAccountPage];
+    navMyAccount.tabBarItem.title = NSLocalizedString(@"My Account", nil);
+//    navMyAccount.tabBarItem.image = [UIImage imageNamed:@""];
+    
+    tabBarController.viewControllers = @[navAssets, navContacts, navMyAccount];
+    [tabBarController setSelectedIndex:0];
+    
+}
+
+
+#pragma mark - private method
+
+- (void)_setNewRootViewController:(UIViewController *)newViewController
+{
+    UIViewController *previousVC = self.window.rootViewController;
+    
+    self.window.rootViewController = newViewController;
+    
+    if (previousVC) {
+        [previousVC dismissViewControllerAnimated:NO completion:^{
+            [previousVC.view removeFromSuperview];
+        }];
+    }
+}
+
 
 @end

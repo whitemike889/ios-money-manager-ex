@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  MMEXCreateFirstAccountGuideViewController.h
 //  MoneyManagerEx
 //
 //  Created by taotao on 15/11/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface MMEXCreateFirstAccountGuideViewController : UIViewController
 
 @end
-

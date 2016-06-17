@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Input your account name"; ObjectID = "7Uz-ir-5Qm"; */
+"7Uz-ir-5Qm.placeholder" = "输入您的账户名称";
+
+/* Class = "UILabel"; text = "Type of account"; ObjectID = "IZV-aK-DPc"; */
+"IZV-aK-DPc.text" = "账户类型";
+
+/* Class = "UIButton"; normalTitle = "Checking"; ObjectID = "sav-g1-l9l"; */
+"sav-g1-l9l.normalTitle" = "支票/存款/信用卡";
+
+/* Class = "UILabel"; text = "Your all transactions belong to accounts. This page will help you to create a new account. Specify a descriptive name for the account. This is generally the name of a financial institution where the account is held. For example:'ABC Bank'"; ObjectID = "uDh-TB-eY8"; */
+"uDh-TB-eY8.text" = "您的所有交易都会属于您创建的账户中，这个页面将回帮助您创建一个新的账户。请指定一个可以描述此账户性质的名称，此名称一般为金融机构 的名称，例如：“招商银行” ;

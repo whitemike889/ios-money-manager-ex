@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Input your account name"; ObjectID = "7Uz-ir-5Qm"; */
+"7Uz-ir-5Qm.placeholder" = "Input your account name";
+
+/* Class = "UILabel"; text = "Type of account"; ObjectID = "IZV-aK-DPc"; */
+"IZV-aK-DPc.text" = "Type of account";
+
+/* Class = "UIButton"; normalTitle = "Checking"; ObjectID = "sav-g1-l9l"; */
+"sav-g1-l9l.normalTitle" = "Checking";
+
+/* Class = "UILabel"; text = "Your all transactions belong to accounts. This page will help you to create a new account. Specify a descriptive name for the account. This is generally the name of a financial institution where the account is held. For example:'ABC Bank'"; ObjectID = "uDh-TB-eY8"; */
+"uDh-TB-eY8.text" = "Your all transactions belong to accounts. This page will help you to create a new account. Specify a descriptive name for the account. This is generally the name of a financial institution where the account is held. For example:'ABC Bank'";

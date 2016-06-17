@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "next step"; ObjectID = "8Ys-dF-Ofw"; */
+"8Ys-dF-Ofw.normalTitle" = "next step";
+
+/* Class = "UILabel"; text = "input your acount name"; ObjectID = "J4Z-Ib-VtM"; */
+"J4Z-Ib-VtM.text" = "Input your name，after entering app, you can change it.";
+
+/* Class = "UITextField"; placeholder = "your account name"; ObjectID = "zvb-Fv-Uh8"; */
+"zvb-Fv-Uh8.placeholder" = "Input your name";

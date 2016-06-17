@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41D58233677532FE0226875C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1DB46292F3D9C0D3176451 /* libPods.a */; };
+		BE067A7C1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = BE067A7B1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m */; };
+		BE067A811C1E79EA00F8B6F1 /* MMEXContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE067A7F1C1E79EA00F8B6F1 /* MMEXContactsViewController.m */; };
+		BE067A821C1E79EA00F8B6F1 /* MMEXContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE067A801C1E79EA00F8B6F1 /* MMEXContactsViewController.xib */; };
+		BE086B401BEDDFE200CEF360 /* MMEXCreateFirstAccountGuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B421BEDDFE200CEF360 /* MMEXCreateFirstAccountGuideViewController.xib */; };
+		BE086B471BEDE08600CEF360 /* MMEXStartPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B491BEDE08600CEF360 /* MMEXStartPageViewController.xib */; };
+		BE086B561BEDE91D00CEF360 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE086B581BEDE91D00CEF360 /* Localizable.strings */; };
+		BE086B5C1BEDEA1F00CEF360 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE086B5B1BEDEA1F00CEF360 /* Info.plist */; };
+		BE086B601BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE086B5E1BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.m */; };
+		BE086B611BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B5F1BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.xib */; };
+		BE086B671BEDF53700CEF360 /* MMEXAddTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE086B651BEDF53700CEF360 /* MMEXAddTransactionViewController.m */; };
+		BE086B681BEDF53700CEF360 /* MMEXAddTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B661BEDF53700CEF360 /* MMEXAddTransactionViewController.xib */; };
+		BE086B6C1BEDF59A00CEF360 /* MMEXMyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE086B6A1BEDF59A00CEF360 /* MMEXMyAccountViewController.m */; };
+		BE086B6D1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B6B1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib */; };
+		BE086B711BEDF5C900CEF360 /* MMEXAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE086B6F1BEDF5C900CEF360 /* MMEXAssetsViewController.m */; };
+		BE086B721BEDF5C900CEF360 /* MMEXAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B701BEDF5C900CEF360 /* MMEXAssetsViewController.xib */; };
 		BE94727B1BE5F4EE001FF64C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE94727A1BE5F4EE001FF64C /* main.m */; };
-		BE94727E1BE5F4EE001FF64C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE94727D1BE5F4EE001FF64C /* AppDelegate.m */; };
-		BE9472811BE5F4EE001FF64C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9472801BE5F4EE001FF64C /* FirstViewController.m */; };
-		BE9472841BE5F4EE001FF64C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9472831BE5F4EE001FF64C /* SecondViewController.m */; };
-		BE9472871BE5F4EE001FF64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9472851BE5F4EE001FF64C /* Main.storyboard */; };
 		BE9472891BE5F4EE001FF64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9472881BE5F4EE001FF64C /* Assets.xcassets */; };
 		BE94728C1BE5F4EE001FF64C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE94728A1BE5F4EE001FF64C /* LaunchScreen.storyboard */; };
 		BE9472971BE5F4EE001FF64C /* MoneyManagerExTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9472961BE5F4EE001FF64C /* MoneyManagerExTests.m */; };
 		BE9472A21BE5F4EE001FF64C /* MoneyManagerExUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9472A11BE5F4EE001FF64C /* MoneyManagerExUITests.m */; };
+		BE9472C51BE60BFA001FF64C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9472C41BE60BFA001FF64C /* AppDelegate.m */; };
+		BE9472C91BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9472C71BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m */; };
+		BEAEC61D1BE9109300D11A05 /* MMEXStartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAEC61B1BE9109300D11A05 /* MMEXStartPageViewController.m */; };
+		BEC14F231BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC14F211BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m */; };
+		BECE3E521D12E8230075D562 /* MMEXMyAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE3E501D12E8230075D562 /* MMEXMyAccountTableViewCell.m */; };
+		BECE3E531D12E8230075D562 /* MMEXMyAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */; };
+		BEF3980C1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF3980E1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,24 +55,66 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0779C54BB00ED4E251D3FEAC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4C1DB46292F3D9C0D3176451 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE067A7A1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MoneyManagerEx.h"; path = "Controller/ViewControllerCategory/UIViewController+MoneyManagerEx.h"; sourceTree = "<group>"; };
+		BE067A7B1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MoneyManagerEx.m"; path = "Controller/ViewControllerCategory/UIViewController+MoneyManagerEx.m"; sourceTree = "<group>"; };
+		BE067A7E1C1E79EA00F8B6F1 /* MMEXContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXContactsViewController.h; path = "Controller/Contacts Page/MMEXContactsViewController.h"; sourceTree = "<group>"; };
+		BE067A7F1C1E79EA00F8B6F1 /* MMEXContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXContactsViewController.m; path = "Controller/Contacts Page/MMEXContactsViewController.m"; sourceTree = "<group>"; };
+		BE067A801C1E79EA00F8B6F1 /* MMEXContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMEXContactsViewController.xib; path = "Controller/Contacts Page/MMEXContactsViewController.xib"; sourceTree = "<group>"; };
+		BE086B411BEDDFE200CEF360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMEXCreateFirstAccountGuideViewController.xib; sourceTree = "<group>"; };
+		BE086B441BEDDFE500CEF360 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MMEXCreateFirstAccountGuideViewController.strings; sourceTree = "<group>"; };
+		BE086B451BEDE07100CEF360 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MMEXCreateFirstAccountGuideViewController.strings"; sourceTree = "<group>"; };
+		BE086B461BEDE07100CEF360 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BE086B481BEDE08600CEF360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMEXStartPageViewController.xib; sourceTree = "<group>"; };
+		BE086B4B1BEDE08900CEF360 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MMEXStartPageViewController.strings; sourceTree = "<group>"; };
+		BE086B4D1BEDE08A00CEF360 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MMEXStartPageViewController.strings"; sourceTree = "<group>"; };
+		BE086B4F1BEDE09100CEF360 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BE086B571BEDE91D00CEF360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BE086B591BEDE91F00CEF360 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BE086B5A1BEDE92000CEF360 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BE086B5B1BEDEA1F00CEF360 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE086B5D1BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXSelectDefaultCurrencyViewController.h; sourceTree = "<group>"; };
+		BE086B5E1BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXSelectDefaultCurrencyViewController.m; sourceTree = "<group>"; };
+		BE086B5F1BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMEXSelectDefaultCurrencyViewController.xib; sourceTree = "<group>"; };
+		BE086B631BEDF28A00CEF360 /* MMEXDoneSettingGuideProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXDoneSettingGuideProtocol.h; path = Controller/Protocol/MMEXDoneSettingGuideProtocol.h; sourceTree = "<group>"; };
+		BE086B641BEDF53700CEF360 /* MMEXAddTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXAddTransactionViewController.h; sourceTree = "<group>"; };
+		BE086B651BEDF53700CEF360 /* MMEXAddTransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXAddTransactionViewController.m; sourceTree = "<group>"; };
+		BE086B661BEDF53700CEF360 /* MMEXAddTransactionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMEXAddTransactionViewController.xib; sourceTree = "<group>"; };
+		BE086B691BEDF59A00CEF360 /* MMEXMyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXMyAccountViewController.h; sourceTree = "<group>"; };
+		BE086B6A1BEDF59A00CEF360 /* MMEXMyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXMyAccountViewController.m; sourceTree = "<group>"; };
+		BE086B6B1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMEXMyAccountViewController.xib; sourceTree = "<group>"; };
+		BE086B6E1BEDF5C900CEF360 /* MMEXAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXAssetsViewController.h; sourceTree = "<group>"; };
+		BE086B6F1BEDF5C900CEF360 /* MMEXAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXAssetsViewController.m; sourceTree = "<group>"; };
+		BE086B701BEDF5C900CEF360 /* MMEXAssetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMEXAssetsViewController.xib; sourceTree = "<group>"; };
+		BE6E7C501BF8D50E00339A4B /* MobileDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileDeviceHelper.h; path = Helper/MobileDeviceHelper.h; sourceTree = "<group>"; };
+		BE89A7B61BF4144D00411171 /* MobileSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileSystemHelper.h; path = Helper/MobileSystemHelper.h; sourceTree = "<group>"; };
 		BE9472761BE5F4EE001FF64C /* MoneyManagerEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManagerEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE94727A1BE5F4EE001FF64C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BE94727C1BE5F4EE001FF64C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BE94727D1BE5F4EE001FF64C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BE94727F1BE5F4EE001FF64C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		BE9472801BE5F4EE001FF64C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		BE9472821BE5F4EE001FF64C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BE9472831BE5F4EE001FF64C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		BE9472861BE5F4EE001FF64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE9472881BE5F4EE001FF64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE94728B1BE5F4EE001FF64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BE94728D1BE5F4EE001FF64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9472921BE5F4EE001FF64C /* MoneyManagerExTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyManagerExTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9472961BE5F4EE001FF64C /* MoneyManagerExTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyManagerExTests.m; sourceTree = "<group>"; };
 		BE9472981BE5F4EE001FF64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE94729D1BE5F4EE001FF64C /* MoneyManagerExUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyManagerExUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9472A11BE5F4EE001FF64C /* MoneyManagerExUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyManagerExUITests.m; sourceTree = "<group>"; };
 		BE9472A31BE5F4EE001FF64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9472C21BE60B50001FF64C /* UserDefaultKeyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefaultKeyDefine.h; path = Macro/UserDefaultKeyDefine.h; sourceTree = "<group>"; };
+		BE9472C31BE60BFA001FF64C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE9472C41BE60BFA001FF64C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE9472C61BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXCreateFirstAccountGuideViewController.h; sourceTree = "<group>"; };
+		BE9472C71BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXCreateFirstAccountGuideViewController.m; sourceTree = "<group>"; };
+		BEAEC61A1BE9109300D11A05 /* MMEXStartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXStartPageViewController.h; sourceTree = "<group>"; };
+		BEAEC61B1BE9109300D11A05 /* MMEXStartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXStartPageViewController.m; sourceTree = "<group>"; };
+		BEC14F201BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXSetFavoriteSubAccountViewController.h; sourceTree = "<group>"; };
+		BEC14F211BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXSetFavoriteSubAccountViewController.m; sourceTree = "<group>"; };
+		BECE3E4F1D12E8230075D562 /* MMEXMyAccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXMyAccountTableViewCell.h; path = View/Me/MMEXMyAccountTableViewCell.h; sourceTree = "<group>"; };
+		BECE3E501D12E8230075D562 /* MMEXMyAccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXMyAccountTableViewCell.m; path = View/Me/MMEXMyAccountTableViewCell.m; sourceTree = "<group>"; };
+		BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMEXMyAccountTableViewCell.xib; path = View/Me/MMEXMyAccountTableViewCell.xib; sourceTree = "<group>"; };
+		BEF3980D1BFA017A0032EE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMEXSetFavoriteSubAccountViewController.xib; sourceTree = "<group>"; };
+		BEF398101BFA017D0032EE8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MMEXSetFavoriteSubAccountViewController.strings; sourceTree = "<group>"; };
+		BEF398121BFA017E0032EE8D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MMEXSetFavoriteSubAccountViewController.strings"; sourceTree = "<group>"; };
+		C533A834D10059DD7860B201 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D58233677532FE0226875C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +143,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		321B3CEE3778B47A72E26FF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0779C54BB00ED4E251D3FEAC /* Pods.debug.xcconfig */,
+				C533A834D10059DD7860B201 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B930197299E611DFA23D00A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C1DB46292F3D9C0D3176451 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE067A791C1E6FB900F8B6F1 /* ViewControllerCategory */ = {
+			isa = PBXGroup;
+			children = (
+				BE067A7A1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.h */,
+				BE067A7B1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m */,
+			);
+			name = ViewControllerCategory;
+			sourceTree = "<group>";
+		};
+		BE067A7D1C1E795B00F8B6F1 /* Contacts Page */ = {
+			isa = PBXGroup;
+			children = (
+				BE067A7E1C1E79EA00F8B6F1 /* MMEXContactsViewController.h */,
+				BE067A7F1C1E79EA00F8B6F1 /* MMEXContactsViewController.m */,
+				BE067A801C1E79EA00F8B6F1 /* MMEXContactsViewController.xib */,
+			);
+			name = "Contacts Page";
+			sourceTree = "<group>";
+		};
+		BE086B621BEDF24800CEF360 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BE086B631BEDF28A00CEF360 /* MMEXDoneSettingGuideProtocol.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
 		BE94726D1BE5F4EE001FF64C = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +194,8 @@
 				BE9472951BE5F4EE001FF64C /* MoneyManagerExTests */,
 				BE9472A01BE5F4EE001FF64C /* MoneyManagerExUITests */,
 				BE9472771BE5F4EE001FF64C /* Products */,
+				321B3CEE3778B47A72E26FF6 /* Pods */,
+				6B930197299E611DFA23D00A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,16 +212,20 @@
 		BE9472781BE5F4EE001FF64C /* MoneyManagerEx */ = {
 			isa = PBXGroup;
 			children = (
-				BE94727C1BE5F4EE001FF64C /* AppDelegate.h */,
-				BE94727D1BE5F4EE001FF64C /* AppDelegate.m */,
-				BE94727F1BE5F4EE001FF64C /* FirstViewController.h */,
-				BE9472801BE5F4EE001FF64C /* FirstViewController.m */,
-				BE9472821BE5F4EE001FF64C /* SecondViewController.h */,
-				BE9472831BE5F4EE001FF64C /* SecondViewController.m */,
-				BE9472851BE5F4EE001FF64C /* Main.storyboard */,
+				BE9472B01BE5F512001FF64C /* Application */,
+				BE9472B81BE6063F001FF64C /* Macro */,
+				BE9472AF1BE5F506001FF64C /* Helper */,
+				BE9472B11BE600DD001FF64C /* Categories */,
+				BE9472B61BE60222001FF64C /* Controller */,
+				BE9472B71BE60230001FF64C /* View */,
+				BE9472B31BE60140001FF64C /* MMEX_SDK */,
+				BE9472B41BE6016C001FF64C /* Network */,
+				BE9472B51BE6017C001FF64C /* MMEX_DB */,
+				BE9472B91BE6066E001FF64C /* Vendors */,
+				BE9472B21BE600F4001FF64C /* Resource */,
 				BE9472881BE5F4EE001FF64C /* Assets.xcassets */,
 				BE94728A1BE5F4EE001FF64C /* LaunchScreen.storyboard */,
-				BE94728D1BE5F4EE001FF64C /* Info.plist */,
+				BE086B5B1BEDEA1F00CEF360 /* Info.plist */,
 				BE9472791BE5F4EE001FF64C /* Supporting Files */,
 			);
 			path = MoneyManagerEx;
@@ -145,6 +257,160 @@
 			path = MoneyManagerExUITests;
 			sourceTree = "<group>";
 		};
+		BE9472AF1BE5F506001FF64C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BE89A7B61BF4144D00411171 /* MobileSystemHelper.h */,
+				BE6E7C501BF8D50E00339A4B /* MobileDeviceHelper.h */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		BE9472B01BE5F512001FF64C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BE9472C31BE60BFA001FF64C /* AppDelegate.h */,
+				BE9472C41BE60BFA001FF64C /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		BE9472B11BE600DD001FF64C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		BE9472B21BE600F4001FF64C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BE086B581BEDE91D00CEF360 /* Localizable.strings */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		BE9472B31BE60140001FF64C /* MMEX_SDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MMEX_SDK;
+			sourceTree = "<group>";
+		};
+		BE9472B41BE6016C001FF64C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		BE9472B51BE6017C001FF64C /* MMEX_DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MMEX_DB;
+			sourceTree = "<group>";
+		};
+		BE9472B61BE60222001FF64C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE067A791C1E6FB900F8B6F1 /* ViewControllerCategory */,
+				BE086B621BEDF24800CEF360 /* Protocol */,
+				BE9472BE1BE60A57001FF64C /* Account Page */,
+				BE067A7D1C1E795B00F8B6F1 /* Contacts Page */,
+				BE9472BF1BE60A57001FF64C /* Add Transaction Page */,
+				BE9472C01BE60A57001FF64C /* Assets Page */,
+				BE9472C11BE60A57001FF64C /* Guide Page */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BE9472B71BE60230001FF64C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BECE3E4E1D12E7A70075D562 /* me */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BE9472B81BE6063F001FF64C /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				BE9472C21BE60B50001FF64C /* UserDefaultKeyDefine.h */,
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		BE9472B91BE6066E001FF64C /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		BE9472BE1BE60A57001FF64C /* Account Page */ = {
+			isa = PBXGroup;
+			children = (
+				BE086B691BEDF59A00CEF360 /* MMEXMyAccountViewController.h */,
+				BE086B6A1BEDF59A00CEF360 /* MMEXMyAccountViewController.m */,
+				BE086B6B1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib */,
+			);
+			name = "Account Page";
+			path = "Controller/Account Page";
+			sourceTree = "<group>";
+		};
+		BE9472BF1BE60A57001FF64C /* Add Transaction Page */ = {
+			isa = PBXGroup;
+			children = (
+				BE086B641BEDF53700CEF360 /* MMEXAddTransactionViewController.h */,
+				BE086B651BEDF53700CEF360 /* MMEXAddTransactionViewController.m */,
+				BE086B661BEDF53700CEF360 /* MMEXAddTransactionViewController.xib */,
+			);
+			name = "Add Transaction Page";
+			path = "Controller/Add Transaction Page";
+			sourceTree = "<group>";
+		};
+		BE9472C01BE60A57001FF64C /* Assets Page */ = {
+			isa = PBXGroup;
+			children = (
+				BE086B6E1BEDF5C900CEF360 /* MMEXAssetsViewController.h */,
+				BE086B6F1BEDF5C900CEF360 /* MMEXAssetsViewController.m */,
+				BE086B701BEDF5C900CEF360 /* MMEXAssetsViewController.xib */,
+			);
+			name = "Assets Page";
+			path = "Controller/Assets Page";
+			sourceTree = "<group>";
+		};
+		BE9472C11BE60A57001FF64C /* Guide Page */ = {
+			isa = PBXGroup;
+			children = (
+				BE9472C61BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.h */,
+				BE9472C71BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m */,
+				BE086B421BEDDFE200CEF360 /* MMEXCreateFirstAccountGuideViewController.xib */,
+				BEAEC61A1BE9109300D11A05 /* MMEXStartPageViewController.h */,
+				BEAEC61B1BE9109300D11A05 /* MMEXStartPageViewController.m */,
+				BE086B491BEDE08600CEF360 /* MMEXStartPageViewController.xib */,
+				BE086B5D1BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.h */,
+				BE086B5E1BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.m */,
+				BE086B5F1BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.xib */,
+				BEC14F201BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.h */,
+				BEC14F211BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m */,
+				BEF3980E1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib */,
+			);
+			name = "Guide Page";
+			path = "Controller/Guide Page";
+			sourceTree = "<group>";
+		};
+		BECE3E4E1D12E7A70075D562 /* me */ = {
+			isa = PBXGroup;
+			children = (
+				BECE3E4F1D12E8230075D562 /* MMEXMyAccountTableViewCell.h */,
+				BECE3E501D12E8230075D562 /* MMEXMyAccountTableViewCell.m */,
+				BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */,
+			);
+			name = me;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +418,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE9472A61BE5F4EE001FF64C /* Build configuration list for PBXNativeTarget "MoneyManagerEx" */;
 			buildPhases = (
+				A704902830D0F01F8C1209EA /* Check Pods Manifest.lock */,
 				BE9472721BE5F4EE001FF64C /* Sources */,
 				BE9472731BE5F4EE001FF64C /* Frameworks */,
 				BE9472741BE5F4EE001FF64C /* Resources */,
+				037D8A95C59BF6AAFB6D9EA6 /* Embed Pods Frameworks */,
+				477F96E6B55F2CBC4F8BBCF8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +499,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = BE94726D1BE5F4EE001FF64C;
 			productRefGroup = BE9472771BE5F4EE001FF64C /* Products */;
@@ -248,9 +518,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE086B561BEDE91D00CEF360 /* Localizable.strings in Resources */,
+				BE067A821C1E79EA00F8B6F1 /* MMEXContactsViewController.xib in Resources */,
 				BE94728C1BE5F4EE001FF64C /* LaunchScreen.storyboard in Resources */,
+				BE086B721BEDF5C900CEF360 /* MMEXAssetsViewController.xib in Resources */,
+				BE086B681BEDF53700CEF360 /* MMEXAddTransactionViewController.xib in Resources */,
+				BE086B5C1BEDEA1F00CEF360 /* Info.plist in Resources */,
+				BE086B6D1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib in Resources */,
+				BE086B611BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.xib in Resources */,
+				BECE3E531D12E8230075D562 /* MMEXMyAccountTableViewCell.xib in Resources */,
+				BEF3980C1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib in Resources */,
+				BE086B471BEDE08600CEF360 /* MMEXStartPageViewController.xib in Resources */,
+				BE086B401BEDDFE200CEF360 /* MMEXCreateFirstAccountGuideViewController.xib in Resources */,
 				BE9472891BE5F4EE001FF64C /* Assets.xcassets in Resources */,
-				BE9472871BE5F4EE001FF64C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,15 +550,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		037D8A95C59BF6AAFB6D9EA6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		477F96E6B55F2CBC4F8BBCF8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A704902830D0F01F8C1209EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE9472721BE5F4EE001FF64C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE9472841BE5F4EE001FF64C /* SecondViewController.m in Sources */,
-				BE94727E1BE5F4EE001FF64C /* AppDelegate.m in Sources */,
-				BE9472811BE5F4EE001FF64C /* FirstViewController.m in Sources */,
+				BE067A811C1E79EA00F8B6F1 /* MMEXContactsViewController.m in Sources */,
+				BE9472C51BE60BFA001FF64C /* AppDelegate.m in Sources */,
+				BEAEC61D1BE9109300D11A05 /* MMEXStartPageViewController.m in Sources */,
+				BE086B671BEDF53700CEF360 /* MMEXAddTransactionViewController.m in Sources */,
+				BECE3E521D12E8230075D562 /* MMEXMyAccountTableViewCell.m in Sources */,
+				BE9472C91BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m in Sources */,
+				BE067A7C1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m in Sources */,
 				BE94727B1BE5F4EE001FF64C /* main.m in Sources */,
+				BEC14F231BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m in Sources */,
+				BE086B601BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.m in Sources */,
+				BE086B711BEDF5C900CEF360 /* MMEXAssetsViewController.m in Sources */,
+				BE086B6C1BEDF59A00CEF360 /* MMEXMyAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,20 +650,55 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BE9472851BE5F4EE001FF64C /* Main.storyboard */ = {
+		BE086B421BEDDFE200CEF360 /* MMEXCreateFirstAccountGuideViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BE9472861BE5F4EE001FF64C /* Base */,
+				BE086B411BEDDFE200CEF360 /* Base */,
+				BE086B441BEDDFE500CEF360 /* en */,
+				BE086B451BEDE07100CEF360 /* zh-Hans */,
 			);
-			name = Main.storyboard;
+			name = MMEXCreateFirstAccountGuideViewController.xib;
+			sourceTree = "<group>";
+		};
+		BE086B491BEDE08600CEF360 /* MMEXStartPageViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE086B481BEDE08600CEF360 /* Base */,
+				BE086B4B1BEDE08900CEF360 /* en */,
+				BE086B4D1BEDE08A00CEF360 /* zh-Hans */,
+			);
+			name = MMEXStartPageViewController.xib;
+			sourceTree = "<group>";
+		};
+		BE086B581BEDE91D00CEF360 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE086B571BEDE91D00CEF360 /* Base */,
+				BE086B591BEDE91F00CEF360 /* en */,
+				BE086B5A1BEDE92000CEF360 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		BE94728A1BE5F4EE001FF64C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BE94728B1BE5F4EE001FF64C /* Base */,
+				BE086B461BEDE07100CEF360 /* zh-Hans */,
+				BE086B4F1BEDE09100CEF360 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BEF3980E1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF3980D1BFA017A0032EE8D /* Base */,
+				BEF398101BFA017D0032EE8D /* en */,
+				BEF398121BFA017E0032EE8D /* zh-Hans */,
+			);
+			name = MMEXSetFavoriteSubAccountViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -415,23 +786,27 @@
 		};
 		BE9472A71BE5F4EE001FF64C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0779C54BB00ED4E251D3FEAC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoneyManagerEx/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taotao.MoneyManagerEx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BE9472A81BE5F4EE001FF64C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C533A834D10059DD7860B201 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoneyManagerEx/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taotao.MoneyManagerEx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -502,6 +877,7 @@
 				BE9472A81BE5F4EE001FF64C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE9472A91BE5F4EE001FF64C /* Build configuration list for PBXNativeTarget "MoneyManagerExTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +886,7 @@
 				BE9472AB1BE5F4EE001FF64C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE9472AC1BE5F4EE001FF64C /* Build configuration list for PBXNativeTarget "MoneyManagerExUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +895,7 @@
 				BE9472AE1BE5F4EE001FF64C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
