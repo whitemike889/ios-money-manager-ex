@@ -8,6 +8,7 @@
 
 #import "MMEXMyAccountViewController.h"
 #import "MMEXMyAccountTableViewCell.h"
+#import "CurrentUserBasicInfoViewController.h"
 
 #define ACCOUNT_TABLE_SECTION_NUM 2
 #define ACCOUNT_TABLE_SECTION_ONE_HEGITH 64
@@ -109,6 +110,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ((0 == indexPath.section) && (0 == indexPath.row)) {
+        CurrentUserBasicInfoViewController *basicInfoVC = [[CurrentUserBasicInfoViewController alloc] initWithNibName:@"CurrentUserBasicInfoViewController" bundle:nil];
+        [self.navigationController pushViewController:basicInfoVC animated:YES];
         
     }
     else if ((1 == indexPath.section) && (0 == indexPath.row)) {
