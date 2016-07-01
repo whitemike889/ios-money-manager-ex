@@ -10,4 +10,6 @@
 
 @interface EditBasicInfoTableViewCell : UITableViewCell
 
+- (void)configureCellDataOnSection:(NSInteger)section row:(NSInteger)row;
+
 @end

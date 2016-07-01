@@ -57,6 +57,21 @@
 {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    switch (indexPath.row) {
+        case 3:
+        {
+            
+        }
+            break;
+        case 4:
+        {
+            
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -90,8 +105,10 @@
     
     EditBasicInfoTableViewCell *cell = (EditBasicInfoTableViewCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"EditBasicInfoTableViewCell" owner:self options:nil] objectAtIndex:indexPath.row];
+        cell = (EditBasicInfoTableViewCell *)[[[NSBundle mainBundle] loadNibNamed:@"EditBasicInfoTableViewCell" owner:self options:nil] objectAtIndex:indexPath.row];
      }
+
+    [cell configureCellDataOnSection:indexPath.section row:indexPath.row];
     
     return cell;
 }

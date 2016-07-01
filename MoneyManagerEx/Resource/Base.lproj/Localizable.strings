@@ -33,6 +33,7 @@
 // Contacts
 
 // Account
+
 "My Accounts List" = "My Accounts List";
 
 "Transaction Type List" = "Transaction Type List";
@@ -40,3 +41,13 @@
 "Currency type List" = "Currency type List";
 
 "Edit Personal Information" = "Edit Personal Information";
+
+// Account Basic Info
+
+"nickname label" = "nickname";
+
+"truename label" = "true name";
+
+"gender label" = "gender";
+
+"birthday label" = "birthday";

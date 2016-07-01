@@ -41,3 +41,13 @@
 "Currency type List" = "货币类型列表";
 
 "Edit Personal Information" = "编辑个人资料";
+
+// Account Basic Info
+
+"nickname label" = "昵称";
+
+"truename label" = "真实姓名";
+
+"gender label" = "性别";
+
+"birthday label" = "生日";
