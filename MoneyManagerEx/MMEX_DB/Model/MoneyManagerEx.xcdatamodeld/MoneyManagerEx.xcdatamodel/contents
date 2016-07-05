@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="Account" syncable="YES">
+        <attribute name="acct_create_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="acct_initial_capital" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="acct_modify_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="acct_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="acct_note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="acct_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="acct_status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="acct_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="currency" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Currency" inverseName="account" inverseEntity="Currency" syncable="YES"/>
+        <relationship name="merchant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Merchant" inverseName="accounts" inverseEntity="Merchant" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Transaction" inverseName="account" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Contacts" syncable="YES">
+        <attribute name="contact_identification" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_letter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_staus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="contact_telphone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="payee" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Currency" syncable="YES">
+        <attribute name="cur_1_100_unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cur_convert" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="cur_create_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="cur_modify_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="cur_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cur_name_letter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cur_prefix_symbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cur_proportion" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="cur_radix_point" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cur_suffix_symbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cur_symbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cur_thousand_symbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cur_unit_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="currency" inverseEntity="Account" syncable="YES"/>
+    </entity>
+    <entity name="Merchant" syncable="YES">
+        <attribute name="mer_create_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mer_login_info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mer_modify_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mer_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mer_name_letter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mer_status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="mer_telphone" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="mer_web_site" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="accounts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="merchant" inverseEntity="Account" syncable="YES"/>
+    </entity>
+    <entity name="Transaction" syncable="YES">
+        <attribute name="trans_create_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trans_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trans_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="trans_modify_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trans_money" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="trans_note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trans_status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="transactions" inverseEntity="Account" syncable="YES"/>
+        <relationship name="payee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contacts" inverseName="transactions" inverseEntity="Contacts" syncable="YES"/>
+        <relationship name="transaction_type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TransactionType" inverseName="transactions" inverseEntity="TransactionType" syncable="YES"/>
+    </entity>
+    <entity name="TransactionType" syncable="YES">
+        <attribute name="tt_create_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="tt_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tt_name_letter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tt_root_type" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="tt_status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="childs" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="TransactionType" inverseName="parent" inverseEntity="TransactionType" syncable="YES"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TransactionType" inverseName="childs" inverseEntity="TransactionType" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="transaction_type" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="-63" positionY="-18" width="128" height="210"/>
+        <element name="Merchant" positionX="-54" positionY="45" width="128" height="180"/>
+        <element name="Currency" positionX="-36" positionY="81" width="128" height="255"/>
+        <element name="Contacts" positionX="-27" positionY="144" width="128" height="135"/>
+        <element name="TransactionType" positionX="-18" positionY="153" width="128" height="165"/>
+        <element name="Transaction" positionX="9" positionY="162" width="128" height="195"/>
+    </elements>
+</model>
