@@ -14,8 +14,11 @@ static MoneyManagerExDBCenter *singletonDBCenter = nil;
 
 @interface MoneyManagerExDBCenter ()
 
-@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext;
-@property (nonatomic, strong) NSManagedObjectContext *backgroundQueueContext;
+@property (nonatomic, strong) NSManagedObjectModel            *managedObjectModel;
+@property (nonatomic, strong) NSPersistentStoreCoordinator    *persistentStoreCoordinator;
+
+@property (nonatomic, strong) NSManagedObjectContext *mainManagedObjectContext;
+@property (nonatomic, strong) NSManagedObjectContext *backgroundManagedObjectContext;
 
 @end
 
@@ -46,40 +49,66 @@ static MoneyManagerExDBCenter *singletonDBCenter = nil;
 
 #pragma mark - setup core data
 
-- (void) setupCoreDataStackWithStoreNamed:(NSString *)storeName
+- (NSManagedObjectContext *)mainManagedObjectContext
 {
-    // object model
-    NSURL *modelURL = [[NSBundle mainBundle]
-                       URLForResource:@"MoneyManagerEx"
-                       withExtension:@"xcdatamodeld"];
+    if (_mainManagedObjectContext != nil) {
+        return _mainManagedObjectContext;
+    }
     
-    NSManagedObjectModel *mom = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    NSAssert(mom != nil, @"Error initializing Managed Object Model");
+    NSPersistentStoreCoordinator *persistentStoreCoordinator = [self persistentStoreCoordinator];
+    if (persistentStoreCoordinator != nil) {
+        _mainManagedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+        [_mainManagedObjectContext setPersistentStoreCoordinator:[self persistentStoreCoordinator]];
+    }
     
-    // persistent store
-    NSPersistentStoreCoordinator *psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(mergeChanges:)
+                                                 name:NSManagedObjectContextDidSaveNotification
+                                               object:nil];
+    _mainManagedObjectContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy;
     
-    
-    // context
-    _mainQueueContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-    [_mainQueueContext setPersistentStoreCoordinator:psc];
-    
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *documentsURL = [[fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-    NSURL *storeURL = [documentsURL URLByAppendingPathComponent:@"MoneyManagerEx.sqlite"];
-    
-    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
-        NSError *error = nil;
-        NSPersistentStoreCoordinator *psc = [_backgroundQueueContext persistentStoreCoordinator];
-//        NSPersistentStore *store = [psc addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error];
-//        NSAssert(store != nil, @"Error initializing PSC: %@\n%@", [error localizedDescription], [error userInfo]);
-    });
+    return _mainManagedObjectContext;
 }
 
-- (void) setupCoreDataStackWithAutoMigratingSqliteStoreNamed:(NSString *)storeName
+- (NSManagedObjectContext *)backgroundManagedObjectContext
 {
+    if (_backgroundManagedObjectContext) {
+        return _backgroundManagedObjectContext;
+    }
     
+    _backgroundManagedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+    [_backgroundManagedObjectContext setPersistentStoreCoordinator:[self persistentStoreCoordinator]];
+    
+    return _backgroundManagedObjectContext;
+}
+
+- (NSManagedObjectModel *)managedObjectModel
+{
+    if (_managedObjectModel) {
+        return _managedObjectModel;
+    }
+    
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"MoneyManagerEx" withExtension:@"momd"];
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    return _managedObjectModel;
+}
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
+{
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
+    }
+    
+    NSURL *storeURL = [[self DocumentsDirectory] URLByAppendingPathComponent:@"MoneyManagerEx.sqlite"];
+    
+    NSError *error = nil;
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+        MMEXLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    
+    return _persistentStoreCoordinator;
 }
 
 #pragma mark - Account
@@ -93,5 +122,22 @@ static MoneyManagerExDBCenter *singletonDBCenter = nil;
 #pragma mark - Transaction
 
 #pragma mark - TransactionType
+
+#pragma mark - save
+
+- (void)mergeChanges:(NSNotification *)notification {
+    if (notification.object != self.mainManagedObjectContext) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.mainManagedObjectContext mergeChangesFromContextDidSaveNotification:notification];
+        });
+    }
+}
+
+#pragma mark - private method
+
+- (NSURL *)DocumentsDirectory
+{
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
 
 @end

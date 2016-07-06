@@ -12,11 +12,9 @@
 
 + (instancetype)shareInstance;
 
-#pragma mark - setup core data
-- (void) setupCoreDataStackWithStoreNamed:(NSString *)storeName;
-- (void) setupCoreDataStackWithAutoMigratingSqliteStoreNamed:(NSString *)storeName;
-
 #pragma mark - Account
+
+
 
 #pragma mark - Contacts
 

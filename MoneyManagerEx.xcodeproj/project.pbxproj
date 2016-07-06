@@ -147,6 +147,7 @@
 		BE147CAB1D2C11BE00E50791 /* LoginRecord+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LoginRecord+CoreDataProperties.m"; path = "MMEX_DB/Entity/LoginRecord+CoreDataProperties.m"; sourceTree = "<group>"; };
 		BE147CAC1D2C11BE00E50791 /* LoginRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginRecord.h; path = MMEX_DB/Entity/LoginRecord.h; sourceTree = "<group>"; };
 		BE147CAD1D2C11BE00E50791 /* LoginRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginRecord.m; path = MMEX_DB/Entity/LoginRecord.m; sourceTree = "<group>"; };
+		BE147CBF1D2CBB0F00E50791 /* MoneyManagerEx.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoneyManagerEx.pch; path = Macro/MoneyManagerEx.pch; sourceTree = "<group>"; };
 		BE6E7C501BF8D50E00339A4B /* MobileDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileDeviceHelper.h; path = Helper/MobileDeviceHelper.h; sourceTree = "<group>"; };
 		BE89A7B61BF4144D00411171 /* MobileSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileSystemHelper.h; path = Helper/MobileSystemHelper.h; sourceTree = "<group>"; };
 		BE9472761BE5F4EE001FF64C /* MoneyManagerEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManagerEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -465,6 +466,7 @@
 			isa = PBXGroup;
 			children = (
 				BE9472C21BE60B50001FF64C /* UserDefaultKeyDefine.h */,
+				BE147CBF1D2CBB0F00E50791 /* MoneyManagerEx.pch */,
 			);
 			name = Macro;
 			sourceTree = "<group>";
@@ -961,6 +963,7 @@
 			baseConfigurationReference = 0779C54BB00ED4E251D3FEAC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MoneyManagerEx/Macro/MoneyManagerEx.pch;
 				INFOPLIST_FILE = MoneyManagerEx/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taotao.MoneyManagerEx;
@@ -974,6 +977,7 @@
 			baseConfigurationReference = C533A834D10059DD7860B201 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MoneyManagerEx/Macro/MoneyManagerEx.pch;
 				INFOPLIST_FILE = MoneyManagerEx/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taotao.MoneyManagerEx;
