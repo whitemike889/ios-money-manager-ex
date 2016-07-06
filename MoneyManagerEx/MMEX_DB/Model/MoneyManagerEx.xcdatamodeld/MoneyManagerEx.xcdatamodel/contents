@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
-    <entity name="Account" syncable="YES">
+    <entity name="Account" representedClassName="Account" syncable="YES">
         <attribute name="acct_create_time" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="acct_initial_capital" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="acct_modify_time" optional="YES" attributeType="Date" syncable="YES"/>
@@ -12,16 +12,16 @@
         <relationship name="currency" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Currency" inverseName="account" inverseEntity="Currency" syncable="YES"/>
         <relationship name="merchant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Merchant" inverseName="accounts" inverseEntity="Merchant" syncable="YES"/>
         <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Transaction" inverseName="account" inverseEntity="Transaction" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfo" inverseName="accounts" inverseEntity="UserInfo" syncable="YES"/>
     </entity>
-    <entity name="Contacts" syncable="YES">
-        <attribute name="contact_identification" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="contact_letter" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="contact_name" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="Contacts" representedClassName="Contacts" syncable="YES">
+        <attribute name="contact_remark" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="contact_staus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="contact_telphone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contactInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfo" inverseName="contact" inverseEntity="UserInfo" syncable="YES"/>
         <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="payee" inverseEntity="Transaction" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfo" inverseName="contacts" inverseEntity="UserInfo" syncable="YES"/>
     </entity>
-    <entity name="Currency" syncable="YES">
+    <entity name="Currency" representedClassName="Currency" syncable="YES">
         <attribute name="cur_1_100_unit" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cur_convert" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="cur_create_time" optional="YES" attributeType="Date" syncable="YES"/>
@@ -37,7 +37,14 @@
         <attribute name="cur_unit_name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="currency" inverseEntity="Account" syncable="YES"/>
     </entity>
-    <entity name="Merchant" syncable="YES">
+    <entity name="LoginRecord" representedClassName="LoginRecord" syncable="YES">
+        <attribute name="account" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logintime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfo" inverseName="loginUser" inverseEntity="UserInfo" syncable="YES"/>
+    </entity>
+    <entity name="Merchant" representedClassName="Merchant" syncable="YES">
         <attribute name="mer_create_time" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="mer_login_info" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="mer_modify_time" optional="YES" attributeType="Date" syncable="YES"/>
@@ -48,7 +55,7 @@
         <attribute name="mer_web_site" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="accounts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="merchant" inverseEntity="Account" syncable="YES"/>
     </entity>
-    <entity name="Transaction" syncable="YES">
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES">
         <attribute name="trans_create_time" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="trans_date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="trans_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
@@ -59,8 +66,9 @@
         <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="transactions" inverseEntity="Account" syncable="YES"/>
         <relationship name="payee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contacts" inverseName="transactions" inverseEntity="Contacts" syncable="YES"/>
         <relationship name="transaction_type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TransactionType" inverseName="transactions" inverseEntity="TransactionType" syncable="YES"/>
+        <relationship name="user" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserInfo" inverseName="transactions" inverseEntity="UserInfo" syncable="YES"/>
     </entity>
-    <entity name="TransactionType" syncable="YES">
+    <entity name="TransactionType" representedClassName="TransactionType" syncable="YES">
         <attribute name="tt_create_time" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="tt_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tt_name_letter" optional="YES" attributeType="String" syncable="YES"/>
@@ -70,12 +78,31 @@
         <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TransactionType" inverseName="childs" inverseEntity="TransactionType" syncable="YES"/>
         <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="transaction_type" inverseEntity="Transaction" syncable="YES"/>
     </entity>
+    <entity name="UserInfo" representedClassName="UserInfo" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="district" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="identification" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="letter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="accounts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Account" inverseName="user" inverseEntity="Account" syncable="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contacts" inverseName="contactInfo" inverseEntity="Contacts" syncable="YES"/>
+        <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contacts" inverseName="user" inverseEntity="Contacts" syncable="YES"/>
+        <relationship name="loginUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LoginRecord" inverseName="user" inverseEntity="LoginRecord" syncable="YES"/>
+        <relationship name="transactions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="user" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Account" positionX="-63" positionY="-18" width="128" height="210"/>
-        <element name="Merchant" positionX="-54" positionY="45" width="128" height="180"/>
+        <element name="Account" positionX="-63" positionY="-18" width="128" height="225"/>
+        <element name="Contacts" positionX="-27" positionY="144" width="128" height="120"/>
         <element name="Currency" positionX="-36" positionY="81" width="128" height="255"/>
-        <element name="Contacts" positionX="-27" positionY="144" width="128" height="135"/>
+        <element name="Merchant" positionX="-54" positionY="45" width="128" height="180"/>
+        <element name="Transaction" positionX="9" positionY="162" width="128" height="210"/>
         <element name="TransactionType" positionX="-18" positionY="153" width="128" height="165"/>
-        <element name="Transaction" positionX="9" positionY="162" width="128" height="195"/>
+        <element name="UserInfo" positionX="18" positionY="189" width="128" height="270"/>
+        <element name="LoginRecord" positionX="-27" positionY="135" width="128" height="120"/>
     </elements>
 </model>
