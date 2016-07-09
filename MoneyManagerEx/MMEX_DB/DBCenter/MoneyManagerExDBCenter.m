@@ -111,6 +111,10 @@ static MoneyManagerExDBCenter *singletonDBCenter = nil;
     return _persistentStoreCoordinator;
 }
 
+#pragma mark - LoginRecord
+
+#pragma mark - UserInfo
+
 #pragma mark - Account
 
 #pragma mark - Contacts

@@ -23,7 +23,6 @@
 		BE086B6D1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B6B1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib */; };
 		BE086B711BEDF5C900CEF360 /* MMEXAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE086B6F1BEDF5C900CEF360 /* MMEXAssetsViewController.m */; };
 		BE086B721BEDF5C900CEF360 /* MMEXAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B701BEDF5C900CEF360 /* MMEXAssetsViewController.xib */; };
-		BE147C231D2AA66C00E50791 /* MoneyManagerEx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE147C211D2AA66C00E50791 /* MoneyManagerEx.xcdatamodeld */; };
 		BE147C4D1D2BC96200E50791 /* BaseManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BE147C4C1D2BC96200E50791 /* BaseManagedObject.m */; };
 		BE147C511D2BCEF000E50791 /* MoneyManagerExDBCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE147C501D2BCEF000E50791 /* MoneyManagerExDBCenter.m */; };
 		BE147CAE1D2C11BE00E50791 /* Transaction+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BE147C8F1D2C11BE00E50791 /* Transaction+CoreDataProperties.m */; };
@@ -42,6 +41,7 @@
 		BE147CBB1D2C11BE00E50791 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = BE147CA91D2C11BE00E50791 /* Account.m */; };
 		BE147CBC1D2C11BE00E50791 /* LoginRecord+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BE147CAB1D2C11BE00E50791 /* LoginRecord+CoreDataProperties.m */; };
 		BE147CBD1D2C11BE00E50791 /* LoginRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE147CAD1D2C11BE00E50791 /* LoginRecord.m */; };
+		BE35F3DF1D30B062004110A4 /* MoneyManagerEx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE35F3DD1D30B062004110A4 /* MoneyManagerEx.xcdatamodeld */; };
 		BE94727B1BE5F4EE001FF64C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE94727A1BE5F4EE001FF64C /* main.m */; };
 		BE9472891BE5F4EE001FF64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9472881BE5F4EE001FF64C /* Assets.xcassets */; };
 		BE94728C1BE5F4EE001FF64C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE94728A1BE5F4EE001FF64C /* LaunchScreen.storyboard */; };
@@ -110,7 +110,6 @@
 		BE086B6E1BEDF5C900CEF360 /* MMEXAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXAssetsViewController.h; sourceTree = "<group>"; };
 		BE086B6F1BEDF5C900CEF360 /* MMEXAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXAssetsViewController.m; sourceTree = "<group>"; };
 		BE086B701BEDF5C900CEF360 /* MMEXAssetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMEXAssetsViewController.xib; sourceTree = "<group>"; };
-		BE147C221D2AA66C00E50791 /* MoneyManagerEx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyManagerEx.xcdatamodel; sourceTree = "<group>"; };
 		BE147C4B1D2BC96200E50791 /* BaseManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseManagedObject.h; path = MMEX_DB/Entity/BaseManagedObject.h; sourceTree = "<group>"; };
 		BE147C4C1D2BC96200E50791 /* BaseManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseManagedObject.m; path = MMEX_DB/Entity/BaseManagedObject.m; sourceTree = "<group>"; };
 		BE147C4F1D2BCEF000E50791 /* MoneyManagerExDBCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoneyManagerExDBCenter.h; path = MMEX_DB/DBCenter/MoneyManagerExDBCenter.h; sourceTree = "<group>"; };
@@ -148,6 +147,7 @@
 		BE147CAC1D2C11BE00E50791 /* LoginRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginRecord.h; path = MMEX_DB/Entity/LoginRecord.h; sourceTree = "<group>"; };
 		BE147CAD1D2C11BE00E50791 /* LoginRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginRecord.m; path = MMEX_DB/Entity/LoginRecord.m; sourceTree = "<group>"; };
 		BE147CBF1D2CBB0F00E50791 /* MoneyManagerEx.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoneyManagerEx.pch; path = Macro/MoneyManagerEx.pch; sourceTree = "<group>"; };
+		BE35F3DE1D30B062004110A4 /* MoneyManagerEx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyManagerEx.xcdatamodel; sourceTree = "<group>"; };
 		BE6E7C501BF8D50E00339A4B /* MobileDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileDeviceHelper.h; path = Helper/MobileDeviceHelper.h; sourceTree = "<group>"; };
 		BE89A7B61BF4144D00411171 /* MobileSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileSystemHelper.h; path = Helper/MobileSystemHelper.h; sourceTree = "<group>"; };
 		BE9472761BE5F4EE001FF64C /* MoneyManagerEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManagerEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,12 +254,12 @@
 			name = Protocol;
 			sourceTree = "<group>";
 		};
-		BE147C201D2AA62400E50791 /* Model */ = {
+		BE147C201D2AA62400E50791 /* ObjectModel */ = {
 			isa = PBXGroup;
 			children = (
-				BE147C211D2AA66C00E50791 /* MoneyManagerEx.xcdatamodeld */,
+				BE35F3DD1D30B062004110A4 /* MoneyManagerEx.xcdatamodeld */,
 			);
-			name = Model;
+			name = ObjectModel;
 			sourceTree = "<group>";
 		};
 		BE147C241D2B520500E50791 /* DBCenter */ = {
@@ -310,6 +310,20 @@
 				BE147C4C1D2BC96200E50791 /* BaseManagedObject.m */,
 			);
 			name = Entity;
+			sourceTree = "<group>";
+		};
+		BE35F3DB1D3005CD004110A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BE35F3DC1D30080B004110A4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 		BE94726D1BE5F4EE001FF64C = {
@@ -418,6 +432,8 @@
 		BE9472B31BE60140001FF64C /* MMEX_SDK */ = {
 			isa = PBXGroup;
 			children = (
+				BE35F3DC1D30080B004110A4 /* Manager */,
+				BE35F3DB1D3005CD004110A4 /* Model */,
 			);
 			name = MMEX_SDK;
 			sourceTree = "<group>";
@@ -434,7 +450,7 @@
 			children = (
 				BE147C251D2B520E00E50791 /* Entity */,
 				BE147C241D2B520500E50791 /* DBCenter */,
-				BE147C201D2AA62400E50791 /* Model */,
+				BE147C201D2AA62400E50791 /* ObjectModel */,
 			);
 			name = MMEX_DB;
 			sourceTree = "<group>";
@@ -760,6 +776,7 @@
 				BE147CBA1D2C11BE00E50791 /* Account+CoreDataProperties.m in Sources */,
 				BE067A811C1E79EA00F8B6F1 /* MMEXContactsViewController.m in Sources */,
 				BE147C4D1D2BC96200E50791 /* BaseManagedObject.m in Sources */,
+				BE35F3DF1D30B062004110A4 /* MoneyManagerEx.xcdatamodeld in Sources */,
 				BE147CB91D2C11BE00E50791 /* Merchant.m in Sources */,
 				BE147CB21D2C11BE00E50791 /* TransactionType+CoreDataProperties.m in Sources */,
 				BE147CB51D2C11BE00E50791 /* UserInfo.m in Sources */,
@@ -781,7 +798,6 @@
 				BE94727B1BE5F4EE001FF64C /* main.m in Sources */,
 				BE147CB31D2C11BE00E50791 /* TransactionType.m in Sources */,
 				BEC14F231BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m in Sources */,
-				BE147C231D2AA66C00E50791 /* MoneyManagerEx.xcdatamodeld in Sources */,
 				BE147CB01D2C11BE00E50791 /* Currency+CoreDataProperties.m in Sources */,
 				BECE3E5E1D1450FC0075D562 /* EditBasicInfoTableViewCell.m in Sources */,
 				BE086B601BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.m in Sources */,
@@ -1076,14 +1092,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BE147C211D2AA66C00E50791 /* MoneyManagerEx.xcdatamodeld */ = {
+		BE35F3DD1D30B062004110A4 /* MoneyManagerEx.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BE147C221D2AA66C00E50791 /* MoneyManagerEx.xcdatamodel */,
+				BE35F3DE1D30B062004110A4 /* MoneyManagerEx.xcdatamodel */,
 			);
-			currentVersion = BE147C221D2AA66C00E50791 /* MoneyManagerEx.xcdatamodel */;
+			currentVersion = BE35F3DE1D30B062004110A4 /* MoneyManagerEx.xcdatamodel */;
 			name = MoneyManagerEx.xcdatamodeld;
-			path = MMEX_DB/Model/MoneyManagerEx.xcdatamodeld;
+			path = MMEX_DB/ObjectModel/MoneyManagerEx.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

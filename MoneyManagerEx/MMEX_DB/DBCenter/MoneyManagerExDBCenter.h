@@ -12,9 +12,14 @@
 
 + (instancetype)shareInstance;
 
+#pragma mark - LoginRecord
+
+#pragma mark - UserInfo
+
 #pragma mark - Account
 
-
+// 增删改查
+//- (void)addAccount:();
 
 #pragma mark - Contacts
 
