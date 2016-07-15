@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LoginInfoModel.h"
+#import "UserInfoModel.h"
 
 @interface MoneyManagerExDBCenter : NSObject
 
 + (instancetype)shareInstance;
 
 #pragma mark - LoginRecord
+
+- (void)saveLoginInfo:(LoginInfoModel *)loginInfo;
 
 #pragma mark - UserInfo
 

@@ -8,6 +8,14 @@
 
 #import "MoneyManagerExDBCenter.h"
 #import <CoreData/CoreData.h>
+#import "LoginRecord.h"
+#import "Account.h"
+#import "Transaction.h"
+#import "Currency.h"
+#import "Transaction.h"
+#import "UserInfo.h"
+#import "Contacts.h"
+#import "Merchant.h"
 
 
 static MoneyManagerExDBCenter *singletonDBCenter = nil;
@@ -113,6 +121,51 @@ static MoneyManagerExDBCenter *singletonDBCenter = nil;
 
 #pragma mark - LoginRecord
 
+- (void)saveLoginInfo:(LoginInfoModel *)loginInfo
+{
+    if (nil == loginInfo || nil == loginInfo.account) {
+        return;
+    }
+    
+    LoginRecord *loginRecord = [self _getLoginInfoByAccount:loginInfo.account inMoc:self.mainManagedObjectContext];
+    if (nil == loginRecord) {
+        loginRecord = [LoginRecord insertInManagedObjectContext:self.mainManagedObjectContext];
+    }
+    
+    loginRecord.account = loginInfo.account;
+    loginRecord.password = loginInfo.password ? loginInfo.password : loginRecord.password;
+    loginRecord.token = loginInfo.token ? loginInfo.token : loginRecord.token;
+    loginRecord.logintime = loginInfo.logintime ? loginInfo.logintime : loginRecord.logintime;
+    if (loginInfo.user && loginInfo.user.uid) {
+        if (nil == loginRecord.user) {
+            loginRecord.user = [UserInfo insertInManagedObjectContext:self.mainManagedObjectContext];
+        }
+        loginRecord.user.uid = loginInfo.user.uid;
+        loginRecord.user.name = loginInfo.user.name ? loginInfo.user.name : loginRecord.user.name;
+        loginRecord.user.gender = loginInfo.user.gender ? loginInfo.user.gender : loginRecord.user.gender;
+        loginRecord.user.avatar = loginInfo.user.avatar ? loginInfo.user.avatar : loginRecord.user.avatar;
+        loginRecord.user.email = loginInfo.user.email ? loginInfo.user.email : loginRecord.user.email;
+        loginRecord.user.mobile = loginInfo.user.mobile ? loginInfo.user.mobile : loginRecord.user.mobile;
+        loginRecord.user.identification = loginInfo.user.identification ? loginInfo.user.identification : loginRecord.user.identification;
+        loginRecord.user.district = loginInfo.user.district ? loginInfo.user.district : loginRecord.user.district;
+        loginRecord.user.sign = loginInfo.user.sign ? loginInfo.user.sign : loginRecord.user.sign;
+    }
+    NSString *__weak str = @"13324";
+    str = @"456";
+    __weak NSString *str2 = @"5566";
+    str2 = @"000";
+}
+
+- (LoginRecord *)_getLoginInfoByAccount:(NSString *)account
+                         inMoc:(NSManagedObjectContext *)moc
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"account == %@", account];
+    NSEntityDescription *loginDes = [LoginRecord entityDesInManagedObjectContext:moc];
+    NSArray *result = [self fetchRequest:loginDes predicate:predicate sort:nil fetchLimit:1 inMoc:moc];
+    
+    return result.firstObject;
+}
+
 #pragma mark - UserInfo
 
 #pragma mark - Account
@@ -137,11 +190,33 @@ static MoneyManagerExDBCenter *singletonDBCenter = nil;
     }
 }
 
-#pragma mark - private method
+#pragma mark - private common method
 
 - (NSURL *)DocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (NSArray *)fetchRequest:(NSEntityDescription *)entity
+                predicate:(NSPredicate *)predicate
+                     sort:(NSSortDescriptor *)sort
+               fetchLimit:(NSInteger)fetchLimit
+                    inMoc:(NSManagedObjectContext *)moc
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:entity];
+    if (predicate) {
+        [fetchRequest setPredicate:predicate];
+    }
+    if (sort) {
+        [fetchRequest setSortDescriptors:@[sort]];
+    }
+    if (fetchLimit) {
+        [fetchRequest setFetchLimit:fetchLimit];
+    }
+    [fetchRequest setIncludesPendingChanges:YES];
+    
+    return [moc executeFetchRequest:fetchRequest error:nil];
 }
 
 @end
