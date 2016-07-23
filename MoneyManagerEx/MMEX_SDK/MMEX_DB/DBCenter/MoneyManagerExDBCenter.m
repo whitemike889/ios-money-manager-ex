@@ -150,10 +150,7 @@ static MoneyManagerExDBCenter *singletonDBCenter = nil;
         loginRecord.user.district = loginInfo.user.district ? loginInfo.user.district : loginRecord.user.district;
         loginRecord.user.sign = loginInfo.user.sign ? loginInfo.user.sign : loginRecord.user.sign;
     }
-    NSString *__weak str = @"13324";
-    str = @"456";
-    __weak NSString *str2 = @"5566";
-    str2 = @"000";
+    
 }
 
 - (LoginRecord *)_getLoginInfoByAccount:(NSString *)account
