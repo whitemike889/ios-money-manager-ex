@@ -51,6 +51,7 @@
 		BE35F4371D30EB68004110A4 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35F4221D30EB68004110A4 /* UserInfo.m */; };
 		BE35F4381D30EB68004110A4 /* MoneyManagerEx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE35F4241D30EB68004110A4 /* MoneyManagerEx.xcdatamodeld */; };
 		BE35F43B1D30FDB2004110A4 /* StringUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35F43A1D30FDB2004110A4 /* StringUtility.m */; };
+		BE6586771D51FCF50091FC7D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6586761D51FCF50091FC7D /* ImageIO.framework */; };
 		BE94727B1BE5F4EE001FF64C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE94727A1BE5F4EE001FF64C /* main.m */; };
 		BE9472891BE5F4EE001FF64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9472881BE5F4EE001FF64C /* Assets.xcassets */; };
 		BE94728C1BE5F4EE001FF64C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE94728A1BE5F4EE001FF64C /* LaunchScreen.storyboard */; };
@@ -175,6 +176,7 @@
 		BE35F4251D30EB68004110A4 /* MoneyManagerEx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyManagerEx.xcdatamodel; sourceTree = "<group>"; };
 		BE35F4391D30FDB2004110A4 /* StringUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringUtility.h; path = Helper/StringUtility.h; sourceTree = "<group>"; };
 		BE35F43A1D30FDB2004110A4 /* StringUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StringUtility.m; path = Helper/StringUtility.m; sourceTree = "<group>"; };
+		BE6586761D51FCF50091FC7D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		BE6E7C501BF8D50E00339A4B /* MobileDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileDeviceHelper.h; path = Helper/MobileDeviceHelper.h; sourceTree = "<group>"; };
 		BE89A7B61BF4144D00411171 /* MobileSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileSystemHelper.h; path = Helper/MobileSystemHelper.h; sourceTree = "<group>"; };
 		BE9472761BE5F4EE001FF64C /* MoneyManagerEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManagerEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6586771D51FCF50091FC7D /* ImageIO.framework in Frameworks */,
 				41D58233677532FE0226875C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +252,7 @@
 		6B930197299E611DFA23D00A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE6586761D51FCF50091FC7D /* ImageIO.framework */,
 				4C1DB46292F3D9C0D3176451 /* libPods.a */,
 			);
 			name = Frameworks;
