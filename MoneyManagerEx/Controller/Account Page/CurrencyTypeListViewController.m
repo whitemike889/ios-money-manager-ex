@@ -1,25 +1,25 @@
 //
-//  SubTransactionTypeListViewController.m
+//  CurrencyTypeListViewController.m
 //  MoneyManagerEx
 //
 //  Created by taotao on 16/9/18.
 //  Copyright © 2016年 taotao. All rights reserved.
 //
 
-#import "SubTransactionTypeListViewController.h"
+#import "CurrencyTypeListViewController.h"
 
-@interface SubTransactionTypeListViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface CurrencyTypeListViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
 
-@implementation SubTransactionTypeListViewController
+@implementation CurrencyTypeListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = NSLocalizedString(@"Sub Transaction Type List Title", nil);
+    self.title = NSLocalizedString(@"Currency Type List Title", nil);
     self.navigationItem.leftBarButtonItem = nil;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addSubTransactionTypeButtonPressed)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addCurrencyTypeButtonPressed)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,7 +31,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 44;
+    return 64;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -52,14 +52,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *reuseIdentifier = @"SubTransactionTypeTableViewCellIdenfier";
+    NSString *reuseIdentifier = @"CurrencyTypeTableViewCellIdenfier";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
     if (nil == cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     }
     
-    cell.textLabel.text = @"Moon cake";
+    cell.textLabel.text = @"Chinese renminbi";
     
     return cell;
 }
@@ -71,7 +71,7 @@
 
 #pragma mark - actions
 
-- (void)addSubTransactionTypeButtonPressed
+- (void)addCurrencyTypeButtonPressed
 {
     
 }

@@ -66,6 +66,8 @@
 		BE9472C51BE60BFA001FF64C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9472C41BE60BFA001FF64C /* AppDelegate.m */; };
 		BE9472C91BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9472C71BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m */; };
 		BEAEC61D1BE9109300D11A05 /* MMEXStartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAEC61B1BE9109300D11A05 /* MMEXStartPageViewController.m */; };
+		BEB7BA2C1D8ECE6A0065CE2A /* CurrencyTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB7BA2A1D8ECE6A0065CE2A /* CurrencyTypeListViewController.m */; };
+		BEB7BA2D1D8ECE6A0065CE2A /* CurrencyTypeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEB7BA2B1D8ECE6A0065CE2A /* CurrencyTypeListViewController.xib */; };
 		BEC14F231BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC14F211BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m */; };
 		BECE3E521D12E8230075D562 /* MMEXMyAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE3E501D12E8230075D562 /* MMEXMyAccountTableViewCell.m */; };
 		BECE3E531D12E8230075D562 /* MMEXMyAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */; };
@@ -211,6 +213,9 @@
 		BE9472C71BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXCreateFirstAccountGuideViewController.m; sourceTree = "<group>"; };
 		BEAEC61A1BE9109300D11A05 /* MMEXStartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXStartPageViewController.h; sourceTree = "<group>"; };
 		BEAEC61B1BE9109300D11A05 /* MMEXStartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXStartPageViewController.m; sourceTree = "<group>"; };
+		BEB7BA291D8ECE6A0065CE2A /* CurrencyTypeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyTypeListViewController.h; sourceTree = "<group>"; };
+		BEB7BA2A1D8ECE6A0065CE2A /* CurrencyTypeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyTypeListViewController.m; sourceTree = "<group>"; };
+		BEB7BA2B1D8ECE6A0065CE2A /* CurrencyTypeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencyTypeListViewController.xib; sourceTree = "<group>"; };
 		BEC14F201BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXSetFavoriteSubAccountViewController.h; sourceTree = "<group>"; };
 		BEC14F211BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXSetFavoriteSubAccountViewController.m; sourceTree = "<group>"; };
 		BECE3E4F1D12E8230075D562 /* MMEXMyAccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXMyAccountTableViewCell.h; path = View/Me/MMEXMyAccountTableViewCell.h; sourceTree = "<group>"; };
@@ -577,6 +582,9 @@
 				BE90096E1D8ECBCB00A570D6 /* SubTransactionTypeListViewController.h */,
 				BE90096F1D8ECBCB00A570D6 /* SubTransactionTypeListViewController.m */,
 				BE9009701D8ECBCB00A570D6 /* SubTransactionTypeListViewController.xib */,
+				BEB7BA291D8ECE6A0065CE2A /* CurrencyTypeListViewController.h */,
+				BEB7BA2A1D8ECE6A0065CE2A /* CurrencyTypeListViewController.m */,
+				BEB7BA2B1D8ECE6A0065CE2A /* CurrencyTypeListViewController.xib */,
 			);
 			name = "Account Page";
 			path = "Controller/Account Page";
@@ -763,6 +771,7 @@
 				BE067A821C1E79EA00F8B6F1 /* MMEXContactsViewController.xib in Resources */,
 				BE94728C1BE5F4EE001FF64C /* LaunchScreen.storyboard in Resources */,
 				BE086B721BEDF5C900CEF360 /* MMEXAssetsViewController.xib in Resources */,
+				BEB7BA2D1D8ECE6A0065CE2A /* CurrencyTypeListViewController.xib in Resources */,
 				BE086B681BEDF53700CEF360 /* MMEXAddTransactionViewController.xib in Resources */,
 				BE086B5C1BEDEA1F00CEF360 /* Info.plist in Resources */,
 				BE086B6D1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib in Resources */,
@@ -865,6 +874,7 @@
 				BECE3E571D1447BE0075D562 /* CurrentUserBasicInfoViewController.m in Sources */,
 				BE35F4291D30EB68004110A4 /* BaseManagedObject.m in Sources */,
 				BE35F4271D30EB68004110A4 /* Account+CoreDataProperties.m in Sources */,
+				BEB7BA2C1D8ECE6A0065CE2A /* CurrencyTypeListViewController.m in Sources */,
 				BE35F4281D30EB68004110A4 /* Account.m in Sources */,
 				BE086B671BEDF53700CEF360 /* MMEXAddTransactionViewController.m in Sources */,
 				BE72884A1D885661007687B5 /* MyBankAccountListViewController.m in Sources */,

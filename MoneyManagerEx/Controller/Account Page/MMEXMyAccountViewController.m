@@ -11,6 +11,8 @@
 #import "CurrentUserBasicInfoViewController.h"
 #import "MyBankAccountListViewController.h"
 #import "TransactionTypeListViewController.h"
+#import "CurrencyTypeListViewController.h"
+
 
 #define ACCOUNT_TABLE_SECTION_NUM 2
 #define ACCOUNT_TABLE_SECTION_ONE_HEGITH 64
@@ -141,7 +143,8 @@
         [self.navigationController pushViewController:transactionTypeList animated:YES];
     }
     else if ((1 == indexPath.section) && (2 == indexPath.row)) {
-        
+        CurrencyTypeListViewController *currencyTypeList = [[CurrencyTypeListViewController alloc] initWithNibName:@"CurrencyTypeListViewController" bundle:nil];
+        [self.navigationController pushViewController:currencyTypeList animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
