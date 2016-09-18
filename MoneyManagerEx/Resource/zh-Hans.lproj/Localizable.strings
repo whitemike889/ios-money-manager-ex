@@ -36,7 +36,7 @@
 
 "My Bank Accounts List" = "我的银行账户列表";
 
-"Transaction Type List" = "交易分类";
+"Transaction Type List" = "交易类型";
 
 "Currency type List" = "货币类型列表";
 
@@ -51,3 +51,8 @@
 "gender label" = "性别";
 
 "birthday label" = "生日";
+
+// Transaction Type List
+"Transaction Type List Title" = "交易类型";
+
+"Sub Transaction Type List Title" = "子交易类型";

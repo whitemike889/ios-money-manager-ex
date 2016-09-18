@@ -51,3 +51,8 @@
 "gender label" = "gender";
 
 "birthday label" = "birthday";
+
+// Transaction Type List
+"Transaction Type List Title" = "Transaction Type";
+
+"Sub Transaction Type List Title" = "Sub Transaction Type";
