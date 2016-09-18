@@ -9,6 +9,7 @@
 #import "MMEXMyAccountViewController.h"
 #import "MMEXMyAccountTableViewCell.h"
 #import "CurrentUserBasicInfoViewController.h"
+#import "MyBankAccountListViewController.h"
 
 #define ACCOUNT_TABLE_SECTION_NUM 2
 #define ACCOUNT_TABLE_SECTION_ONE_HEGITH 64
@@ -26,6 +27,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = NSLocalizedString(@"My Account", nil);
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+//    self.tabBarController.tabBar.hidden = YES;
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,7 +85,7 @@
         switch (indexPath.row) {
             case 0:
             {
-                cell.textLabel.text = NSLocalizedString(@"My Accounts List", nil);
+                cell.textLabel.text = NSLocalizedString(@"My Bank Accounts List", nil);
             }
                 break;
             case 1:
@@ -115,7 +132,8 @@
         
     }
     else if ((1 == indexPath.section) && (0 == indexPath.row)) {
-        
+        MyBankAccountListViewController *myBankAccountList = [[MyBankAccountListViewController alloc] initWithNibName:@"MyBankAccountListViewController" bundle:nil];
+        [self.navigationController pushViewController:myBankAccountList animated:YES];
     }
     else if ((1 == indexPath.section) && (1 == indexPath.row)) {
         
