@@ -7,6 +7,8 @@
 //
 
 #import "MMEXAssetsViewController.h"
+#import "MMEXAddTransactionViewController.h"
+#import "BankAccountViewController.h"
 
 #define CURRENT_CURRENCY @"¥"
 
@@ -42,7 +44,11 @@
 #pragma mark - actions
 - (void)addNewTransaction:(id)sender
 {
+    MMEXAddTransactionViewController *addTransactionVC = [[MMEXAddTransactionViewController alloc] initWithNibName:@"MMEXAddTransactionViewController" bundle:nil];
     
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:addTransactionVC];
+    
+    [self.navigationController presentViewController:nav animated:YES completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
@@ -148,6 +154,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (1 == indexPath.section) {
+        if (0 == indexPath.row) {
+            BankAccountViewController *bankAccountVC = [[BankAccountViewController alloc] initWithNibName:@"BankAccountViewController" bundle:nil];
+            
+            [self.navigationController pushViewController:bankAccountVC animated:YES];
+        }
+    }
 }
 
 @end
