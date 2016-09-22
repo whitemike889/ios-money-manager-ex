@@ -28,8 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = NSLocalizedString(@"Edit Personal Information", nil);
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveTheBasicInfo)];
+    self.title = NSLocalizedString(@"Personal Information", nil);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,10 +45,7 @@
 
 #pragma mark - action
 
-- (void)saveTheBasicInfo
-{
-    NSLog(@"save the basic info.....");
-}
+
 
 #pragma mark - UITableViewDelegate
 

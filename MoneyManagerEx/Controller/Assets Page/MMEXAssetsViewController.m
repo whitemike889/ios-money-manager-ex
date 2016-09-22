@@ -158,7 +158,7 @@
     if (1 == indexPath.section) {
         if (0 == indexPath.row) {
             BankAccountViewController *bankAccountVC = [[BankAccountViewController alloc] initWithNibName:@"BankAccountViewController" bundle:nil];
-            
+            bankAccountVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:bankAccountVC animated:YES];
         }
     }

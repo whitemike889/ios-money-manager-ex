@@ -34,13 +34,15 @@
 
 // Account
 
-"My Bank Accounts List" = "我的银行账户列表";
+"My Bank Accounts List" = "账户";
 
 "Transaction Type List" = "交易类型";
 
-"Currency type List" = "货币类型列表";
+"Currency type List" = "货币类型";
 
-"Edit Personal Information" = "编辑个人资料";
+"Personal Information" = "个人信息";
+
+"Bank Account Edit Page Title" = "银行账户编辑";
 
 // Account Basic Info
 

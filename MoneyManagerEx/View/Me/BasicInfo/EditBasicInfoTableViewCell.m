@@ -41,21 +41,21 @@
         switch (row) {
             case 0:
             {
-                self.selectionStyle = UITableViewCellSelectionStyleNone;
+//                self.selectionStyle = UITableViewCellSelectionStyleNone;
             }
                 break;
             case 1:
             {
                 _nicknameLabel.text = NSLocalizedString(@"nickname label", nil);
                 _nicknameTextField.text = @"";
-                self.selectionStyle = UITableViewCellSelectionStyleNone;
+//                self.selectionStyle = UITableViewCellSelectionStyleNone;
             }
                 break;
             case 2:
             {
                 _trueNameLabel.text = NSLocalizedString(@"truename label", nil);
                 _trueNameTextField.text = @"";
-                self.selectionStyle = UITableViewCellSelectionStyleNone;
+//                self.selectionStyle = UITableViewCellSelectionStyleNone;
             }
                 break;
             case 3:

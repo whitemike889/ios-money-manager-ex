@@ -7,6 +7,7 @@
 //
 
 #import "MyBankAccountListViewController.h"
+#import "BankAccountEditViewController.h"
 
 @implementation MyBankAccountListViewController
 
@@ -33,6 +34,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    BankAccountEditViewController *bankAccountVC = [[BankAccountEditViewController alloc] initWithNibName:@"BankAccountEditViewController" bundle:nil];
+    [self.navigationController pushViewController:bankAccountVC animated:YES];
 }
 
 #pragma mark - UITableViewDataSource
@@ -55,7 +59,7 @@
     }
     
     cell.textLabel.text = @"BC Bank";
-    cell.detailTextLabel.text = @"10000";
+    cell.detailTextLabel.text = @"10000000000";
     
     return cell;
 }

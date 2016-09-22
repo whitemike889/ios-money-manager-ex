@@ -34,13 +34,15 @@
 
 // Account
 
-"My Bank Accounts List" = "My Bank Accounts List";
+"My Bank Accounts List" = "Accounts";
 
-"Transaction Type List" = "Transaction Type List";
+"Transaction Type List" = "Transaction Type";
 
-"Currency type List" = "Currency type List";
+"Currency type List" = "Currency type";
 
-"Edit Personal Information" = "Edit Personal Information";
+"Personal Information" = "Personal Information";
+
+"Bank Account Edit Page Title" = "Bank Account Edit";
 
 // Account Basic Info
 

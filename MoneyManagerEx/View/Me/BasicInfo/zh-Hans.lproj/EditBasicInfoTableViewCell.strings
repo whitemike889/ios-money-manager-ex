@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "嘻哈小混混"; ObjectID = "8m7-gA-KlY"; */
+"8m7-gA-KlY.text" = "嘻哈小混混";
+
+/* Class = "UILabel"; text = "陶陶"; ObjectID = "AsX-4F-nFw"; */
+"AsX-4F-nFw.text" = "陶陶";
+
+/* Class = "UILabel"; text = "Nickname"; ObjectID = "Bod-Cf-4fV"; */
+"Bod-Cf-4fV.text" = "昵称";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "LrT-v2-Omd"; */
+"LrT-v2-Omd.text" = "性别";
+
+/* Class = "UILabel"; text = "1989年11月29日"; ObjectID = "RZX-zd-xr5"; */
+"RZX-zd-xr5.text" = "1989.11.29";
+
+/* Class = "UILabel"; text = "Birthday"; ObjectID = "SFx-zc-pro"; */
+"SFx-zc-pro.text" = "生日";
+
+/* Class = "UILabel"; text = "女"; ObjectID = "eOe-tZ-j4C"; */
+"eOe-tZ-j4C.text" = "女";
+
+/* Class = "UILabel"; text = "Truename"; ObjectID = "gfS-ad-rGs"; */
+"gfS-ad-rGs.text" = "真实姓名";

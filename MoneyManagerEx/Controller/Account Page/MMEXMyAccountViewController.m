@@ -131,19 +131,23 @@
 {
     if ((0 == indexPath.section) && (0 == indexPath.row)) {
         CurrentUserBasicInfoViewController *basicInfoVC = [[CurrentUserBasicInfoViewController alloc] initWithNibName:@"CurrentUserBasicInfoViewController" bundle:nil];
+        basicInfoVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:basicInfoVC animated:YES];
         
     }
     else if ((1 == indexPath.section) && (0 == indexPath.row)) {
         MyBankAccountListViewController *myBankAccountList = [[MyBankAccountListViewController alloc] initWithNibName:@"MyBankAccountListViewController" bundle:nil];
+        myBankAccountList.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:myBankAccountList animated:YES];
     }
     else if ((1 == indexPath.section) && (1 == indexPath.row)) {
         TransactionTypeListViewController *transactionTypeList = [[TransactionTypeListViewController alloc] initWithNibName:@"TransactionTypeListViewController" bundle:nil];
+        transactionTypeList.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:transactionTypeList animated:YES];
     }
     else if ((1 == indexPath.section) && (2 == indexPath.row)) {
         CurrencyTypeListViewController *currencyTypeList = [[CurrencyTypeListViewController alloc] initWithNibName:@"CurrencyTypeListViewController" bundle:nil];
+        currencyTypeList.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:currencyTypeList animated:YES];
     }
     
