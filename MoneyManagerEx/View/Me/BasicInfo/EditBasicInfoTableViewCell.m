@@ -12,9 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *avatarButton;
 @property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
-@property (weak, nonatomic) IBOutlet UITextField *nicknameTextField;
+@property (weak, nonatomic) IBOutlet UILabel *nicknameValue;
 @property (weak, nonatomic) IBOutlet UILabel *trueNameLabel;
-@property (weak, nonatomic) IBOutlet UITextField *trueNameTextField;
+@property (weak, nonatomic) IBOutlet UILabel *trueNameValue;
 @property (weak, nonatomic) IBOutlet UILabel *genderLabel;
 @property (weak, nonatomic) IBOutlet UILabel *genderValue;
 @property (weak, nonatomic) IBOutlet UILabel *birthdayLabel;
@@ -41,33 +41,31 @@
         switch (row) {
             case 0:
             {
-//                self.selectionStyle = UITableViewCellSelectionStyleNone;
+                self.selectionStyle = UITableViewCellSelectionStyleNone;
             }
                 break;
             case 1:
             {
                 _nicknameLabel.text = NSLocalizedString(@"nickname label", nil);
-                _nicknameTextField.text = @"";
-//                self.selectionStyle = UITableViewCellSelectionStyleNone;
+                _nicknameValue.text = @"嘻哈小混混";
             }
                 break;
             case 2:
             {
                 _trueNameLabel.text = NSLocalizedString(@"truename label", nil);
-                _trueNameTextField.text = @"";
-//                self.selectionStyle = UITableViewCellSelectionStyleNone;
+                _trueNameValue.text = @"Teresa";
             }
                 break;
             case 3:
             {
                 _genderLabel.text = NSLocalizedString(@"gender label", nil);
-                _genderValue.text = @"";
+                _genderValue.text = @"女";
             }
                 break;
             case 4:
             {
                 _birthdayLabel.text = NSLocalizedString(@"birthday label", nil);
-                _birthdayValue.text = @"";
+                _birthdayValue.text = @"1989.05.24";
             }
                 break;
             default:

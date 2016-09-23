@@ -5,6 +5,16 @@
   Created by taotao on 15/11/7.
   Copyright © 2015年 taotao. All rights reserved.
 */
+
+// common string
+"Cancel" = "Cancel";
+
+"Sure" = "Sure";
+
+"Ok" = "Ok";
+
+"Fine" = "Fine";
+
 "create new count title" = "create new count";
 
 "Assets Summary" = "Assets Summary";
@@ -60,3 +70,5 @@
 "Sub Transaction Type List Title" = "Sub Transaction Type";
 
 "Currency Type List Title" = "Currency Type";
+
+"New Transaction Type" = "New Transaction Type";

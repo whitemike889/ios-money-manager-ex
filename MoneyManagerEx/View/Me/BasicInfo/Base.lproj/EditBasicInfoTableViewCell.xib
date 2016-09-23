@@ -74,6 +74,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="nicknameLabel" destination="Bod-Cf-4fV" id="JMh-c6-e1X"/>
+                <outlet property="nicknameValue" destination="8m7-gA-KlY" id="nT2-Rq-fJ3"/>
             </connections>
         </tableViewCell>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EditTrueName" rowHeight="60" id="X3W-jE-Ygd" userLabel="EditTrueName" customClass="EditBasicInfoTableViewCell">
@@ -109,6 +110,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="trueNameLabel" destination="gfS-ad-rGs" id="aR2-pd-gFi"/>
+                <outlet property="trueNameValue" destination="AsX-4F-nFw" id="sae-MF-cVe"/>
             </connections>
         </tableViewCell>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EditGender" rowHeight="60" id="gSc-3H-qer" userLabel="EditGender" customClass="EditBasicInfoTableViewCell">

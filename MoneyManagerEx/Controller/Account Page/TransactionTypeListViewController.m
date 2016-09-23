@@ -8,8 +8,9 @@
 
 #import "TransactionTypeListViewController.h"
 #import "SubTransactionTypeListViewController.h"
+#import "MobileSystemHelper.h"
 
-@interface TransactionTypeListViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface TransactionTypeListViewController ()<UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 
 @end
 
@@ -47,11 +48,6 @@
     return UITableViewCellEditingStyleDelete;
 }
 
-//- (void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    tableView.editing = YES;
-//}
-
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -86,11 +82,32 @@
     return YES;
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (UITableViewCellEditingStyleDelete == editingStyle) {
+        //[tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    }
+}
+
 #pragma mark - actions
 
 - (void)addTransactionTypeButtonPressed
 {
-    
+    UIAlertController *controller = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"New Transaction Type", nil) message:nil preferredStyle:UIAlertControllerStyleAlert];
+    [controller addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Fine", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [controller addAction:cancelAction];
+    [controller addAction:okAction];
+    [self presentViewController:controller animated:YES completion:^{
+        
+    }];
 }
 
 @end
