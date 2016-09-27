@@ -29,6 +29,10 @@
 		BE0BC0961D9AA8600084FC40 /* MMEXGenderPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0BC0981D9AA8600084FC40 /* MMEXGenderPickerView.xib */; };
 		BE0BC09F1D9AA9320084FC40 /* MMEXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0BC09E1D9AA9320084FC40 /* MMEXDatePickerView.m */; };
 		BE0BC0A21D9AC6970084FC40 /* MMEXDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0BC0A41D9AC6970084FC40 /* MMEXDatePickerView.xib */; };
+		BE0BC0AD1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0BC0AB1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.m */; };
+		BE0BC0AE1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0BC0AC1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.xib */; };
+		BE0BC0B21D9AC9530084FC40 /* MMEXContactInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0BC0B01D9AC9530084FC40 /* MMEXContactInfoViewController.m */; };
+		BE0BC0B31D9AC9530084FC40 /* MMEXContactInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0BC0B11D9AC9530084FC40 /* MMEXContactInfoViewController.xib */; };
 		BE35F3E51D30DF85004110A4 /* LoginInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35F3E41D30DF85004110A4 /* LoginInfoModel.m */; };
 		BE35F3E91D30E12F004110A4 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35F3E81D30E12F004110A4 /* UserInfoModel.m */; };
 		BE35F3EC1D30E266004110A4 /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35F3EB1D30E266004110A4 /* ContactModel.m */; };
@@ -153,6 +157,12 @@
 		BE0BC0A31D9AC6970084FC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMEXDatePickerView.xib; sourceTree = "<group>"; };
 		BE0BC0A61D9AC69A0084FC40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MMEXDatePickerView.strings; sourceTree = "<group>"; };
 		BE0BC0A81D9AC69B0084FC40 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MMEXDatePickerView.strings"; sourceTree = "<group>"; };
+		BE0BC0AA1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrencyTypeInfoViewController.h; path = CurrencyType/CurrencyTypeInfoViewController.h; sourceTree = "<group>"; };
+		BE0BC0AB1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrencyTypeInfoViewController.m; path = CurrencyType/CurrencyTypeInfoViewController.m; sourceTree = "<group>"; };
+		BE0BC0AC1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CurrencyTypeInfoViewController.xib; path = CurrencyType/CurrencyTypeInfoViewController.xib; sourceTree = "<group>"; };
+		BE0BC0AF1D9AC9530084FC40 /* MMEXContactInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXContactInfoViewController.h; path = "Controller/Contacts Page/MMEXContactInfoViewController.h"; sourceTree = "<group>"; };
+		BE0BC0B01D9AC9530084FC40 /* MMEXContactInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXContactInfoViewController.m; path = "Controller/Contacts Page/MMEXContactInfoViewController.m"; sourceTree = "<group>"; };
+		BE0BC0B11D9AC9530084FC40 /* MMEXContactInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMEXContactInfoViewController.xib; path = "Controller/Contacts Page/MMEXContactInfoViewController.xib"; sourceTree = "<group>"; };
 		BE147CBF1D2CBB0F00E50791 /* MoneyManagerEx.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoneyManagerEx.pch; path = Macro/MoneyManagerEx.pch; sourceTree = "<group>"; };
 		BE35F3E31D30DF85004110A4 /* LoginInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginInfoModel.h; path = MMEX_SDK/Model/LoginInfoModel.h; sourceTree = "<group>"; };
 		BE35F3E41D30DF85004110A4 /* LoginInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginInfoModel.m; path = MMEX_SDK/Model/LoginInfoModel.m; sourceTree = "<group>"; };
@@ -331,6 +341,9 @@
 				BE067A7E1C1E79EA00F8B6F1 /* MMEXContactsViewController.h */,
 				BE067A7F1C1E79EA00F8B6F1 /* MMEXContactsViewController.m */,
 				BE067A801C1E79EA00F8B6F1 /* MMEXContactsViewController.xib */,
+				BE0BC0AF1D9AC9530084FC40 /* MMEXContactInfoViewController.h */,
+				BE0BC0B01D9AC9530084FC40 /* MMEXContactInfoViewController.m */,
+				BE0BC0B11D9AC9530084FC40 /* MMEXContactInfoViewController.xib */,
 			);
 			name = "Contacts Page";
 			sourceTree = "<group>";
@@ -351,6 +364,16 @@
 				BE086B631BEDF28A00CEF360 /* MMEXDoneSettingGuideProtocol.h */,
 			);
 			name = Protocol;
+			sourceTree = "<group>";
+		};
+		BE0BC0A91D9AC7BF0084FC40 /* CurrencyType */ = {
+			isa = PBXGroup;
+			children = (
+				BE0BC0AA1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.h */,
+				BE0BC0AB1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.m */,
+				BE0BC0AC1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.xib */,
+			);
+			name = CurrencyType;
 			sourceTree = "<group>";
 		};
 		BE35F3DB1D3005CD004110A4 /* Model */ = {
@@ -642,6 +665,7 @@
 		BE9472BE1BE60A57001FF64C /* Account Page */ = {
 			isa = PBXGroup;
 			children = (
+				BE0BC0A91D9AC7BF0084FC40 /* CurrencyType */,
 				BE618D831D96984000984C45 /* BasicInfo */,
 				BE0772D81D914AF1000BF953 /* BankAccount */,
 				BE086B691BEDF59A00CEF360 /* MMEXMyAccountViewController.h */,
@@ -854,6 +878,7 @@
 				BE0BC0961D9AA8600084FC40 /* MMEXGenderPickerView.xib in Resources */,
 				BE067A821C1E79EA00F8B6F1 /* MMEXContactsViewController.xib in Resources */,
 				BE94728C1BE5F4EE001FF64C /* LaunchScreen.storyboard in Resources */,
+				BE0BC0B31D9AC9530084FC40 /* MMEXContactInfoViewController.xib in Resources */,
 				BE086B721BEDF5C900CEF360 /* MMEXAssetsViewController.xib in Resources */,
 				BEB7BA2D1D8ECE6A0065CE2A /* CurrencyTypeListViewController.xib in Resources */,
 				BE0772DD1D914B45000BF953 /* BankAccountEditViewController.xib in Resources */,
@@ -871,6 +896,7 @@
 				BEF3980C1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib in Resources */,
 				BE086B471BEDE08600CEF360 /* MMEXStartPageViewController.xib in Resources */,
 				BE086B401BEDDFE200CEF360 /* MMEXCreateFirstAccountGuideViewController.xib in Resources */,
+				BE0BC0AE1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.xib in Resources */,
 				BE9009721D8ECBCB00A570D6 /* SubTransactionTypeListViewController.xib in Resources */,
 				BE9472891BE5F4EE001FF64C /* Assets.xcassets in Resources */,
 			);
@@ -985,11 +1011,13 @@
 				BECE3E5E1D1450FC0075D562 /* EditBasicInfoTableViewCell.m in Sources */,
 				BE086B601BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.m in Sources */,
 				BE35F42B1D30EB68004110A4 /* Contacts.m in Sources */,
+				BE0BC0AD1D9AC83B0084FC40 /* CurrencyTypeInfoViewController.m in Sources */,
 				BE35F3EC1D30E266004110A4 /* ContactModel.m in Sources */,
 				BE9009711D8ECBCB00A570D6 /* SubTransactionTypeListViewController.m in Sources */,
 				BE35F3EF1D30E2FC004110A4 /* AccountModel.m in Sources */,
 				BE35F3F21D30E374004110A4 /* MerchantModel.m in Sources */,
 				BE35F4361D30EB68004110A4 /* UserInfo+CoreDataProperties.m in Sources */,
+				BE0BC0B21D9AC9530084FC40 /* MMEXContactInfoViewController.m in Sources */,
 				BE0BC09F1D9AA9320084FC40 /* MMEXDatePickerView.m in Sources */,
 				BEB7BA311D8ED2BB0065CE2A /* BankAccountViewController.m in Sources */,
 				BE086B711BEDF5C900CEF360 /* MMEXAssetsViewController.m in Sources */,

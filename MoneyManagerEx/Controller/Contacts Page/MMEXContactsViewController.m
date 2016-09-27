@@ -7,6 +7,7 @@
 //
 
 #import "MMEXContactsViewController.h"
+#import "MMEXContactInfoViewController.h"
 
 @interface MMEXContactsViewController ()
 
@@ -36,7 +37,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    MMEXContactInfoViewController *contactInfoVC = [[MMEXContactInfoViewController alloc] initWithNibName:@"MMEXContactInfoViewController" bundle:nil];
+    [self.navigationController pushViewController:contactInfoVC animated:YES];
 }
 
 #pragma mark - UITableViewDataSource

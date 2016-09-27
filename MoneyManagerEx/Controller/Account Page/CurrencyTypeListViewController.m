@@ -7,6 +7,7 @@
 //
 
 #import "CurrencyTypeListViewController.h"
+#import "CurrencyTypeInfoViewController.h"
 
 @interface CurrencyTypeListViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -38,6 +39,8 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    CurrencyTypeInfoViewController *currencyTypeInfoVC = [[CurrencyTypeInfoViewController alloc] initWithNibName:@"CurrencyTypeInfoViewController" bundle:nil];
+    [self.navigationController pushViewController:currencyTypeInfoVC animated:YES];
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
