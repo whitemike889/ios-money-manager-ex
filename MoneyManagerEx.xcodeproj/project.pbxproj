@@ -26,6 +26,9 @@
 		BE086B6D1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B6B1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib */; };
 		BE086B711BEDF5C900CEF360 /* MMEXAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE086B6F1BEDF5C900CEF360 /* MMEXAssetsViewController.m */; };
 		BE086B721BEDF5C900CEF360 /* MMEXAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE086B701BEDF5C900CEF360 /* MMEXAssetsViewController.xib */; };
+		BE0BC0961D9AA8600084FC40 /* MMEXGenderPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0BC0981D9AA8600084FC40 /* MMEXGenderPickerView.xib */; };
+		BE0BC09F1D9AA9320084FC40 /* MMEXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0BC09E1D9AA9320084FC40 /* MMEXDatePickerView.m */; };
+		BE0BC0A21D9AC6970084FC40 /* MMEXDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0BC0A41D9AC6970084FC40 /* MMEXDatePickerView.xib */; };
 		BE35F3E51D30DF85004110A4 /* LoginInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35F3E41D30DF85004110A4 /* LoginInfoModel.m */; };
 		BE35F3E91D30E12F004110A4 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35F3E81D30E12F004110A4 /* UserInfoModel.m */; };
 		BE35F3EC1D30E266004110A4 /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35F3EB1D30E266004110A4 /* ContactModel.m */; };
@@ -56,6 +59,11 @@
 		BE35F43B1D30FDB2004110A4 /* StringUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35F43A1D30FDB2004110A4 /* StringUtility.m */; };
 		BE618D701D93FE1900984C45 /* BankAccountEditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE618D721D93FE1900984C45 /* BankAccountEditTableViewCell.xib */; };
 		BE618D7C1D94400E00984C45 /* EditBasicInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE618D7E1D94400E00984C45 /* EditBasicInfoTableViewCell.xib */; };
+		BE618D871D9698A600984C45 /* CurrentUserBasicInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE618D851D9698A600984C45 /* CurrentUserBasicInfoViewController.m */; };
+		BE618D881D9698A600984C45 /* CurrentUserBasicInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE618D861D9698A600984C45 /* CurrentUserBasicInfoViewController.xib */; };
+		BE618D8C1D969C4000984C45 /* MyNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE618D8A1D969C4000984C45 /* MyNameViewController.m */; };
+		BE618D8D1D969C4000984C45 /* MyNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE618D8B1D969C4000984C45 /* MyNameViewController.xib */; };
+		BE618D911D97EE1100984C45 /* MMEXGenderPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE618D901D97EE1100984C45 /* MMEXGenderPickerView.m */; };
 		BE6586771D51FCF50091FC7D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6586761D51FCF50091FC7D /* ImageIO.framework */; };
 		BE72884A1D885661007687B5 /* MyBankAccountListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7288491D885661007687B5 /* MyBankAccountListViewController.m */; };
 		BE72884C1D885692007687B5 /* MyBankAccountListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE72884B1D885692007687B5 /* MyBankAccountListViewController.xib */; };
@@ -78,8 +86,6 @@
 		BEC14F231BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC14F211BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m */; };
 		BECE3E521D12E8230075D562 /* MMEXMyAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE3E501D12E8230075D562 /* MMEXMyAccountTableViewCell.m */; };
 		BECE3E531D12E8230075D562 /* MMEXMyAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */; };
-		BECE3E571D1447BE0075D562 /* CurrentUserBasicInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE3E551D1447BE0075D562 /* CurrentUserBasicInfoViewController.m */; };
-		BECE3E581D1447BE0075D562 /* CurrentUserBasicInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECE3E561D1447BE0075D562 /* CurrentUserBasicInfoViewController.xib */; };
 		BECE3E5E1D1450FC0075D562 /* EditBasicInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE3E5C1D1450FC0075D562 /* EditBasicInfoTableViewCell.m */; };
 		BEF3980C1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF3980E1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib */; };
 /* End PBXBuildFile section */
@@ -139,6 +145,14 @@
 		BE086B6E1BEDF5C900CEF360 /* MMEXAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXAssetsViewController.h; sourceTree = "<group>"; };
 		BE086B6F1BEDF5C900CEF360 /* MMEXAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXAssetsViewController.m; sourceTree = "<group>"; };
 		BE086B701BEDF5C900CEF360 /* MMEXAssetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMEXAssetsViewController.xib; sourceTree = "<group>"; };
+		BE0BC0971D9AA8600084FC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMEXGenderPickerView.xib; sourceTree = "<group>"; };
+		BE0BC09A1D9AA88A0084FC40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MMEXGenderPickerView.strings; sourceTree = "<group>"; };
+		BE0BC09C1D9AA88C0084FC40 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MMEXGenderPickerView.strings"; sourceTree = "<group>"; };
+		BE0BC09D1D9AA9320084FC40 /* MMEXDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXDatePickerView.h; path = View/CustomView/MMEXDatePickerView.h; sourceTree = "<group>"; };
+		BE0BC09E1D9AA9320084FC40 /* MMEXDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXDatePickerView.m; path = View/CustomView/MMEXDatePickerView.m; sourceTree = "<group>"; };
+		BE0BC0A31D9AC6970084FC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMEXDatePickerView.xib; sourceTree = "<group>"; };
+		BE0BC0A61D9AC69A0084FC40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MMEXDatePickerView.strings; sourceTree = "<group>"; };
+		BE0BC0A81D9AC69B0084FC40 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MMEXDatePickerView.strings"; sourceTree = "<group>"; };
 		BE147CBF1D2CBB0F00E50791 /* MoneyManagerEx.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoneyManagerEx.pch; path = Macro/MoneyManagerEx.pch; sourceTree = "<group>"; };
 		BE35F3E31D30DF85004110A4 /* LoginInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginInfoModel.h; path = MMEX_SDK/Model/LoginInfoModel.h; sourceTree = "<group>"; };
 		BE35F3E41D30DF85004110A4 /* LoginInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginInfoModel.m; path = MMEX_SDK/Model/LoginInfoModel.m; sourceTree = "<group>"; };
@@ -201,6 +215,14 @@
 		BE618D7D1D94400E00984C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EditBasicInfoTableViewCell.xib; sourceTree = "<group>"; };
 		BE618D801D94401200984C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EditBasicInfoTableViewCell.strings; sourceTree = "<group>"; };
 		BE618D821D94401400984C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/EditBasicInfoTableViewCell.strings"; sourceTree = "<group>"; };
+		BE618D841D9698A600984C45 /* CurrentUserBasicInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentUserBasicInfoViewController.h; path = BasicInfo/CurrentUserBasicInfoViewController.h; sourceTree = "<group>"; };
+		BE618D851D9698A600984C45 /* CurrentUserBasicInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentUserBasicInfoViewController.m; path = BasicInfo/CurrentUserBasicInfoViewController.m; sourceTree = "<group>"; };
+		BE618D861D9698A600984C45 /* CurrentUserBasicInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CurrentUserBasicInfoViewController.xib; path = BasicInfo/CurrentUserBasicInfoViewController.xib; sourceTree = "<group>"; };
+		BE618D891D969C4000984C45 /* MyNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyNameViewController.h; path = BasicInfo/MyNameViewController.h; sourceTree = "<group>"; };
+		BE618D8A1D969C4000984C45 /* MyNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyNameViewController.m; path = BasicInfo/MyNameViewController.m; sourceTree = "<group>"; };
+		BE618D8B1D969C4000984C45 /* MyNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyNameViewController.xib; path = BasicInfo/MyNameViewController.xib; sourceTree = "<group>"; };
+		BE618D8F1D97EE1100984C45 /* MMEXGenderPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXGenderPickerView.h; path = View/CustomView/MMEXGenderPickerView.h; sourceTree = "<group>"; };
+		BE618D901D97EE1100984C45 /* MMEXGenderPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXGenderPickerView.m; path = View/CustomView/MMEXGenderPickerView.m; sourceTree = "<group>"; };
 		BE6586761D51FCF50091FC7D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		BE6E7C501BF8D50E00339A4B /* MobileDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileDeviceHelper.h; path = Helper/MobileDeviceHelper.h; sourceTree = "<group>"; };
 		BE7288481D885661007687B5 /* MyBankAccountListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBankAccountListViewController.h; sourceTree = "<group>"; };
@@ -241,9 +263,6 @@
 		BECE3E4F1D12E8230075D562 /* MMEXMyAccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXMyAccountTableViewCell.h; path = View/Me/MMEXMyAccountTableViewCell.h; sourceTree = "<group>"; };
 		BECE3E501D12E8230075D562 /* MMEXMyAccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXMyAccountTableViewCell.m; path = View/Me/MMEXMyAccountTableViewCell.m; sourceTree = "<group>"; };
 		BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMEXMyAccountTableViewCell.xib; path = View/Me/MMEXMyAccountTableViewCell.xib; sourceTree = "<group>"; };
-		BECE3E541D1447BE0075D562 /* CurrentUserBasicInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentUserBasicInfoViewController.h; sourceTree = "<group>"; };
-		BECE3E551D1447BE0075D562 /* CurrentUserBasicInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentUserBasicInfoViewController.m; sourceTree = "<group>"; };
-		BECE3E561D1447BE0075D562 /* CurrentUserBasicInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentUserBasicInfoViewController.xib; sourceTree = "<group>"; };
 		BECE3E5B1D1450FC0075D562 /* EditBasicInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditBasicInfoTableViewCell.h; path = View/Me/BasicInfo/EditBasicInfoTableViewCell.h; sourceTree = "<group>"; };
 		BECE3E5C1D1450FC0075D562 /* EditBasicInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditBasicInfoTableViewCell.m; path = View/Me/BasicInfo/EditBasicInfoTableViewCell.m; sourceTree = "<group>"; };
 		BEF3980D1BFA017A0032EE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMEXSetFavoriteSubAccountViewController.xib; sourceTree = "<group>"; };
@@ -433,6 +452,32 @@
 			path = ObjectModel;
 			sourceTree = "<group>";
 		};
+		BE618D831D96984000984C45 /* BasicInfo */ = {
+			isa = PBXGroup;
+			children = (
+				BE618D841D9698A600984C45 /* CurrentUserBasicInfoViewController.h */,
+				BE618D851D9698A600984C45 /* CurrentUserBasicInfoViewController.m */,
+				BE618D861D9698A600984C45 /* CurrentUserBasicInfoViewController.xib */,
+				BE618D891D969C4000984C45 /* MyNameViewController.h */,
+				BE618D8A1D969C4000984C45 /* MyNameViewController.m */,
+				BE618D8B1D969C4000984C45 /* MyNameViewController.xib */,
+			);
+			name = BasicInfo;
+			sourceTree = "<group>";
+		};
+		BE618D8E1D97E85800984C45 /* picker */ = {
+			isa = PBXGroup;
+			children = (
+				BE618D8F1D97EE1100984C45 /* MMEXGenderPickerView.h */,
+				BE618D901D97EE1100984C45 /* MMEXGenderPickerView.m */,
+				BE0BC0981D9AA8600084FC40 /* MMEXGenderPickerView.xib */,
+				BE0BC09D1D9AA9320084FC40 /* MMEXDatePickerView.h */,
+				BE0BC09E1D9AA9320084FC40 /* MMEXDatePickerView.m */,
+				BE0BC0A41D9AC6970084FC40 /* MMEXDatePickerView.xib */,
+			);
+			name = picker;
+			sourceTree = "<group>";
+		};
 		BE94726D1BE5F4EE001FF64C = {
 			isa = PBXGroup;
 			children = (
@@ -571,6 +616,7 @@
 		BE9472B71BE60230001FF64C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BE618D8E1D97E85800984C45 /* picker */,
 				BECE3E591D1450140075D562 /* BankAccount */,
 				BECE3E4E1D12E7A70075D562 /* me */,
 			);
@@ -596,13 +642,11 @@
 		BE9472BE1BE60A57001FF64C /* Account Page */ = {
 			isa = PBXGroup;
 			children = (
+				BE618D831D96984000984C45 /* BasicInfo */,
 				BE0772D81D914AF1000BF953 /* BankAccount */,
 				BE086B691BEDF59A00CEF360 /* MMEXMyAccountViewController.h */,
 				BE086B6A1BEDF59A00CEF360 /* MMEXMyAccountViewController.m */,
 				BE086B6B1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib */,
-				BECE3E541D1447BE0075D562 /* CurrentUserBasicInfoViewController.h */,
-				BECE3E551D1447BE0075D562 /* CurrentUserBasicInfoViewController.m */,
-				BECE3E561D1447BE0075D562 /* CurrentUserBasicInfoViewController.xib */,
 				BE7288481D885661007687B5 /* MyBankAccountListViewController.h */,
 				BE7288491D885661007687B5 /* MyBankAccountListViewController.m */,
 				BE72884B1D885692007687B5 /* MyBankAccountListViewController.xib */,
@@ -766,7 +810,7 @@
 				TargetAttributes = {
 					BE9472751BE5F4EE001FF64C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = Z63APZ72SR;
+						ProvisioningStyle = Automatic;
 					};
 					BE9472911BE5F4EE001FF64C = {
 						CreatedOnToolsVersion = 7.1;
@@ -804,7 +848,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE618D881D9698A600984C45 /* CurrentUserBasicInfoViewController.xib in Resources */,
+				BE618D8D1D969C4000984C45 /* MyNameViewController.xib in Resources */,
 				BE086B561BEDE91D00CEF360 /* Localizable.strings in Resources */,
+				BE0BC0961D9AA8600084FC40 /* MMEXGenderPickerView.xib in Resources */,
 				BE067A821C1E79EA00F8B6F1 /* MMEXContactsViewController.xib in Resources */,
 				BE94728C1BE5F4EE001FF64C /* LaunchScreen.storyboard in Resources */,
 				BE086B721BEDF5C900CEF360 /* MMEXAssetsViewController.xib in Resources */,
@@ -815,12 +862,12 @@
 				BE086B5C1BEDEA1F00CEF360 /* Info.plist in Resources */,
 				BE086B6D1BEDF59A00CEF360 /* MMEXMyAccountViewController.xib in Resources */,
 				BE086B611BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.xib in Resources */,
-				BECE3E581D1447BE0075D562 /* CurrentUserBasicInfoViewController.xib in Resources */,
 				BECE3E531D12E8230075D562 /* MMEXMyAccountTableViewCell.xib in Resources */,
 				BE618D7C1D94400E00984C45 /* EditBasicInfoTableViewCell.xib in Resources */,
 				BE618D701D93FE1900984C45 /* BankAccountEditTableViewCell.xib in Resources */,
 				BE72884C1D885692007687B5 /* MyBankAccountListViewController.xib in Resources */,
 				BE90096D1D8EC56800A570D6 /* TransactionTypeListViewController.xib in Resources */,
+				BE0BC0A21D9AC6970084FC40 /* MMEXDatePickerView.xib in Resources */,
 				BEF3980C1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib in Resources */,
 				BE086B471BEDE08600CEF360 /* MMEXStartPageViewController.xib in Resources */,
 				BE086B401BEDDFE200CEF360 /* MMEXCreateFirstAccountGuideViewController.xib in Resources */,
@@ -912,9 +959,9 @@
 				BE35F42A1D30EB68004110A4 /* Contacts+CoreDataProperties.m in Sources */,
 				BE35F4321D30EB68004110A4 /* Transaction+CoreDataProperties.m in Sources */,
 				BE35F3F51D30E6A5004110A4 /* CurrencyModel.m in Sources */,
-				BECE3E571D1447BE0075D562 /* CurrentUserBasicInfoViewController.m in Sources */,
 				BE35F4291D30EB68004110A4 /* BaseManagedObject.m in Sources */,
 				BE35F4271D30EB68004110A4 /* Account+CoreDataProperties.m in Sources */,
+				BE618D911D97EE1100984C45 /* MMEXGenderPickerView.m in Sources */,
 				BEB7BA2C1D8ECE6A0065CE2A /* CurrencyTypeListViewController.m in Sources */,
 				BE35F4281D30EB68004110A4 /* Account.m in Sources */,
 				BE086B671BEDF53700CEF360 /* MMEXAddTransactionViewController.m in Sources */,
@@ -924,7 +971,9 @@
 				BE90096C1D8EC56800A570D6 /* TransactionTypeListViewController.m in Sources */,
 				BE35F4351D30EB68004110A4 /* TransactionType.m in Sources */,
 				BE35F4341D30EB68004110A4 /* TransactionType+CoreDataProperties.m in Sources */,
+				BE618D8C1D969C4000984C45 /* MyNameViewController.m in Sources */,
 				BE35F4331D30EB68004110A4 /* Transaction.m in Sources */,
+				BE618D871D9698A600984C45 /* CurrentUserBasicInfoViewController.m in Sources */,
 				BE9472C91BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m in Sources */,
 				BE067A7C1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m in Sources */,
 				BE94727B1BE5F4EE001FF64C /* main.m in Sources */,
@@ -941,6 +990,7 @@
 				BE35F3EF1D30E2FC004110A4 /* AccountModel.m in Sources */,
 				BE35F3F21D30E374004110A4 /* MerchantModel.m in Sources */,
 				BE35F4361D30EB68004110A4 /* UserInfo+CoreDataProperties.m in Sources */,
+				BE0BC09F1D9AA9320084FC40 /* MMEXDatePickerView.m in Sources */,
 				BEB7BA311D8ED2BB0065CE2A /* BankAccountViewController.m in Sources */,
 				BE086B711BEDF5C900CEF360 /* MMEXAssetsViewController.m in Sources */,
 				BE35F3E51D30DF85004110A4 /* LoginInfoModel.m in Sources */,
@@ -1011,6 +1061,28 @@
 			);
 			name = Localizable.strings;
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		BE0BC0981D9AA8600084FC40 /* MMEXGenderPickerView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE0BC0971D9AA8600084FC40 /* Base */,
+				BE0BC09A1D9AA88A0084FC40 /* en */,
+				BE0BC09C1D9AA88C0084FC40 /* zh-Hans */,
+			);
+			name = MMEXGenderPickerView.xib;
+			path = View/CustomView;
+			sourceTree = "<group>";
+		};
+		BE0BC0A41D9AC6970084FC40 /* MMEXDatePickerView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE0BC0A31D9AC6970084FC40 /* Base */,
+				BE0BC0A61D9AC69A0084FC40 /* en */,
+				BE0BC0A81D9AC69B0084FC40 /* zh-Hans */,
+			);
+			name = MMEXDatePickerView.xib;
+			path = View/CustomView;
 			sourceTree = "<group>";
 		};
 		BE618D721D93FE1900984C45 /* BankAccountEditTableViewCell.xib */ = {
@@ -1143,9 +1215,11 @@
 			baseConfigurationReference = 0779C54BB00ED4E251D3FEAC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z63APZ72SR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = MoneyManagerEx/Macro/MoneyManagerEx.pch;
 				INFOPLIST_FILE = MoneyManagerEx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taotao.MoneyManagerEx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1158,12 +1232,16 @@
 			baseConfigurationReference = C533A834D10059DD7860B201 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z63APZ72SR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = MoneyManagerEx/Macro/MoneyManagerEx.pch;
 				INFOPLIST_FILE = MoneyManagerEx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taotao.MoneyManagerEx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

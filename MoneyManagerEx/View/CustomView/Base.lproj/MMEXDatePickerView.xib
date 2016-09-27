@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MMEXDatePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERj-Zi-sTO">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4t5-tE-IHA"/>
+                        <constraint firstAttribute="width" constant="71" id="dQE-Pr-G1g"/>
+                    </constraints>
+                    <state key="normal" title="Confirm"/>
+                    <connections>
+                        <action selector="confirmButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="SKB-3o-PtY"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Val-lD-e5D">
+                    <date key="date" timeIntervalSinceReferenceDate="-410299199.47099304">
+                        <!--1988-01-01 04:00:00 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                        <!--1970-01-01 11:00:00 +0000-->
+                    </date>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                        <!--2037-12-31 11:00:00 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Val-lD-e5D" secondAttribute="trailing" id="7ih-s0-fKi"/>
+                <constraint firstItem="Val-lD-e5D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HIv-V9-FrW"/>
+                <constraint firstItem="Val-lD-e5D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="JYs-j2-qXW"/>
+                <constraint firstAttribute="bottom" secondItem="Val-lD-e5D" secondAttribute="bottom" id="SaC-UQ-4PM"/>
+                <constraint firstAttribute="trailing" secondItem="ERj-Zi-sTO" secondAttribute="trailing" constant="8" id="hmt-i7-1Sw"/>
+                <constraint firstItem="ERj-Zi-sTO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="shW-5v-NR1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmButton" destination="ERj-Zi-sTO" id="cap-bc-005"/>
+                <outlet property="datePicker" destination="Val-lD-e5D" id="Syq-Mn-d5W"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="87"/>
+        </view>
+    </objects>
+</document>

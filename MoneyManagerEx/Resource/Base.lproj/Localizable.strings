@@ -64,6 +64,14 @@
 
 "birthday label" = "birthday";
 
+"nickname" = "nickname";
+
+"truename" = "truename";
+
+"male" = "male";
+
+"female" = "female";
+
 // Transaction Type List
 "Transaction Type List Title" = "Transaction Type";
 

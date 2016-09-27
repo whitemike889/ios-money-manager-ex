@@ -64,6 +64,14 @@
 
 "birthday label" = "生日";
 
+"nickname" = "昵称";
+
+"truename" = "真实姓名";
+
+"male" = "男";
+
+"female" = "女";
+
 // Transaction Type List
 "Transaction Type List Title" = "交易类型";
 
