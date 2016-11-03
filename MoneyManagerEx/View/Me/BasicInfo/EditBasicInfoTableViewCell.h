@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EditBasicInfoDelegate.h"
+#import "UserInfoModel.h"
 
 @interface EditBasicInfoTableViewCell : UITableViewCell
 
-- (void)configureCellDataOnSection:(NSInteger)section row:(NSInteger)row;
+- (void)configureCellDataOnSection:(NSInteger)section row:(NSInteger)row data:(UserInfoModel *)userInfo;
+
+@property (nonatomic, weak) id<EditBasicInfoDelegate> delegate;
 
 @end

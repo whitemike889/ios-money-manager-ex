@@ -17,5 +17,6 @@
 @property (nonatomic, strong) NSDate *logintime;
 @property (nonatomic, strong) NSString *token;
 @property (nonatomic, strong) UserInfoModel *user;
+@property (nonatomic, strong) NSString *avatar;
 
 @end

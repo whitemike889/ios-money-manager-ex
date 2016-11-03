@@ -17,6 +17,7 @@
 #import "IQKeyboardManager.h"
 #import "MoneyManagerExDBCenter.h"
 #import "StringUtility.h"
+#import "MMEX.h"
 
 @interface AppDelegate ()
 
@@ -42,6 +43,8 @@
     
     [self.window makeKeyAndVisible];
     [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
+    
+    [MMEX initializeAllManager];
     
     return YES;
 }

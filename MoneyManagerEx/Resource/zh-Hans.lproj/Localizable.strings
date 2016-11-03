@@ -56,6 +56,8 @@
 
 // Account Basic Info
 
+"name label" = "名字";
+
 "nickname label" = "昵称";
 
 "truename label" = "真实姓名";
@@ -72,6 +74,10 @@
 
 "female" = "女";
 
+"Take Photo" = "拍照";
+
+"Choose Photo" = "选择照片";
+
 // Transaction Type List
 "Transaction Type List Title" = "交易类型";
 
@@ -80,3 +86,8 @@
 "Currency Type List Title" = "货币类型";
 
 "New Transaction Type" = "新建交易类型";
+
+// privacy
+"This app need your approve to open the media library" = "此 App 需要您的同意才能读取媒体资料库。";
+
+"This app need your approve to open the camera" = "此 App 需要您的同意才能读取相机。";

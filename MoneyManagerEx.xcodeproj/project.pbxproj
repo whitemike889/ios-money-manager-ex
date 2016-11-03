@@ -71,6 +71,7 @@
 		BE6586771D51FCF50091FC7D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6586761D51FCF50091FC7D /* ImageIO.framework */; };
 		BE72884A1D885661007687B5 /* MyBankAccountListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7288491D885661007687B5 /* MyBankAccountListViewController.m */; };
 		BE72884C1D885692007687B5 /* MyBankAccountListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE72884B1D885692007687B5 /* MyBankAccountListViewController.xib */; };
+		BE81634A1DCA37F400BF90EC /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8163491DCA37F400BF90EC /* UIImage+Crop.m */; };
 		BE90096C1D8EC56800A570D6 /* TransactionTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE90096A1D8EC56800A570D6 /* TransactionTypeListViewController.m */; };
 		BE90096D1D8EC56800A570D6 /* TransactionTypeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE90096B1D8EC56800A570D6 /* TransactionTypeListViewController.xib */; };
 		BE9009711D8ECBCB00A570D6 /* SubTransactionTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE90096F1D8ECBCB00A570D6 /* SubTransactionTypeListViewController.m */; };
@@ -87,10 +88,14 @@
 		BEB7BA2D1D8ECE6A0065CE2A /* CurrencyTypeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEB7BA2B1D8ECE6A0065CE2A /* CurrencyTypeListViewController.xib */; };
 		BEB7BA311D8ED2BB0065CE2A /* BankAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB7BA2F1D8ED2BB0065CE2A /* BankAccountViewController.m */; };
 		BEB7BA321D8ED2BB0065CE2A /* BankAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEB7BA301D8ED2BB0065CE2A /* BankAccountViewController.xib */; };
+		BEBE59001DCB964D0084DD72 /* MainMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBE58FF1DCB964D0084DD72 /* MainMgr.m */; };
+		BEBE59031DCB96B20084DD72 /* MMEX.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBE59021DCB96B20084DD72 /* MMEX.m */; };
+		BEBE59091DCBA2DD0084DD72 /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBE59081DCBA2DD0084DD72 /* NSDate+Format.m */; };
 		BEC14F231BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC14F211BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m */; };
 		BECE3E521D12E8230075D562 /* MMEXMyAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE3E501D12E8230075D562 /* MMEXMyAccountTableViewCell.m */; };
 		BECE3E531D12E8230075D562 /* MMEXMyAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */; };
 		BECE3E5E1D1450FC0075D562 /* EditBasicInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE3E5C1D1450FC0075D562 /* EditBasicInfoTableViewCell.m */; };
+		BED92E771DCB923200EFD601 /* LoginAccountMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = BED92E761DCB923200EFD601 /* LoginAccountMgr.m */; };
 		BEF3980C1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF3980E1BFA017A0032EE8D /* MMEXSetFavoriteSubAccountViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -238,6 +243,9 @@
 		BE7288481D885661007687B5 /* MyBankAccountListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBankAccountListViewController.h; sourceTree = "<group>"; };
 		BE7288491D885661007687B5 /* MyBankAccountListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBankAccountListViewController.m; sourceTree = "<group>"; };
 		BE72884B1D885692007687B5 /* MyBankAccountListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyBankAccountListViewController.xib; sourceTree = "<group>"; };
+		BE8163441DCA19D800BF90EC /* EditBasicInfoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditBasicInfoDelegate.h; path = View/Me/BasicInfo/EditBasicInfoDelegate.h; sourceTree = "<group>"; };
+		BE8163481DCA37F400BF90EC /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Crop.h"; path = "Categories/UIImage+Crop.h"; sourceTree = "<group>"; };
+		BE8163491DCA37F400BF90EC /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Crop.m"; path = "Categories/UIImage+Crop.m"; sourceTree = "<group>"; };
 		BE89A7B61BF4144D00411171 /* MobileSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileSystemHelper.h; path = Helper/MobileSystemHelper.h; sourceTree = "<group>"; };
 		BE9009691D8EC56800A570D6 /* TransactionTypeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionTypeListViewController.h; sourceTree = "<group>"; };
 		BE90096A1D8EC56800A570D6 /* TransactionTypeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionTypeListViewController.m; sourceTree = "<group>"; };
@@ -268,6 +276,13 @@
 		BEB7BA2E1D8ED2BB0065CE2A /* BankAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountViewController.h; sourceTree = "<group>"; };
 		BEB7BA2F1D8ED2BB0065CE2A /* BankAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountViewController.m; sourceTree = "<group>"; };
 		BEB7BA301D8ED2BB0065CE2A /* BankAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankAccountViewController.xib; sourceTree = "<group>"; };
+		BEBE58FD1DCB95880084DD72 /* IBaseMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IBaseMgr.h; path = MMEX_SDK/Interface/IBaseMgr.h; sourceTree = "<group>"; };
+		BEBE58FE1DCB964D0084DD72 /* MainMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMgr.h; path = MMEX_SDK/Interface/MainMgr.h; sourceTree = "<group>"; };
+		BEBE58FF1DCB964D0084DD72 /* MainMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMgr.m; path = MMEX_SDK/Interface/MainMgr.m; sourceTree = "<group>"; };
+		BEBE59011DCB96B20084DD72 /* MMEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEX.h; path = MMEX_SDK/Interface/MMEX.h; sourceTree = "<group>"; };
+		BEBE59021DCB96B20084DD72 /* MMEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEX.m; path = MMEX_SDK/Interface/MMEX.m; sourceTree = "<group>"; };
+		BEBE59071DCBA2DD0084DD72 /* NSDate+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Format.h"; path = "Categories/NSDate+Format.h"; sourceTree = "<group>"; };
+		BEBE59081DCBA2DD0084DD72 /* NSDate+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Format.m"; path = "Categories/NSDate+Format.m"; sourceTree = "<group>"; };
 		BEC14F201BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEXSetFavoriteSubAccountViewController.h; sourceTree = "<group>"; };
 		BEC14F211BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEXSetFavoriteSubAccountViewController.m; sourceTree = "<group>"; };
 		BECE3E4F1D12E8230075D562 /* MMEXMyAccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXMyAccountTableViewCell.h; path = View/Me/MMEXMyAccountTableViewCell.h; sourceTree = "<group>"; };
@@ -275,6 +290,10 @@
 		BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMEXMyAccountTableViewCell.xib; path = View/Me/MMEXMyAccountTableViewCell.xib; sourceTree = "<group>"; };
 		BECE3E5B1D1450FC0075D562 /* EditBasicInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditBasicInfoTableViewCell.h; path = View/Me/BasicInfo/EditBasicInfoTableViewCell.h; sourceTree = "<group>"; };
 		BECE3E5C1D1450FC0075D562 /* EditBasicInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditBasicInfoTableViewCell.m; path = View/Me/BasicInfo/EditBasicInfoTableViewCell.m; sourceTree = "<group>"; };
+		BED92E701DCB7F1800EFD601 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BED92E741DCB905500EFD601 /* ILoginAccountMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILoginAccountMgr.h; path = MMEX_SDK/Interface/ILoginAccountMgr.h; sourceTree = "<group>"; };
+		BED92E751DCB923200EFD601 /* LoginAccountMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginAccountMgr.h; path = MMEX_SDK/Manager/LoginAccountMgr.h; sourceTree = "<group>"; };
+		BED92E761DCB923200EFD601 /* LoginAccountMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginAccountMgr.m; path = MMEX_SDK/Manager/LoginAccountMgr.m; sourceTree = "<group>"; };
 		BEF3980D1BFA017A0032EE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMEXSetFavoriteSubAccountViewController.xib; sourceTree = "<group>"; };
 		BEF398101BFA017D0032EE8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MMEXSetFavoriteSubAccountViewController.strings; sourceTree = "<group>"; };
 		BEF398121BFA017E0032EE8D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MMEXSetFavoriteSubAccountViewController.strings"; sourceTree = "<group>"; };
@@ -320,6 +339,7 @@
 		6B930197299E611DFA23D00A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BED92E701DCB7F1800EFD601 /* CoreMedia.framework */,
 				BE6586761D51FCF50091FC7D /* ImageIO.framework */,
 				AFED510AC7469D5BE768BB15 /* Pods.framework */,
 			);
@@ -402,6 +422,8 @@
 		BE35F3DC1D30080B004110A4 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				BED92E751DCB923200EFD601 /* LoginAccountMgr.h */,
+				BED92E761DCB923200EFD601 /* LoginAccountMgr.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -593,6 +615,10 @@
 		BE9472B11BE600DD001FF64C /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				BE8163481DCA37F400BF90EC /* UIImage+Crop.h */,
+				BE8163491DCA37F400BF90EC /* UIImage+Crop.m */,
+				BEBE59071DCBA2DD0084DD72 /* NSDate+Format.h */,
+				BEBE59081DCBA2DD0084DD72 /* NSDate+Format.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -608,6 +634,7 @@
 		BE9472B31BE60140001FF64C /* MMEX_SDK */ = {
 			isa = PBXGroup;
 			children = (
+				BED92E731DCB900B00EFD601 /* Interface */,
 				BE35F3FC1D30EB68004110A4 /* MMEX_DB */,
 				BE35F3DC1D30080B004110A4 /* Manager */,
 				BE35F3DB1D3005CD004110A4 /* Model */,
@@ -760,8 +787,22 @@
 				BECE3E5B1D1450FC0075D562 /* EditBasicInfoTableViewCell.h */,
 				BECE3E5C1D1450FC0075D562 /* EditBasicInfoTableViewCell.m */,
 				BE618D7E1D94400E00984C45 /* EditBasicInfoTableViewCell.xib */,
+				BE8163441DCA19D800BF90EC /* EditBasicInfoDelegate.h */,
 			);
 			name = BasicInfo;
+			sourceTree = "<group>";
+		};
+		BED92E731DCB900B00EFD601 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				BED92E741DCB905500EFD601 /* ILoginAccountMgr.h */,
+				BEBE58FD1DCB95880084DD72 /* IBaseMgr.h */,
+				BEBE58FE1DCB964D0084DD72 /* MainMgr.h */,
+				BEBE58FF1DCB964D0084DD72 /* MainMgr.m */,
+				BEBE59011DCB96B20084DD72 /* MMEX.h */,
+				BEBE59021DCB96B20084DD72 /* MMEX.m */,
+			);
+			name = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -834,6 +875,7 @@
 				TargetAttributes = {
 					BE9472751BE5F4EE001FF64C = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = Z63APZ72SR;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -972,6 +1014,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBE59031DCB96B20084DD72 /* MMEX.m in Sources */,
 				BE35F42F1D30EB68004110A4 /* LoginRecord.m in Sources */,
 				BE35F4381D30EB68004110A4 /* MoneyManagerEx.xcdatamodeld in Sources */,
 				BE35F3E91D30E12F004110A4 /* UserInfoModel.m in Sources */,
@@ -996,9 +1039,11 @@
 				BECE3E521D12E8230075D562 /* MMEXMyAccountTableViewCell.m in Sources */,
 				BE35F42D1D30EB68004110A4 /* Currency.m in Sources */,
 				BE90096C1D8EC56800A570D6 /* TransactionTypeListViewController.m in Sources */,
+				BED92E771DCB923200EFD601 /* LoginAccountMgr.m in Sources */,
 				BE35F4351D30EB68004110A4 /* TransactionType.m in Sources */,
 				BE35F4341D30EB68004110A4 /* TransactionType+CoreDataProperties.m in Sources */,
 				BE618D8C1D969C4000984C45 /* MyNameViewController.m in Sources */,
+				BEBE59001DCB964D0084DD72 /* MainMgr.m in Sources */,
 				BE35F4331D30EB68004110A4 /* Transaction.m in Sources */,
 				BE618D871D9698A600984C45 /* CurrentUserBasicInfoViewController.m in Sources */,
 				BE9472C91BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m in Sources */,
@@ -1009,6 +1054,7 @@
 				BE0772E21D914C7B000BF953 /* BankAccountEditTableViewCell.m in Sources */,
 				BE35F4311D30EB68004110A4 /* Merchant.m in Sources */,
 				BEC14F231BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m in Sources */,
+				BE81634A1DCA37F400BF90EC /* UIImage+Crop.m in Sources */,
 				BECE3E5E1D1450FC0075D562 /* EditBasicInfoTableViewCell.m in Sources */,
 				BE086B601BEDEAF500CEF360 /* MMEXSelectDefaultCurrencyViewController.m in Sources */,
 				BE35F42B1D30EB68004110A4 /* Contacts.m in Sources */,
@@ -1016,6 +1062,7 @@
 				BE35F3EC1D30E266004110A4 /* ContactModel.m in Sources */,
 				BE9009711D8ECBCB00A570D6 /* SubTransactionTypeListViewController.m in Sources */,
 				BE35F3EF1D30E2FC004110A4 /* AccountModel.m in Sources */,
+				BEBE59091DCBA2DD0084DD72 /* NSDate+Format.m in Sources */,
 				BE35F3F21D30E374004110A4 /* MerchantModel.m in Sources */,
 				BE35F4361D30EB68004110A4 /* UserInfo+CoreDataProperties.m in Sources */,
 				BE0BC0B21D9AC9530084FC40 /* MMEXContactInfoViewController.m in Sources */,
@@ -1195,7 +1242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1232,7 +1279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1245,13 +1292,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Z63APZ72SR;
 				GCC_PREFIX_HEADER = MoneyManagerEx/Macro/MoneyManagerEx.pch;
 				INFOPLIST_FILE = MoneyManagerEx/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = taotao.MoneyManagerEx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1263,12 +1312,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Z63APZ72SR;
 				GCC_PREFIX_HEADER = MoneyManagerEx/Macro/MoneyManagerEx.pch;
 				INFOPLIST_FILE = MoneyManagerEx/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = taotao.MoneyManagerEx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

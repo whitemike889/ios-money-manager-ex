@@ -7,6 +7,7 @@
 //
 
 #import "MyNameViewController.h"
+#import "MMEX.h"
 
 @interface MyNameViewController ()
 
@@ -20,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = _navTitle;
+    self.myNameTextField.placeholder = self.placeHolder;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(save)];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
     [self.myNameTextField becomeFirstResponder];
@@ -34,6 +36,7 @@
 
 - (void)save {
     [self.myNameTextField resignFirstResponder];
+    [[MMEX getLoginAccountMgr] updateLoginUserName:self.myNameTextField.text];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

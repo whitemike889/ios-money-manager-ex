@@ -11,5 +11,6 @@
 @interface MyNameViewController : UIViewController
 
 @property (nonatomic, copy) NSString *navTitle;
+@property (nonatomic, copy) NSString *placeHolder;
 
 @end

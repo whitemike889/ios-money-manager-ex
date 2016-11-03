@@ -7,6 +7,8 @@
 //
 
 #import "EditBasicInfoTableViewCell.h"
+#import "UIImage+Crop.h"
+#import "NSDate+Format.h"
 
 @interface EditBasicInfoTableViewCell()
 
@@ -19,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *genderValue;
 @property (weak, nonatomic) IBOutlet UILabel *birthdayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *birthdayValue;
+
+
 
 @end
 
@@ -35,42 +39,68 @@
     // Configure the view for the selected state
 }
 
-- (void)configureCellDataOnSection:(NSInteger)section row:(NSInteger)row
+- (void)configureCellDataOnSection:(NSInteger)section row:(NSInteger)row data:(UserInfoModel *)userInfo
 {
     if (section == 0) {
         switch (row) {
             case 0:
             {
+                if (userInfo && userInfo.avatarImg) {
+                    UIImage *circleImage = [userInfo.avatarImg circleImage];
+                    [self.avatarButton setImage:circleImage forState:UIControlStateNormal];
+                }
                 self.selectionStyle = UITableViewCellSelectionStyleNone;
             }
                 break;
             case 1:
             {
-                _nicknameLabel.text = NSLocalizedString(@"nickname label", nil);
-                _nicknameValue.text = @"嘻哈小混混";
+                _nicknameLabel.text = NSLocalizedString(@"name label", nil);
+                if (userInfo && userInfo.name) {
+                    _nicknameValue.text = userInfo.name;
+                }
             }
                 break;
+//            case 2:
+//            {
+//                _trueNameLabel.text = NSLocalizedString(@"truename label", nil);
+//                _trueNameValue.text = @"Teresa";
+//            }
+//                break;
             case 2:
             {
-                _trueNameLabel.text = NSLocalizedString(@"truename label", nil);
-                _trueNameValue.text = @"Teresa";
+                _genderLabel.text = NSLocalizedString(@"gender label", nil);
+                if (userInfo && userInfo.gender) {
+                    if ([userInfo.gender integerValue] == 0) {
+                        _genderValue.text = NSLocalizedString(@"male", nil);
+                    }
+                    else {
+                        _genderValue.text = NSLocalizedString(@"female", nil);
+                    }
+                }
+                else {
+                    _genderValue.text = NSLocalizedString(@"male", nil);
+                }
             }
                 break;
             case 3:
             {
-                _genderLabel.text = NSLocalizedString(@"gender label", nil);
-                _genderValue.text = @"女";
-            }
-                break;
-            case 4:
-            {
                 _birthdayLabel.text = NSLocalizedString(@"birthday label", nil);
-                _birthdayValue.text = @"1989.05.24";
+                if (userInfo && userInfo.birthday) {
+                    NSDate *date = [NSDate dateWithTimeIntervalSince1970:[userInfo.birthday longLongValue]];
+                    
+                    _birthdayValue.text = [date getChineseDate];
+                }
             }
                 break;
             default:
                 break;
         }
+    }
+}
+
+- (IBAction)changeAvatar:(id)sender {
+    if (_delegate && [_delegate respondsToSelector:@selector(avatarBtnPressed)]) {
+        [_delegate avatarBtnPressed];
     }
 }
 

@@ -56,6 +56,8 @@
 
 // Account Basic Info
 
+"name label" = "name";
+
 "nickname label" = "nickname";
 
 "truename label" = "true name";
@@ -72,6 +74,10 @@
 
 "female" = "female";
 
+"Take Photo" = "take photo";
+
+"Choose Photo" = "choose photo";
+
 // Transaction Type List
 "Transaction Type List Title" = "Transaction Type";
 
@@ -80,3 +86,8 @@
 "Currency Type List Title" = "Currency Type";
 
 "New Transaction Type" = "New Transaction Type";
+
+// privacy
+"This app need your approve to open the media library" = "This app need your approve to open the media library";
+
+"This app need your approve to open the camera" = "This app need your approve to open the camera";
