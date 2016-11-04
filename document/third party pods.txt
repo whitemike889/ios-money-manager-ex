@@ -1,0 +1,6 @@
+pod 'Charts'
+pod 'MWPhotoBrowser'
+pod 'PEPhotoCropEditor'
+platform :ios, '8.0'
+use_frameworks!
+pod 'PermissionScope'
