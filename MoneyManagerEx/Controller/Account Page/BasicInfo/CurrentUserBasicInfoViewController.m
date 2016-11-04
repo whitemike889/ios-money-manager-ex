@@ -180,13 +180,13 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
-    [picker dismissViewControllerAnimated:YES completion:nil];
-    
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
     if ([mediaType isEqualToString:((NSString *)kUTTypeImage)]) {
-        UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
-        self.myInfo.avatarImg = image;
-        [self.basicInfoTableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+        [picker dismissViewControllerAnimated:YES completion:^{
+            UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+            self.myInfo.avatarImg = image;
+            [self.basicInfoTableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+        }];
     }
 }
 
@@ -202,7 +202,7 @@
     [self hideGenderPickerView:YES];
     self.myInfo.gender = [NSNumber numberWithInteger:gender];
     
-    [self.basicInfoTableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:3 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+    [self.basicInfoTableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:2 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
 }
 
 #pragma mark - DatePickerViewDelegate
@@ -225,7 +225,7 @@
     }];
     [alertController addAction:takePhoto];
     UIAlertAction *choosePhoto = [UIAlertAction actionWithTitle:NSLocalizedString(@"Choose Photo", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
+        [self choosePhoto];
     }];
     [alertController addAction:choosePhoto];
     
@@ -343,7 +343,14 @@
 
 - (void)choosePhoto
 {
-    
+    UIImagePickerController *controller = [[UIImagePickerController alloc] init];
+    [controller setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];// 设置类型
+    NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
+    [mediaTypes addObject:(NSString *)kUTTypeImage];
+    controller.allowsEditing = YES;
+    [controller setMediaTypes:mediaTypes];
+    [controller setDelegate:self];// 设置代理
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 @end
