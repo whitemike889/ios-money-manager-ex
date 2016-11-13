@@ -8,6 +8,7 @@
 
 #import "MyBankAccountListViewController.h"
 #import "BankAccountEditViewController.h"
+#import "CreateBankAccountViewController.h"
 
 @implementation MyBankAccountListViewController
 
@@ -17,7 +18,6 @@
     self.title = NSLocalizedString(@"My Bank Accounts List", nil);
     self.navigationItem.leftBarButtonItem = nil;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBankAccountButtonPressed)];
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -90,7 +90,11 @@
 
 - (void)addBankAccountButtonPressed
 {
+    CreateBankAccountViewController *createBankAccountVC = [[CreateBankAccountViewController alloc] initWithNibName:@"CreateBankAccountViewController" bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:createBankAccountVC];
+    [self presentViewController:nav animated:YES completion:nil];
     
+//    [self.navigationController pushViewController:createBankAccountVC animated:YES];
 }
 
 @end

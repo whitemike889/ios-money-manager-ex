@@ -7,6 +7,7 @@
 */
 
 // common string
+
 "Cancel" = "Cancel";
 
 "Sure" = "Sure";
@@ -31,7 +32,9 @@
 
 "set favorite sub account" = "set favorite account";
 
+
 // Assets
+
 "All Assets" = "All Assets";
 
 "All Liabilities" = "All Liabilities";
@@ -78,7 +81,9 @@
 
 "Choose Photo" = "choose photo";
 
+
 // Transaction Type List
+
 "Transaction Type List Title" = "Transaction Type";
 
 "Sub Transaction Type List Title" = "Sub Transaction Type";
@@ -88,6 +93,15 @@
 "New Transaction Type" = "New Transaction Type";
 
 // privacy
+
 "This app need your approve to open the media library" = "This app need your approve to open the media library";
 
 "This app need your approve to open the camera" = "This app need your approve to open the camera";
+
+// Bank Account
+
+"Bank Account Name" = "Bank Account Name";
+
+"Bank Account Type" = "Bank Account Type";
+
+"Create Bank Account" = "Create Bank Account";

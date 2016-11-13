@@ -7,6 +7,7 @@
 */
 
 // common string
+
 "Cancel" = "取消";
 
 "Sure" = "确定";
@@ -31,7 +32,9 @@
 
 "set favorite sub account" = "设置默认银行账户";
 
+
 // Assets
+
 "All Assets" = "总资产";
 
 "All Liabilities" = "总负债";
@@ -41,6 +44,7 @@
 "Reconciled" = "核实";
 
 // Contacts
+
 
 // Account
 
@@ -53,6 +57,7 @@
 "Personal Information" = "个人信息";
 
 "Bank Account Edit Page Title" = "银行账户编辑";
+
 
 // Account Basic Info
 
@@ -78,7 +83,9 @@
 
 "Choose Photo" = "选择照片";
 
+
 // Transaction Type List
+
 "Transaction Type List Title" = "交易类型";
 
 "Sub Transaction Type List Title" = "子交易类型";
@@ -87,7 +94,18 @@
 
 "New Transaction Type" = "新建交易类型";
 
+
 // privacy
+
 "This app need your approve to open the media library" = "此 App 需要您的同意才能读取媒体资料库。";
 
 "This app need your approve to open the camera" = "此 App 需要您的同意才能读取相机。";
+
+
+// Bank Account
+
+"Bank Account Name" = "账户名称";
+
+"Bank Account Type" = "账户类型";
+
+"Create Bank Account" = "创建银行账户";

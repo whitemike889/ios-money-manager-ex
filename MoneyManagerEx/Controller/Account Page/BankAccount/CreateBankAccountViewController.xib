@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateBankAccountViewController">
+            <connections>
+                <outlet property="bankAccountNameTextField" destination="N0b-sc-UZl" id="gZ4-0o-wFP"/>
+                <outlet property="bankAccountTypeLabel" destination="EmI-g0-hHV" id="Vke-8I-q5f"/>
+                <outlet property="bankAccountTypeValueLabel" destination="ewc-En-PWk" id="s5I-13-ad8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uy6-Ox-aLN" userLabel="name">
+                    <rect key="frame" x="0.0" y="80" width="375" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Account Name" clearsOnBeginEditing="YES" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N0b-sc-UZl">
+                            <rect key="frame" x="8" y="13" width="359" height="19"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="ENA-mq-mbB"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1Fk-7N-92y"/>
+                        <constraint firstAttribute="trailing" secondItem="N0b-sc-UZl" secondAttribute="trailing" constant="8" id="7kH-HI-jH5"/>
+                        <constraint firstItem="N0b-sc-UZl" firstAttribute="top" secondItem="Uy6-Ox-aLN" secondAttribute="top" constant="13" id="ESg-uH-4bo"/>
+                        <constraint firstItem="N0b-sc-UZl" firstAttribute="leading" secondItem="Uy6-Ox-aLN" secondAttribute="leading" constant="8" id="ip5-aI-GuP"/>
+                        <constraint firstAttribute="bottom" secondItem="N0b-sc-UZl" secondAttribute="bottom" constant="13" id="xAH-nY-RYT"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xAH-nY-RYT"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olL-0e-NX0" userLabel="type">
+                    <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRw-Cg-n2T">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <connections>
+                                <action selector="accountTypeBtnPressed:" destination="-1" eventType="touchUpInside" id="nib-UG-P7G"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Account Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmI-g0-hHV">
+                            <rect key="frame" x="8" y="0.0" width="139" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="139" id="5Ur-qm-h7j"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewc-En-PWk">
+                            <rect key="frame" x="155" y="0.0" width="190" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Dwc-lD-Z4t">
+                            <rect key="frame" x="355" y="16" width="12" height="12"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ewc-En-PWk" firstAttribute="leading" secondItem="EmI-g0-hHV" secondAttribute="trailing" constant="8" id="9p4-0X-nn0"/>
+                        <constraint firstAttribute="height" constant="44" id="EFX-V1-SL2"/>
+                        <constraint firstAttribute="bottom" secondItem="EmI-g0-hHV" secondAttribute="bottom" id="Ewr-ev-8pe"/>
+                        <constraint firstItem="EmI-g0-hHV" firstAttribute="top" secondItem="olL-0e-NX0" secondAttribute="top" id="MRb-sl-IdA"/>
+                        <constraint firstAttribute="trailing" secondItem="gRw-Cg-n2T" secondAttribute="trailing" id="VtO-rk-dgP"/>
+                        <constraint firstItem="ewc-En-PWk" firstAttribute="top" secondItem="olL-0e-NX0" secondAttribute="top" id="dtF-fs-3CV"/>
+                        <constraint firstItem="gRw-Cg-n2T" firstAttribute="top" secondItem="olL-0e-NX0" secondAttribute="top" id="g9M-U7-lwm"/>
+                        <constraint firstAttribute="bottom" secondItem="ewc-En-PWk" secondAttribute="bottom" id="gFh-hz-Myj"/>
+                        <constraint firstAttribute="bottom" secondItem="gRw-Cg-n2T" secondAttribute="bottom" id="ntk-0i-SQS"/>
+                        <constraint firstItem="EmI-g0-hHV" firstAttribute="leading" secondItem="olL-0e-NX0" secondAttribute="leading" constant="8" id="oCz-Tn-RzB"/>
+                        <constraint firstItem="gRw-Cg-n2T" firstAttribute="leading" secondItem="olL-0e-NX0" secondAttribute="leading" id="tT3-Zf-qFh"/>
+                        <constraint firstAttribute="trailing" secondItem="ewc-En-PWk" secondAttribute="trailing" constant="30" id="xmJ-OP-WXN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Uy6-Ox-aLN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="7Xc-MZ-6k6"/>
+                <constraint firstItem="olL-0e-NX0" firstAttribute="top" secondItem="Uy6-Ox-aLN" secondAttribute="bottom" constant="20" id="LKv-eO-fOq"/>
+                <constraint firstAttribute="trailing" secondItem="olL-0e-NX0" secondAttribute="trailing" id="P0G-z5-mxt"/>
+                <constraint firstAttribute="trailing" secondItem="Uy6-Ox-aLN" secondAttribute="trailing" id="fbr-je-V5v"/>
+                <constraint firstItem="olL-0e-NX0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oOK-yt-z7y"/>
+                <constraint firstItem="Uy6-Ox-aLN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xf6-eo-AZC"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="12" height="12"/>
+    </resources>
+</document>
