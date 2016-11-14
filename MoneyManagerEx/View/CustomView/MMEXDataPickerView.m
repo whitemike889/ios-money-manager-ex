@@ -21,8 +21,10 @@
 
 @implementation MMEXDataPickerView
 
-- (instancetype)initWithData:(NSArray *)data parentHeight:(CGFloat)height delegate:(id<DataPickerDelegate>)delegate {
-    
++ (instancetype)getNewInstanceWithData:(NSArray *)data
+                          parentHeight:(CGFloat)height
+                              delegate:(id<DataPickerDelegate>)delegate
+{
     MMEXDataPickerView *dataPickerView = [[[NSBundle mainBundle] loadNibNamed:@"MMEXDataPickerView" owner:delegate options:nil] objectAtIndex:0];
     dataPickerView.frame = CGRectMake(0, height, dataPickerView.frame.size.width, dataPickerView.frame.size.height);
     dataPickerView.delegate = delegate;

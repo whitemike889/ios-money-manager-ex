@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class AccountModel;
+
 @interface BankAccountEditViewController : UIViewController
+
+- (instancetype)initWithAccount:(AccountModel *)account;
 
 @end

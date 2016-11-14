@@ -9,6 +9,7 @@
 #import "CreateBankAccountViewController.h"
 #import "MMEXDataPickerView.h"
 #import "AccountModel.h"
+#import "BankAccountType.h"
 
 @interface CreateBankAccountViewController ()<DataPickerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *bankAccountNameTextField;
@@ -17,13 +18,22 @@
 @property (strong, nonatomic) MMEXDataPickerView *dataPickerView;
 
 @property (nonatomic, strong) AccountModel *account;
-@property (nonatomic, strong) NSArray *accountTypes;
+@property (nonatomic, weak) id<CreateBankAccountDelegate> delegate;
 
 - (IBAction)accountTypeBtnPressed:(id)sender;
 
 @end
 
 @implementation CreateBankAccountViewController
+
+- (instancetype)initWithDelegate:(id<CreateBankAccountDelegate>)delegate
+{
+    if (self = [self initWithNibName:@"CreateBankAccountViewController" bundle:nil]) {
+        self.delegate = delegate;
+    }
+    
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,7 +65,7 @@
 
 - (void)initData
 {
-    _accountTypes = [NSArray arrayWithObjects:@"Cash", @"Invest", nil];
+    _account = [[AccountModel alloc] init];
 }
 
 #pragma mark - setter
@@ -65,7 +75,7 @@
 - (MMEXDataPickerView *)dataPickerView
 {
     if (!_dataPickerView) {
-        _dataPickerView = [[MMEXDataPickerView alloc] initWithData:_accountTypes parentHeight:self.view.frame.size.height delegate:self];
+        _dataPickerView = [MMEXDataPickerView getNewInstanceWithData:[[BankAccountType shareInstance] getAllTypeName] parentHeight:self.view.frame.size.height delegate:self];
         
         [self.view addSubview:_dataPickerView];
     }
@@ -90,6 +100,15 @@
 - (void)saveCreateBankAccount
 {
     [_bankAccountNameTextField resignFirstResponder];
+    
+    if ([_account.type integerValue] == 0) {
+        
+    }
+    
+    if (_delegate && [_delegate respondsToSelector:@selector(didCreateBankAccount:)]) {
+        [_delegate didCreateBankAccount:_account];
+    }
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -106,6 +125,8 @@
 - (void)didSelectData:(NSInteger)data
 {
     [self.dataPickerView hide:YES];
+    _account.type = [NSNumber numberWithInteger:data];
+    _bankAccountTypeValueLabel.text = [[BankAccountType shareInstance] typeNameOfIndex:data];
 }
 
 @end

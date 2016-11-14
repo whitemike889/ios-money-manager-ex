@@ -18,7 +18,9 @@
 
 @property (nonatomic, assign) BOOL invisible;
 
-- (instancetype)initWithData:(NSArray *)data parentHeight:(CGFloat)height delegate:(id<DataPickerDelegate>)delegate;
++ (instancetype)getNewInstanceWithData:(NSArray *)data
+                          parentHeight:(CGFloat)height
+                              delegate:(id<DataPickerDelegate>)delegate;
 
 - (void)hide:(BOOL)hide;
 

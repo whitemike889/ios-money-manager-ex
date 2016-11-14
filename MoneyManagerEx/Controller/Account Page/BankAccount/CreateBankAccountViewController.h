@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CreateBankAccountDelegate.h"
 
 @interface CreateBankAccountViewController : UIViewController
+
+- (instancetype)initWithDelegate:(id<CreateBankAccountDelegate>)delegate;
 
 @end

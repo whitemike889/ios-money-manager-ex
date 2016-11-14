@@ -8,12 +8,24 @@
 
 #import "BankAccountEditViewController.h"
 #import "BankAccountEditTableViewCell.h"
+#import "AccountModel.h"
 
 @interface BankAccountEditViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) AccountModel *account;
 
 @end
 
 @implementation BankAccountEditViewController
+
+- (instancetype)initWithAccount:(AccountModel *)account
+{
+    if (self = [self initWithNibName:@"BankAccountEditViewController" bundle:nil]) {
+        self.account = account;
+    }
+    
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

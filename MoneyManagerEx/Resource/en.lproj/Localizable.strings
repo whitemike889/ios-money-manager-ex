@@ -105,3 +105,15 @@
 "Bank Account Type" = "Bank Account Type";
 
 "Create Bank Account" = "Create Bank Account";
+
+"none" = "none";
+
+"Cash" = "Cash";
+
+"Checking" = "Checking";
+
+"Investment" = "Investment";
+
+"Term" = "Term";
+
+"Credit Card" = "Credit Card";

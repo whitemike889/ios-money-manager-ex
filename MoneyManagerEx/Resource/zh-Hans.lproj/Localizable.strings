@@ -109,3 +109,15 @@
 "Bank Account Type" = "账户类型";
 
 "Create Bank Account" = "创建银行账户";
+
+"none" = "无";
+
+"Cash" = "现金";
+
+"Checking" = "活期存款";
+
+"Investment" = "投资";
+
+"Term" = "定期存款";
+
+"Credit Card" = "信用卡";

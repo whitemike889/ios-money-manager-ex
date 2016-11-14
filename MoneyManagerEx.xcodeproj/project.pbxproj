@@ -94,6 +94,8 @@
 		BEC14F231BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC14F211BEF946A00FF8D61 /* MMEXSetFavoriteSubAccountViewController.m */; };
 		BEC703B51DD772010012C4E4 /* CreateBankAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC703B31DD772010012C4E4 /* CreateBankAccountViewController.m */; };
 		BEC703B61DD772010012C4E4 /* CreateBankAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC703B41DD772010012C4E4 /* CreateBankAccountViewController.xib */; };
+		BEC703BB1DD8C8AA0012C4E4 /* BankAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC703BA1DD8C8AA0012C4E4 /* BankAccountType.m */; };
+		BEC703BE1DD8CD8B0012C4E4 /* NSArray+EnumExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC703BD1DD8CD8B0012C4E4 /* NSArray+EnumExtension.m */; };
 		BECE3E521D12E8230075D562 /* MMEXMyAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE3E501D12E8230075D562 /* MMEXMyAccountTableViewCell.m */; };
 		BECE3E531D12E8230075D562 /* MMEXMyAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */; };
 		BECE3E5E1D1450FC0075D562 /* EditBasicInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE3E5C1D1450FC0075D562 /* EditBasicInfoTableViewCell.m */; };
@@ -293,6 +295,11 @@
 		BEC703B21DD772010012C4E4 /* CreateBankAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateBankAccountViewController.h; path = BankAccount/CreateBankAccountViewController.h; sourceTree = "<group>"; };
 		BEC703B31DD772010012C4E4 /* CreateBankAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateBankAccountViewController.m; path = BankAccount/CreateBankAccountViewController.m; sourceTree = "<group>"; };
 		BEC703B41DD772010012C4E4 /* CreateBankAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateBankAccountViewController.xib; path = BankAccount/CreateBankAccountViewController.xib; sourceTree = "<group>"; };
+		BEC703B91DD8C8AA0012C4E4 /* BankAccountType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BankAccountType.h; path = MMEX_SDK/Model/BankAccountType.h; sourceTree = "<group>"; };
+		BEC703BA1DD8C8AA0012C4E4 /* BankAccountType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BankAccountType.m; path = MMEX_SDK/Model/BankAccountType.m; sourceTree = "<group>"; };
+		BEC703BC1DD8CD8B0012C4E4 /* NSArray+EnumExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+EnumExtension.h"; path = "Categories/NSArray+EnumExtension.h"; sourceTree = "<group>"; };
+		BEC703BD1DD8CD8B0012C4E4 /* NSArray+EnumExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+EnumExtension.m"; path = "Categories/NSArray+EnumExtension.m"; sourceTree = "<group>"; };
+		BEC703BF1DD96A160012C4E4 /* CreateBankAccountDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateBankAccountDelegate.h; path = BankAccount/CreateBankAccountDelegate.h; sourceTree = "<group>"; };
 		BECE3E4F1D12E8230075D562 /* MMEXMyAccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXMyAccountTableViewCell.h; path = View/Me/MMEXMyAccountTableViewCell.h; sourceTree = "<group>"; };
 		BECE3E501D12E8230075D562 /* MMEXMyAccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXMyAccountTableViewCell.m; path = View/Me/MMEXMyAccountTableViewCell.m; sourceTree = "<group>"; };
 		BECE3E511D12E8230075D562 /* MMEXMyAccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMEXMyAccountTableViewCell.xib; path = View/Me/MMEXMyAccountTableViewCell.xib; sourceTree = "<group>"; };
@@ -392,6 +399,7 @@
 				BEC703B21DD772010012C4E4 /* CreateBankAccountViewController.h */,
 				BEC703B31DD772010012C4E4 /* CreateBankAccountViewController.m */,
 				BEC703B41DD772010012C4E4 /* CreateBankAccountViewController.xib */,
+				BEC703BF1DD96A160012C4E4 /* CreateBankAccountDelegate.h */,
 			);
 			name = BankAccount;
 			sourceTree = "<group>";
@@ -433,6 +441,8 @@
 				BE35F3F71D30E824004110A4 /* TransactionTypeModel.m */,
 				BE35F3F91D30E8DE004110A4 /* TransactionModel.h */,
 				BE35F3FA1D30E8DE004110A4 /* TransactionModel.m */,
+				BEC703B91DD8C8AA0012C4E4 /* BankAccountType.h */,
+				BEC703BA1DD8C8AA0012C4E4 /* BankAccountType.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -640,6 +650,8 @@
 				BE8163491DCA37F400BF90EC /* UIImage+Crop.m */,
 				BEBE59071DCBA2DD0084DD72 /* NSDate+Format.h */,
 				BEBE59081DCBA2DD0084DD72 /* NSDate+Format.m */,
+				BEC703BC1DD8CD8B0012C4E4 /* NSArray+EnumExtension.h */,
+				BEC703BD1DD8CD8B0012C4E4 /* NSArray+EnumExtension.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -1052,10 +1064,12 @@
 				BE9472C51BE60BFA001FF64C /* AppDelegate.m in Sources */,
 				BE35F4301D30EB68004110A4 /* Merchant+CoreDataProperties.m in Sources */,
 				BE0772DC1D914B45000BF953 /* BankAccountEditViewController.m in Sources */,
+				BEC703BB1DD8C8AA0012C4E4 /* BankAccountType.m in Sources */,
 				BEAEC61D1BE9109300D11A05 /* MMEXStartPageViewController.m in Sources */,
 				BE35F4371D30EB68004110A4 /* UserInfo.m in Sources */,
 				BE35F42A1D30EB68004110A4 /* Contacts+CoreDataProperties.m in Sources */,
 				BE35F4321D30EB68004110A4 /* Transaction+CoreDataProperties.m in Sources */,
+				BEC703BE1DD8CD8B0012C4E4 /* NSArray+EnumExtension.m in Sources */,
 				BE35F3F51D30E6A5004110A4 /* CurrencyModel.m in Sources */,
 				BE35F4291D30EB68004110A4 /* BaseManagedObject.m in Sources */,
 				BE35F4271D30EB68004110A4 /* Account+CoreDataProperties.m in Sources */,

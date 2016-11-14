@@ -9,6 +9,12 @@
 #import "MyBankAccountListViewController.h"
 #import "BankAccountEditViewController.h"
 #import "CreateBankAccountViewController.h"
+#import "BankAccountEditViewController.h"
+#import "AccountModel.h"
+
+@interface MyBankAccountListViewController() <CreateBankAccountDelegate>
+
+@end
 
 @implementation MyBankAccountListViewController
 
@@ -90,11 +96,18 @@
 
 - (void)addBankAccountButtonPressed
 {
-    CreateBankAccountViewController *createBankAccountVC = [[CreateBankAccountViewController alloc] initWithNibName:@"CreateBankAccountViewController" bundle:nil];
+    CreateBankAccountViewController *createBankAccountVC = [[CreateBankAccountViewController alloc] initWithDelegate:self];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:createBankAccountVC];
     [self presentViewController:nav animated:YES completion:nil];
+}
+
+#pragma mark - CreateBankAccountDelegate
+
+- (void)didCreateBankAccount:(AccountModel *)account
+{
+    BankAccountEditViewController *bankAccountEditVC = [[BankAccountEditViewController alloc] initWithAccount:account];
     
-//    [self.navigationController pushViewController:createBankAccountVC animated:YES];
+    [self.navigationController pushViewController:bankAccountEditVC animated:NO];
 }
 
 @end
