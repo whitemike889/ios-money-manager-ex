@@ -14,6 +14,7 @@
 @implementation Account (CoreDataProperties)
 
 @dynamic acct_create_time;
+@dynamic acct_favorite;
 @dynamic acct_initial_capital;
 @dynamic acct_modify_time;
 @dynamic acct_name;

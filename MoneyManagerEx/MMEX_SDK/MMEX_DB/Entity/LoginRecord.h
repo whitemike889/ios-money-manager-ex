@@ -11,6 +11,7 @@
 #import "BaseManagedObject.h"
 
 @class UserInfo;
+@class Account;
 
 NS_ASSUME_NONNULL_BEGIN
 

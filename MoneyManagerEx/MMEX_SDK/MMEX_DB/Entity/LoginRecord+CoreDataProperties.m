@@ -18,5 +18,6 @@
 @dynamic password;
 @dynamic token;
 @dynamic user;
+@dynamic defaultBankAccount;
 
 @end

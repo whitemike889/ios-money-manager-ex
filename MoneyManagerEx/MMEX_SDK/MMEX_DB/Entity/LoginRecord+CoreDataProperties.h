@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *password;
 @property (nullable, nonatomic, retain) NSString *token;
 @property (nullable, nonatomic, retain) UserInfo *user;
+@property (nullable, nonatomic, retain) Account *defaultBankAccount;
 
 @end
 

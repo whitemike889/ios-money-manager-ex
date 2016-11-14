@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class AccountModel;
+
 @interface BankAccountEditTableViewCell : UITableViewCell
 
 - (void)configureCellData:(id)object withIndexPath:(NSIndexPath *)indexPath;

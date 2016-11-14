@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Account (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSDate *acct_create_time;
+@property (nullable, nonatomic, retain) NSNumber *acct_favorite;
 @property (nullable, nonatomic, retain) NSNumber *acct_initial_capital;
 @property (nullable, nonatomic, retain) NSDate *acct_modify_time;
 @property (nullable, nonatomic, retain) NSString *acct_name;

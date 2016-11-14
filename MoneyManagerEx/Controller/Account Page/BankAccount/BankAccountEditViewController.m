@@ -31,8 +31,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     //self.title = NSLocalizedString(@"Bank Account Edit Page Title", nil);
-    self.title = @"taotao";
+    self.title = _account.name;
     self.navigationItem.leftBarButtonItem = nil;
+    if (!_account) {
+        _account = [[AccountModel alloc] init];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -146,7 +149,7 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:@"BankAccountEditTableViewCell" owner:self options:nil] objectAtIndex:12];
     }
     
-    [cell configureCellData:nil withIndexPath:indexPath];
+    [cell configureCellData:_account withIndexPath:indexPath];
     
     return cell;
 }
@@ -157,10 +160,10 @@
         return @"";
     }
     else if (1 == section) {
-        return @"账户状态";
+        return NSLocalizedString(@"Bank Account Status", nil);
     }
     else if (2 == section) {
-        return @"开户行相关信息";
+        return NSLocalizedString(@"Bank Account Bank Info", nil);
     }
     
     return @"";

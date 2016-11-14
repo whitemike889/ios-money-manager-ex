@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,10 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="298" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPH-lE-ilS" userLabel="account_name_key">
+                        <rect key="frame" x="16" y="14.5" width="120" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="120" id="ULQ-TL-cko"/>
                             <constraint firstAttribute="height" constant="21" id="gSY-dO-SP1"/>
@@ -26,6 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taotao" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7E-kD-Rz1" userLabel="account_name_value">
+                        <rect key="frame" x="136" y="14.5" width="146" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="GvZ-0j-1lb"/>
                         </constraints>
@@ -42,16 +47,39 @@
                     <constraint firstItem="LPH-lE-ilS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yEE-Z8-Ibj"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="accessInfoValueLabel" destination="rRI-tQ-ZxN" id="cDa-iT-1w8"/>
+                <outlet property="contactValueLabel" destination="xhH-Ef-wMl" id="Beb-S9-o3v"/>
+                <outlet property="currencyKeyLabel" destination="ZvO-KU-tey" id="8rk-Wv-RKK"/>
+                <outlet property="currencyValueLabel" destination="wqt-0Y-WMh" id="4a2-e3-cd7"/>
+                <outlet property="defaultAccountKeyLabel" destination="CiV-Jr-on3" id="SFr-nW-wnP"/>
+                <outlet property="defaultAccountSwitch" destination="ZYf-3Z-BHa" id="KYn-Dy-5jp"/>
+                <outlet property="favoriteAccountKeyLabel" destination="7RP-Ak-1dP" id="AcV-ds-2dm"/>
+                <outlet property="favoriteAccountSwitch" destination="0kq-Mf-OtL" id="vTS-gY-uEd"/>
+                <outlet property="heldAtValueLabel" destination="9hK-2B-97X" id="tgE-8Y-466"/>
+                <outlet property="initialBalanceValueLabel" destination="p6B-LY-Izl" id="97l-iE-f1O"/>
+                <outlet property="initialbalanceKeyLabel" destination="a6b-b9-5R8" id="uzJ-jM-gxi"/>
+                <outlet property="nameKeyLabel" destination="LPH-lE-ilS" id="TP5-f4-Gx5"/>
+                <outlet property="nameValueLabel" destination="q7E-kD-Rz1" id="XAf-eT-xq9"/>
+                <outlet property="noteKeyLabel" destination="wcN-0V-KaD" id="9kg-Kz-o2N"/>
+                <outlet property="noteValueLabel" destination="yUw-C8-4wG" id="TqY-dU-FMG"/>
+                <outlet property="numberValue" destination="aIs-Cg-2bw" id="PdE-Gy-UzX"/>
+                <outlet property="openStatusSwitch" destination="5aC-Db-RUt" id="VQ5-vg-HLD"/>
+                <outlet property="typeKeyLabel" destination="H2w-eG-eML" id="ma1-En-ZPc"/>
+                <outlet property="typeValueLabel" destination="LgO-d9-P6D" id="bTs-tr-blY"/>
+                <outlet property="websiteValueLabel" destination="Qgl-0p-Ffm" id="Eud-ud-QvR"/>
+            </connections>
             <point key="canvasLocation" x="-20" y="-578"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BankAccountTypeCellIdentifier" rowHeight="45" id="zgJ-z1-Hz2" userLabel="BankAccountTypeCell" customClass="BankAccountEditTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zgJ-z1-Hz2" id="EPe-LK-pb2">
-                <frame key="frameInset" width="298" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2w-eG-eML" userLabel="account_type_key">
+                        <rect key="frame" x="16" y="14" width="120" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="dff-Qs-BWQ"/>
                             <constraint firstAttribute="width" constant="120" id="qWr-Tb-W0g"/>
@@ -61,6 +89,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgO-d9-P6D" userLabel="account_type_value">
+                        <rect key="frame" x="136" y="14" width="146" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="OJO-YA-cwI"/>
                         </constraints>
@@ -83,10 +112,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dA1-EO-HGM" id="hL6-na-7vJ">
-                <frame key="frameInset" width="298" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvO-KU-tey" userLabel="account_currency_key">
+                        <rect key="frame" x="16" y="14" width="120" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="faX-A2-mKe"/>
                             <constraint firstAttribute="width" constant="120" id="jof-vU-jLZ"/>
@@ -96,6 +126,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chinese renminbi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqt-0Y-WMh" userLabel="account_currency_value">
+                        <rect key="frame" x="136" y="14" width="146" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="9e9-Wv-7DI"/>
                         </constraints>
@@ -118,10 +149,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CSx-Xe-Z8P" id="bYQ-Ky-LAn">
-                <frame key="frameInset" width="298" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6b-b9-5R8" userLabel="account_initial_balance_key">
+                        <rect key="frame" x="16" y="14" width="120" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="120" id="qYJ-kz-H1i"/>
                             <constraint firstAttribute="height" constant="21" id="zch-Qr-W05"/>
@@ -131,6 +163,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6B-LY-Izl" userLabel="account_initial_balance_value">
+                        <rect key="frame" x="136" y="14" width="146" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="g2t-0S-lgs"/>
                         </constraints>
@@ -153,10 +186,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bZv-8e-Xo6" id="Zq8-ZS-Mhs">
-                <frame key="frameInset" width="331" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="331" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiV-Jr-on3" userLabel="default_account_key">
+                        <rect key="frame" x="16" y="14" width="130" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="130" id="7e9-I5-Q9I"/>
                             <constraint firstAttribute="height" constant="21" id="ITX-UV-jzd"/>
@@ -165,7 +199,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYf-3Z-BHa"/>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYf-3Z-BHa">
+                        <rect key="frame" x="266" y="9" width="51" height="31"/>
+                    </switch>
                 </subviews>
                 <constraints>
                     <constraint firstItem="CiV-Jr-on3" firstAttribute="centerY" secondItem="Zq8-ZS-Mhs" secondAttribute="centerY" id="5oo-Y1-ggI"/>
@@ -180,10 +216,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g1c-In-NXi" id="CSI-O3-eY4">
-                <frame key="frameInset" width="331" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="331" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RP-Ak-1dP" userLabel="favorite_account_key">
+                        <rect key="frame" x="16" y="14" width="130" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="hcu-XH-SLb"/>
                             <constraint firstAttribute="width" constant="130" id="xd0-VY-iwj"/>
@@ -192,7 +229,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kq-Mf-OtL"/>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kq-Mf-OtL">
+                        <rect key="frame" x="266" y="9" width="51" height="31"/>
+                    </switch>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="0kq-Mf-OtL" secondAttribute="trailing" constant="8" id="5C0-60-nNq"/>
@@ -207,10 +246,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a78-rQ-N7T" id="fJf-LO-KUE">
-                <frame key="frameInset" width="331" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="331" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Open " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wS5-zn-cYu" userLabel="account_open_status_key">
+                        <rect key="frame" x="16" y="14" width="130" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="FD5-CB-Evj"/>
                             <constraint firstAttribute="width" constant="130" id="fhL-08-A6I"/>
@@ -219,7 +259,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5aC-Db-RUt"/>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5aC-Db-RUt">
+                        <rect key="frame" x="266" y="9" width="51" height="31"/>
+                    </switch>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="5aC-Db-RUt" secondAttribute="trailing" constant="8" id="Fu9-mz-FbI"/>
@@ -234,10 +276,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dEd-f7-mOg" id="CC9-18-KaU">
-                <frame key="frameInset" width="298" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEZ-3b-bKn" userLabel="account_number_key">
+                        <rect key="frame" x="16" y="14" width="110" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="110" id="Nho-IA-9rD"/>
                             <constraint firstAttribute="height" constant="21" id="Tyh-61-2HJ"/>
@@ -247,6 +290,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456789012345" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-Cg-2bw" userLabel="account_number_value">
+                        <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="ZhI-Nn-mBO"/>
                         </constraints>
@@ -269,10 +313,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sib-eZ-nBo" id="i7S-Ci-97A">
-                <frame key="frameInset" width="298" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Held At" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDo-3I-KEg" userLabel="account_held_at_key">
+                        <rect key="frame" x="16" y="14" width="110" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="110" id="3Vh-oy-FIC"/>
                             <constraint firstAttribute="height" constant="21" id="qdG-h4-1wc"/>
@@ -282,6 +327,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-2B-97X" userLabel="account_held_at_value">
+                        <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Zz1-FQ-1ef"/>
                         </constraints>
@@ -304,10 +350,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iCm-Fz-3rk" id="jqc-Kg-Zvm">
-                <frame key="frameInset" width="298" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7R-dg-RCp" userLabel="account_website_key">
+                        <rect key="frame" x="16" y="14" width="110" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="110" id="821-5I-djE"/>
                             <constraint firstAttribute="height" constant="21" id="Pg8-lH-NCN"/>
@@ -317,6 +364,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.bc.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgl-0p-Ffm" userLabel="account_website_value">
+                        <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="RDg-Fp-fEg"/>
                         </constraints>
@@ -339,10 +387,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HF9-RO-Iqt" id="Eh2-15-CFi">
-                <frame key="frameInset" width="298" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3w-GP-hKp" userLabel="account_contact_key">
+                        <rect key="frame" x="16" y="14" width="110" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="110" id="Ysi-Ex-lQj"/>
                             <constraint firstAttribute="height" constant="21" id="dbO-lk-amW"/>
@@ -352,6 +401,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678901" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhH-Ef-wMl" userLabel="account_contact_value">
+                        <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="lZY-Bh-35B"/>
                         </constraints>
@@ -374,10 +424,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i3V-va-BdB" id="h2O-71-Lya">
-                <frame key="frameInset" width="298" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpz-tV-MdW" userLabel="account_access_info_key">
+                        <rect key="frame" x="16" y="14" width="110" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="110" id="3aa-gZ-3dy"/>
                             <constraint firstAttribute="height" constant="21" id="ovl-I5-DyA"/>
@@ -387,6 +438,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456ksjfsdfj" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRI-tQ-ZxN" userLabel="account_access_info_value">
+                        <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="6BO-VT-qN6"/>
                         </constraints>
@@ -409,10 +461,11 @@
             <rect key="frame" x="0.0" y="0.0" width="331" height="84"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GGk-Ed-2ub" id="AZb-IZ-7p5">
-                <frame key="frameInset" width="298" height="83"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="83"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcN-0V-KaD" userLabel="account_note_key">
+                        <rect key="frame" x="16" y="13" width="110" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="JWf-gN-Grn"/>
                             <constraint firstAttribute="width" constant="110" id="NyR-DO-l2i"/>
@@ -422,6 +475,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfasdfadsfsdf死对方是德弗里斯大幅拉升快点放假啊驷大幅拉升的房间里看撒的sdjfalsdfa" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUw-C8-4wG" userLabel="account_note_value">
+                        <rect key="frame" x="126" y="13" width="156" height="57"/>
                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>

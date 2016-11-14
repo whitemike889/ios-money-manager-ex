@@ -125,3 +125,7 @@
 "Create Bank Account type is nil" = "请选择银行账户类型";
 
 "Create Bank Account name is nil" = "请填写银行账户名称";
+
+"Bank Account Status" = "账户状态";
+
+"Bank Account Bank Info" = "账户开户行信息";

@@ -11,6 +11,8 @@
 @interface MerchantModel : NSObject
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *number;
+@property (nonatomic, strong) NSString *note;
 @property (nonatomic, strong) NSString *webSite;
 @property (nonatomic, strong) NSString *loginInfo;
 @property (nonatomic, strong) NSNumber *telphone;

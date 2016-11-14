@@ -121,3 +121,7 @@
 "Create Bank Account type is nil" = "Please choose Bank Account Type";
 
 "Create Bank Account name is nil" = "Please input Account name";
+
+"Bank Account Status" = "Account Status";
+
+"Bank Account Bank Info" = "Bank Info";

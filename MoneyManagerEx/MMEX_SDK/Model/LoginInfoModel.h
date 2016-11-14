@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class UserInfoModel;
+@class AccountModel;
 
 @interface LoginInfoModel : NSObject
 
@@ -18,5 +19,6 @@
 @property (nonatomic, strong) NSString *token;
 @property (nonatomic, strong) UserInfoModel *user;
 @property (nonatomic, strong) NSString *avatar;
+@property (nonatomic, strong) AccountModel *defaultBankAccount;
 
 @end

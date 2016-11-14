@@ -19,6 +19,7 @@
 @property (nonatomic, strong) NSNumber *initialCapital;
 @property (nonatomic, strong) NSString *note;
 @property (nonatomic, strong) NSNumber *status;
+@property (nonatomic, strong) NSNumber *favorite;
 @property (nonatomic, strong) NSDate *createTime;
 @property (nonatomic, strong) NSDate *modifyTime;
 @property (nonatomic, strong) CurrencyModel *currency;
