@@ -121,3 +121,7 @@
 "Term" = "定期存款";
 
 "Credit Card" = "信用卡";
+
+"Create Bank Account type is nil" = "请选择银行账户类型";
+
+"Create Bank Account name is nil" = "请填写银行账户名称";

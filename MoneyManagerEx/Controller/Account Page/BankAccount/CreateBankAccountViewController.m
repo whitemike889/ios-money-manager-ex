@@ -10,6 +10,7 @@
 #import "MMEXDataPickerView.h"
 #import "AccountModel.h"
 #import "BankAccountType.h"
+#import "SCLAlertView.h"
 
 @interface CreateBankAccountViewController ()<DataPickerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *bankAccountNameTextField;
@@ -101,8 +102,22 @@
 {
     [_bankAccountNameTextField resignFirstResponder];
     
-    if ([_account.type integerValue] == 0) {
+    if (_account.name.length <= 0) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        alert.backgroundType = SCLAlertViewBackgroundTransparent;
+        alert.showAnimationType = SCLAlertViewShowAnimationFadeIn;
         
+        [alert showNotice:self title:NSLocalizedString(@"Create Bank Account name is nil", nil) subTitle:nil closeButtonTitle:NSLocalizedString(@"Confirm", nil) duration:2];
+        return;
+    }
+    
+    if ([_account.type integerValue] == 0) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        alert.backgroundType = SCLAlertViewBackgroundTransparent;
+        alert.showAnimationType = SCLAlertViewShowAnimationFadeIn;
+        
+        [alert showNotice:self title:NSLocalizedString(@"Create Bank Account type is nil", nil) subTitle:nil closeButtonTitle:NSLocalizedString(@"Confirm", nil) duration:2];
+        return;
     }
     
     if (_delegate && [_delegate respondsToSelector:@selector(didCreateBankAccount:)]) {

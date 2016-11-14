@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4204F9888539138951E71710 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D182F225A4EF081FEF60FD8 /* libPods.a */; };
+		6F71157654FE82FBE3E1A07A /* libPods-MoneyManagerEx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526C958DA69351B8CAF55D7 /* libPods-MoneyManagerEx.a */; };
 		BE067A7C1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = BE067A7B1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m */; };
 		BE067A811C1E79EA00F8B6F1 /* MMEXContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE067A7F1C1E79EA00F8B6F1 /* MMEXContactsViewController.m */; };
 		BE067A821C1E79EA00F8B6F1 /* MMEXContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE067A801C1E79EA00F8B6F1 /* MMEXContactsViewController.xib */; };
@@ -125,8 +125,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0779C54BB00ED4E251D3FEAC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		5D182F225A4EF081FEF60FD8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		457214BD31635C17619B45DB /* Pods-MoneyManagerEx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerEx.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerEx/Pods-MoneyManagerEx.release.xcconfig"; sourceTree = "<group>"; };
+		61F862671177430A70839D65 /* Pods-MoneyManagerEx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerEx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerEx/Pods-MoneyManagerEx.debug.xcconfig"; sourceTree = "<group>"; };
+		6526C958DA69351B8CAF55D7 /* libPods-MoneyManagerEx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoneyManagerEx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE067A7A1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MoneyManagerEx.h"; path = "Controller/ViewControllerCategory/UIViewController+MoneyManagerEx.h"; sourceTree = "<group>"; };
 		BE067A7B1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MoneyManagerEx.m"; path = "Controller/ViewControllerCategory/UIViewController+MoneyManagerEx.m"; sourceTree = "<group>"; };
 		BE067A7E1C1E79EA00F8B6F1 /* MMEXContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXContactsViewController.h; path = "Controller/Contacts Page/MMEXContactsViewController.h"; sourceTree = "<group>"; };
@@ -319,7 +320,6 @@
 		BEF6A5B01DD749E600FB6BA4 /* MMEXDataPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXDataPickerView.h; path = View/CustomView/MMEXDataPickerView.h; sourceTree = "<group>"; };
 		BEF6A5B11DD749E600FB6BA4 /* MMEXDataPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXDataPickerView.m; path = View/CustomView/MMEXDataPickerView.m; sourceTree = "<group>"; };
 		BEF6A5B31DD74AF400FB6BA4 /* MMEXDataPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMEXDataPickerView.xib; path = View/CustomView/MMEXDataPickerView.xib; sourceTree = "<group>"; };
-		C533A834D10059DD7860B201 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,7 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6586771D51FCF50091FC7D /* ImageIO.framework in Frameworks */,
-				4204F9888539138951E71710 /* libPods.a in Frameworks */,
+				6F71157654FE82FBE3E1A07A /* libPods-MoneyManagerEx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,23 +349,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		321B3CEE3778B47A72E26FF6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0779C54BB00ED4E251D3FEAC /* Pods.debug.xcconfig */,
-				C533A834D10059DD7860B201 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6B930197299E611DFA23D00A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				BED92E701DCB7F1800EFD601 /* CoreMedia.framework */,
 				BE6586761D51FCF50091FC7D /* ImageIO.framework */,
-				5D182F225A4EF081FEF60FD8 /* libPods.a */,
+				6526C958DA69351B8CAF55D7 /* libPods-MoneyManagerEx.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EC8096FCB149AE2CA962E08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61F862671177430A70839D65 /* Pods-MoneyManagerEx.debug.xcconfig */,
+				457214BD31635C17619B45DB /* Pods-MoneyManagerEx.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BE067A791C1E6FB900F8B6F1 /* ViewControllerCategory */ = {
@@ -561,8 +561,8 @@
 				BE9472951BE5F4EE001FF64C /* MoneyManagerExTests */,
 				BE9472A01BE5F4EE001FF64C /* MoneyManagerExUITests */,
 				BE9472771BE5F4EE001FF64C /* Products */,
-				321B3CEE3778B47A72E26FF6 /* Pods */,
 				6B930197299E611DFA23D00A /* Frameworks */,
+				7EC8096FCB149AE2CA962E08 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -849,12 +849,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE9472A61BE5F4EE001FF64C /* Build configuration list for PBXNativeTarget "MoneyManagerEx" */;
 			buildPhases = (
-				A704902830D0F01F8C1209EA /* Check Pods Manifest.lock */,
+				E43C2362BF40088970C4F9AA /* [CP] Check Pods Manifest.lock */,
 				BE9472721BE5F4EE001FF64C /* Sources */,
 				BE9472731BE5F4EE001FF64C /* Frameworks */,
 				BE9472741BE5F4EE001FF64C /* Resources */,
-				037D8A95C59BF6AAFB6D9EA6 /* Embed Pods Frameworks */,
-				477F96E6B55F2CBC4F8BBCF8 /* Copy Pods Resources */,
+				0C0454899999B8C6D3BC1D1F /* [CP] Embed Pods Frameworks */,
+				9CC02FD7A0301B238C3846BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1002,49 +1002,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		037D8A95C59BF6AAFB6D9EA6 /* Embed Pods Frameworks */ = {
+		0C0454899999B8C6D3BC1D1F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyManagerEx/Pods-MoneyManagerEx-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		477F96E6B55F2CBC4F8BBCF8 /* Copy Pods Resources */ = {
+		9CC02FD7A0301B238C3846BB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyManagerEx/Pods-MoneyManagerEx-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A704902830D0F01F8C1209EA /* Check Pods Manifest.lock */ = {
+		E43C2362BF40088970C4F9AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1334,7 +1334,7 @@
 		};
 		BE9472A71BE5F4EE001FF64C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0779C54BB00ED4E251D3FEAC /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 61F862671177430A70839D65 /* Pods-MoneyManagerEx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1354,7 +1354,7 @@
 		};
 		BE9472A81BE5F4EE001FF64C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C533A834D10059DD7860B201 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 457214BD31635C17619B45DB /* Pods-MoneyManagerEx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
