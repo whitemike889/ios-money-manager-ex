@@ -25,29 +25,23 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uy6-Ox-aLN" userLabel="name">
                     <rect key="frame" x="0.0" y="80" width="375" height="44"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Account Name" clearsOnBeginEditing="YES" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N0b-sc-UZl">
-                            <rect key="frame" x="8" y="13" width="359" height="19"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="N0b-sc-UZl">
+                            <rect key="frame" x="8" y="11" width="359" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="1qB-VZ-z4V"/>
+                            </constraints>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            <connections>
-                                <outlet property="delegate" destination="-1" id="ENA-mq-mbB"/>
-                            </connections>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="1Fk-7N-92y"/>
                         <constraint firstAttribute="trailing" secondItem="N0b-sc-UZl" secondAttribute="trailing" constant="8" id="7kH-HI-jH5"/>
-                        <constraint firstItem="N0b-sc-UZl" firstAttribute="top" secondItem="Uy6-Ox-aLN" secondAttribute="top" constant="13" id="ESg-uH-4bo"/>
+                        <constraint firstItem="N0b-sc-UZl" firstAttribute="top" secondItem="Uy6-Ox-aLN" secondAttribute="top" constant="11" id="ESg-uH-4bo"/>
                         <constraint firstItem="N0b-sc-UZl" firstAttribute="leading" secondItem="Uy6-Ox-aLN" secondAttribute="leading" constant="8" id="ip5-aI-GuP"/>
-                        <constraint firstAttribute="bottom" secondItem="N0b-sc-UZl" secondAttribute="bottom" constant="13" id="xAH-nY-RYT"/>
                     </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="xAH-nY-RYT"/>
-                        </mask>
-                    </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olL-0e-NX0" userLabel="type">
                     <rect key="frame" x="0.0" y="144" width="375" height="44"/>

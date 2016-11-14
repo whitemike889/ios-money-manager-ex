@@ -12,7 +12,7 @@
 #import "BankAccountType.h"
 #import "SCLAlertView.h"
 
-@interface CreateBankAccountViewController ()<DataPickerDelegate>
+@interface CreateBankAccountViewController ()<DataPickerDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *bankAccountNameTextField;
 @property (weak, nonatomic) IBOutlet UILabel *bankAccountTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bankAccountTypeValueLabel;
@@ -53,6 +53,8 @@
     self.title = NSLocalizedString(@"Create Bank Account", nil);
     _bankAccountNameTextField.placeholder = NSLocalizedString(@"Bank Account Name", nil);
     [_bankAccountNameTextField becomeFirstResponder];
+    _bankAccountNameTextField.delegate = self;
+    [_bankAccountNameTextField enablesReturnKeyAutomatically];
     _bankAccountTypeLabel.text = NSLocalizedString(@"Bank Account Type", nil);
     
     _bankAccountTypeValueLabel.text = @"";
@@ -142,6 +144,20 @@
     [self.dataPickerView hide:YES];
     _account.type = [NSNumber numberWithInteger:data];
     _bankAccountTypeValueLabel.text = [[BankAccountType shareInstance] typeNameOfIndex:data];
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    _account.name = textField.text;
+    [textField resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end
