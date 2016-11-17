@@ -16,6 +16,10 @@
 
 "Fine" = "好的";
 
+"Done" = "完成";
+
+"Edit" = "编辑";
+
 "create new count title" = "新帐号";
 
 "Assets Summary" = "资产总览";
@@ -129,3 +133,35 @@
 "Bank Account Status" = "账户状态";
 
 "Bank Account Bank Info" = "账户开户行信息";
+
+"Enter the bank account name" = "输入账户名称";
+
+"Enter the inital balance" = "输入初始金额";
+
+"Enter the bank account number" = "输入银行账户号码";
+
+"Enter the merchant name" = "输入银行名称";
+
+"Enter the merchant website" = "输入银行网站";
+
+"Enter the merchant contact information" = "输入银行联系电话";
+
+"Enter the merchant login information" = "输入登录信息";
+
+"Account Name" = "账户名称";
+
+"Initial Banlance" = "初始金额";
+
+"Bank Account Number" = "账户号码";
+
+"Merchant Name" = "银行名称";
+
+"Merchant Website" = "银行网站";
+
+"Merchant Contanct" = "银行电话";
+
+"Merchant Login Information" = "登录信息";
+
+"Input the " = "输入";
+
+"note" = "备注";

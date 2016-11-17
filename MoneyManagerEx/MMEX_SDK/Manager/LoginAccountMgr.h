@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseMgr.h"
 #import "ILoginAccountMgr.h"
 #import "LoginInfoModel.h"
 #import <UIKit/UIKit.h>
 
-@interface LoginAccountMgr : NSObject<ILoginAccountMgr>
+@interface LoginAccountMgr : BaseMgr<ILoginAccountMgr>
 
 @property (nonatomic, strong) LoginInfoModel *loginInfo;
 

@@ -29,7 +29,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taotao" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7E-kD-Rz1" userLabel="account_name_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7E-kD-Rz1" userLabel="account_name_value">
                         <rect key="frame" x="136" y="14.5" width="146" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="GvZ-0j-1lb"/>
@@ -48,26 +48,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="accessInfoValueLabel" destination="rRI-tQ-ZxN" id="cDa-iT-1w8"/>
-                <outlet property="contactValueLabel" destination="xhH-Ef-wMl" id="Beb-S9-o3v"/>
-                <outlet property="currencyKeyLabel" destination="ZvO-KU-tey" id="8rk-Wv-RKK"/>
-                <outlet property="currencyValueLabel" destination="wqt-0Y-WMh" id="4a2-e3-cd7"/>
-                <outlet property="defaultAccountKeyLabel" destination="CiV-Jr-on3" id="SFr-nW-wnP"/>
-                <outlet property="defaultAccountSwitch" destination="ZYf-3Z-BHa" id="KYn-Dy-5jp"/>
-                <outlet property="favoriteAccountKeyLabel" destination="7RP-Ak-1dP" id="AcV-ds-2dm"/>
-                <outlet property="favoriteAccountSwitch" destination="0kq-Mf-OtL" id="vTS-gY-uEd"/>
-                <outlet property="heldAtValueLabel" destination="9hK-2B-97X" id="tgE-8Y-466"/>
-                <outlet property="initialBalanceValueLabel" destination="p6B-LY-Izl" id="97l-iE-f1O"/>
-                <outlet property="initialbalanceKeyLabel" destination="a6b-b9-5R8" id="uzJ-jM-gxi"/>
-                <outlet property="nameKeyLabel" destination="LPH-lE-ilS" id="TP5-f4-Gx5"/>
-                <outlet property="nameValueLabel" destination="q7E-kD-Rz1" id="XAf-eT-xq9"/>
-                <outlet property="noteKeyLabel" destination="wcN-0V-KaD" id="9kg-Kz-o2N"/>
-                <outlet property="noteValueLabel" destination="yUw-C8-4wG" id="TqY-dU-FMG"/>
-                <outlet property="numberValue" destination="aIs-Cg-2bw" id="PdE-Gy-UzX"/>
-                <outlet property="openStatusSwitch" destination="5aC-Db-RUt" id="VQ5-vg-HLD"/>
-                <outlet property="typeKeyLabel" destination="H2w-eG-eML" id="ma1-En-ZPc"/>
-                <outlet property="typeValueLabel" destination="LgO-d9-P6D" id="bTs-tr-blY"/>
-                <outlet property="websiteValueLabel" destination="Qgl-0p-Ffm" id="Eud-ud-QvR"/>
+                <outlet property="nameValueLabel" destination="q7E-kD-Rz1" id="wO2-m7-a9R"/>
             </connections>
             <point key="canvasLocation" x="-20" y="-578"/>
         </tableViewCell>
@@ -88,7 +69,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgO-d9-P6D" userLabel="account_type_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgO-d9-P6D" userLabel="account_type_value">
                         <rect key="frame" x="136" y="14" width="146" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="OJO-YA-cwI"/>
@@ -106,6 +87,9 @@
                     <constraint firstItem="LgO-d9-P6D" firstAttribute="centerY" secondItem="EPe-LK-pb2" secondAttribute="centerY" id="ky0-J2-edz"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="typeValueLabel" destination="LgO-d9-P6D" id="eqT-fk-wY2"/>
+            </connections>
             <point key="canvasLocation" x="-13" y="-471"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BankAccountCurrencyCellIdentifier" rowHeight="45" id="dA1-EO-HGM" userLabel="BankAccountCurrencyCell" customClass="BankAccountEditTableViewCell">
@@ -125,7 +109,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chinese renminbi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqt-0Y-WMh" userLabel="account_currency_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqt-0Y-WMh" userLabel="account_currency_value">
                         <rect key="frame" x="136" y="14" width="146" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="9e9-Wv-7DI"/>
@@ -143,6 +127,9 @@
                     <constraint firstAttribute="leadingMargin" secondItem="ZvO-KU-tey" secondAttribute="leading" constant="-8" id="wgN-dP-mOr"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="currencyValueLabel" destination="wqt-0Y-WMh" id="S43-Jv-Ynu"/>
+            </connections>
             <point key="canvasLocation" x="-12" y="-368"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BankAccountInitialBalanceCellIdentifier" rowHeight="45" id="CSx-Xe-Z8P" userLabel="BankAccountInitialBalanceCell" customClass="BankAccountEditTableViewCell">
@@ -162,7 +149,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6B-LY-Izl" userLabel="account_initial_balance_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6B-LY-Izl" userLabel="account_initial_balance_value">
                         <rect key="frame" x="136" y="14" width="146" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="g2t-0S-lgs"/>
@@ -180,6 +167,9 @@
                     <constraint firstAttribute="leadingMargin" secondItem="a6b-b9-5R8" secondAttribute="leading" constant="-8" id="uep-l1-lyL"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="initialBalanceValueLabel" destination="p6B-LY-Izl" id="4pO-gW-dNV"/>
+            </connections>
             <point key="canvasLocation" x="-12" y="-269"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultBankAccountCellIdentifier" rowHeight="45" id="bZv-8e-Xo6" userLabel="DefaultBankAccountCell" customClass="BankAccountEditTableViewCell">
@@ -210,6 +200,9 @@
                     <constraint firstItem="ZYf-3Z-BHa" firstAttribute="centerY" secondItem="Zq8-ZS-Mhs" secondAttribute="centerY" id="x1I-pe-SBV"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="defaultAccountSwitch" destination="ZYf-3Z-BHa" id="za0-vN-v1Z"/>
+            </connections>
             <point key="canvasLocation" x="-12" y="62"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteBankAccountCellIdentifier" rowHeight="45" id="g1c-In-NXi" userLabel="FavoriteBankAccountCell" customClass="BankAccountEditTableViewCell">
@@ -240,6 +233,9 @@
                     <constraint firstItem="7RP-Ak-1dP" firstAttribute="centerY" secondItem="CSI-O3-eY4" secondAttribute="centerY" id="yEQ-zz-V2V"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="favoriteAccountSwitch" destination="0kq-Mf-OtL" id="Uni-ee-VE5"/>
+            </connections>
             <point key="canvasLocation" x="-12" y="-36"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BankAccountStatusCellIdentifier" rowHeight="45" id="a78-rQ-N7T" userLabel="BankAccountStatusCell" customClass="BankAccountEditTableViewCell">
@@ -270,6 +266,9 @@
                     <constraint firstItem="5aC-Db-RUt" firstAttribute="centerY" secondItem="fJf-LO-KUE" secondAttribute="centerY" id="sxq-FU-qcG"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="openStatusSwitch" destination="5aC-Db-RUt" id="Iwj-Ql-qLZ"/>
+            </connections>
             <point key="canvasLocation" x="-12" y="-137"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BankAccountNumberCellIdentifier" rowHeight="45" id="dEd-f7-mOg" userLabel="BankAccountNumberCell" customClass="BankAccountEditTableViewCell">
@@ -289,7 +288,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456789012345" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-Cg-2bw" userLabel="account_number_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-Cg-2bw" userLabel="account_number_value">
                         <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="ZhI-Nn-mBO"/>
@@ -307,6 +306,9 @@
                     <constraint firstAttribute="leadingMargin" secondItem="qEZ-3b-bKn" secondAttribute="leading" constant="-8" id="qOh-Dr-Xjp"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="numberValue" destination="aIs-Cg-2bw" id="YYG-pv-g02"/>
+            </connections>
             <point key="canvasLocation" x="-13" y="197"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BankAccountHeldAtCellIdentifier" rowHeight="45" id="sib-eZ-nBo" userLabel="BankAccountHeldAtCell" customClass="BankAccountEditTableViewCell">
@@ -326,7 +328,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-2B-97X" userLabel="account_held_at_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-2B-97X" userLabel="account_held_at_value">
                         <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Zz1-FQ-1ef"/>
@@ -344,6 +346,9 @@
                     <constraint firstItem="dDo-3I-KEg" firstAttribute="centerY" secondItem="i7S-Ci-97A" secondAttribute="centerY" id="zkg-PU-fGL"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="heldAtValueLabel" destination="9hK-2B-97X" id="crw-1O-JcI"/>
+            </connections>
             <point key="canvasLocation" x="-13" y="298"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BankAccountWebsiteCellIdentifier" rowHeight="45" id="iCm-Fz-3rk" userLabel="BankAccountWebsiteCell" customClass="BankAccountEditTableViewCell">
@@ -363,7 +368,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.bc.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgl-0p-Ffm" userLabel="account_website_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgl-0p-Ffm" userLabel="account_website_value">
                         <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="RDg-Fp-fEg"/>
@@ -381,6 +386,9 @@
                     <constraint firstItem="Qgl-0p-Ffm" firstAttribute="leading" secondItem="b7R-dg-RCp" secondAttribute="trailing" id="jmj-5q-eUe"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="websiteValueLabel" destination="Qgl-0p-Ffm" id="5tb-yz-XDK"/>
+            </connections>
             <point key="canvasLocation" x="-13" y="403"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BankAccountContactCellIdentifier" rowHeight="45" id="HF9-RO-Iqt" userLabel="BankAccountContactCell" customClass="BankAccountEditTableViewCell">
@@ -400,7 +408,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678901" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhH-Ef-wMl" userLabel="account_contact_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhH-Ef-wMl" userLabel="account_contact_value">
                         <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="lZY-Bh-35B"/>
@@ -418,6 +426,9 @@
                     <constraint firstItem="xhH-Ef-wMl" firstAttribute="centerY" secondItem="Eh2-15-CFi" secondAttribute="centerY" id="QUJ-SS-g8d"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="contactValueLabel" destination="xhH-Ef-wMl" id="kVq-CA-x7k"/>
+            </connections>
             <point key="canvasLocation" x="-13" y="506"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BankAccountAccessInfoCellIdentifier" rowHeight="45" id="i3V-va-BdB" userLabel="BankAccountAccessInfoCell" customClass="BankAccountEditTableViewCell">
@@ -437,7 +448,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456ksjfsdfj" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRI-tQ-ZxN" userLabel="account_access_info_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRI-tQ-ZxN" userLabel="account_access_info_value">
                         <rect key="frame" x="126" y="14" width="156" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="6BO-VT-qN6"/>
@@ -455,6 +466,9 @@
                     <constraint firstAttribute="leadingMargin" secondItem="tpz-tV-MdW" secondAttribute="leading" constant="-8" id="zlT-ri-TI1"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="accessInfoValueLabel" destination="rRI-tQ-ZxN" id="gYq-fj-ect"/>
+            </connections>
             <point key="canvasLocation" x="-13" y="614"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BankAccountNoteCellIdentifier" rowHeight="84" id="GGk-Ed-2ub" userLabel="BankAccountNoteCell" customClass="BankAccountEditTableViewCell">
@@ -474,7 +488,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfasdfadsfsdf死对方是德弗里斯大幅拉升快点放假啊驷大幅拉升的房间里看撒的sdjfalsdfa" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUw-C8-4wG" userLabel="account_note_value">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUw-C8-4wG" userLabel="account_note_value">
                         <rect key="frame" x="126" y="13" width="156" height="57"/>
                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                         <nil key="textColor"/>
@@ -490,6 +504,9 @@
                     <constraint firstAttribute="leadingMargin" secondItem="wcN-0V-KaD" secondAttribute="leading" constant="-8" id="swY-Ih-8WA"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="noteValueLabel" destination="yUw-C8-4wG" id="QG4-OR-CsG"/>
+            </connections>
             <point key="canvasLocation" x="-13" y="744"/>
         </tableViewCell>
     </objects>

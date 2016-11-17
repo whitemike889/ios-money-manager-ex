@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "ILoginAccountMgr.h"
+#import "IAccountMgr.h"
 
 @interface MMEX : NSObject
 
 + (void)initializeAllManager;
 
 + (id<ILoginAccountMgr>)getLoginAccountMgr;
+
++ (id<IAccountMgr>)getAccountMgr;
 
 @end

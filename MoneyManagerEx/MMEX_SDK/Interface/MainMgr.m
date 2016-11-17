@@ -8,10 +8,12 @@
 
 #import "MainMgr.h"
 #import "LoginAccountMgr.h"
+#import "AccountMgr.h"
 
 @interface MainMgr()
 
 @property (nonatomic, strong) id<ILoginAccountMgr> loginAccountMgr;
+@property (nonatomic, strong) id<IAccountMgr> accountMgr;
 
 @end
 
@@ -33,6 +35,15 @@
     }
     
     return _loginAccountMgr;
+}
+
+- (id<IAccountMgr>)getAccountMgr
+{
+    if (!_accountMgr) {
+        _accountMgr = [[AccountMgr alloc] init];
+    }
+    
+    return _accountMgr;
 }
 
 @end

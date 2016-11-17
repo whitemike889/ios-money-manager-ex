@@ -8,7 +8,7 @@
 
 #import "BankAccountEditTableViewCell.h"
 #import "AccountModel.h"
-#import "BankAccountType.h"
+#import "BankAccountType.h"jupui
 #import "MMEX.h"
 #import "LoginInfoModel.h"
 #import "Merchant.h"
@@ -16,31 +16,18 @@
 
 @interface BankAccountEditTableViewCell()
 
-@property (weak, nonatomic) IBOutlet UILabel *nameKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nameValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *typeKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *typeValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *currencyKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currencyValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *initialbalanceKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *initialBalanceValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *defaultAccountKeyLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *defaultAccountSwitch;
-@property (weak, nonatomic) IBOutlet UILabel *favoriteAccountKeyLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *favoriteAccountSwitch;
-@property (weak, nonatomic) IBOutlet UILabel *openStatusKeyLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *openStatusSwitch;
-@property (weak, nonatomic) IBOutlet UILabel *numberKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberValue;
-@property (weak, nonatomic) IBOutlet UILabel *heldAtKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *heldAtValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *websiteKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *websiteValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *contactKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contactValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *accessInfoKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *accessInfoValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *noteKeyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *noteValueLabel;
 
 @end
@@ -60,6 +47,7 @@
 
 - (void)configureCellData:(AccountModel *)object withIndexPath:(NSIndexPath *)indexPath
 {
+    self.selectionStyle = UITableViewCellSelectionStyleDefault;
     if (!object) {
         return;
     }
@@ -72,7 +60,7 @@
                 break;
             case 1:
             {
-                _typeKeyLabel.text = [[BankAccountType shareInstance] typeNameOfIndex:[object.type integerValue]];
+                _typeValueLabel.text = [[BankAccountType shareInstance] typeNameOfIndex:[object.type integerValue]];
             }
                 break;
             case 2:
@@ -100,16 +88,19 @@
                 }
                 
                 _defaultAccountSwitch.on = isDefault;
+                self.selectionStyle = UITableViewCellSelectionStyleNone;
             }
                 break;
             case 1:
             {
                 _favoriteAccountSwitch.on = [object.favorite boolValue];
+                self.selectionStyle = UITableViewCellSelectionStyleNone;
             }
                 break;
             case 2:
             {
                 _openStatusSwitch.on = [object.status boolValue];
+                self.selectionStyle = UITableViewCellSelectionStyleNone;
             }
                 break;
             default:
@@ -142,7 +133,7 @@
             case 3:
             {
                 if (object && object.merchant) {
-                    _contactValueLabel.text = [object.merchant.telphone stringValue];
+                    _contactValueLabel.text = object.merchant.telphone;
                 }
             }
                 break;

@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSString *note;
 @property (nonatomic, strong) NSString *webSite;
 @property (nonatomic, strong) NSString *loginInfo;
-@property (nonatomic, strong) NSNumber *telphone;
+@property (nonatomic, strong) NSString *telphone;
 @property (nonatomic, strong) NSNumber *status;
 @property (nonatomic, strong) NSDate *createTime;
 @property (nonatomic, strong) NSDate *modifyTime;

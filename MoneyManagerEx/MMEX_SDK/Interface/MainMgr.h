@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "ILoginAccountMgr.h"
+#import "IAccountMgr.h"
 
 @interface MainMgr : NSObject
 
 - (id<ILoginAccountMgr>) getLoginAccountMgr;
+
+- (id<IAccountMgr>)getAccountMgr;
 
 @end

@@ -21,6 +21,8 @@
 @dynamic mer_status;
 @dynamic mer_telphone;
 @dynamic mer_web_site;
+@dynamic mer_note;
+@dynamic mer_number;
 @dynamic accounts;
 
 @end

@@ -16,6 +16,10 @@
 
 "Fine" = "Fine";
 
+"Done" = "Done";
+
+"Edit" = "Edit";
+
 "create new count title" = "create new count";
 
 "Assets Summary" = "Assets Summary";
@@ -125,3 +129,35 @@
 "Bank Account Status" = "Account Status";
 
 "Bank Account Bank Info" = "Bank Info";
+
+"Enter the bank account name" = "Enter the bank account name";
+
+"Enter the inital balance" = "Enter the inital balance";
+
+"Enter the bank account number" = "Enter the bank account number";
+
+"Enter the merchant name" = "Enter the merchant name";
+
+"Enter the merchant website" = "Enter the merchant website";
+
+"Enter the merchant contact information" = "Enter the merchant contact information";
+
+"Enter the merchant login information" = "Enter the merchant login information";
+
+"Account Name" = "Account Name";
+
+"Initial Banlance" = "Initial Balance";
+
+"Bank Account Number" = "Bank Account Number";
+
+"Merchant Name" = "Merchant Name";
+
+"Merchant Website" = "Merchant Website";
+
+"Merchant Contanct" = "Merchant Contact";
+
+"Merchant Login Information" = "Merchant Login Information";
+
+"Input the " = "Input the ";
+
+"note" = "note";

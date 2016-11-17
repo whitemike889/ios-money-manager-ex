@@ -7,7 +7,17 @@
 //
 
 #import "AccountModel.h"
+#import "MerchantModel.h"
 
 @implementation AccountModel
+
+- (MerchantModel *)merchant
+{
+    if (!_merchant) {
+        _merchant = [[MerchantModel alloc] init];
+    }
+    
+    return _merchant;
+}
 
 @end

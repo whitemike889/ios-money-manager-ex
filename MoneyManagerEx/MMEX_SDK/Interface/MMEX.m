@@ -25,4 +25,9 @@ static MainMgr *mainMgr = nil;
     return [mainMgr getLoginAccountMgr];
 }
 
++ (id<IAccountMgr>)getAccountMgr
+{
+    return [mainMgr getAccountMgr];
+}
+
 @end

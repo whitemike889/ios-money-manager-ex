@@ -9,8 +9,15 @@
 #import "BankAccountEditViewController.h"
 #import "BankAccountEditTableViewCell.h"
 #import "AccountModel.h"
+#import "MerchantModel.h"
+#import "SCLAlertView.h"
+#import "MMEX.h"
+#import "IAccountMgr.h"
+#import "EditInfoViewController.h"
 
-@interface BankAccountEditViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface BankAccountEditViewController ()<UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, EditInfoDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *accountInfoTableView;
 
 @property (nonatomic, strong) AccountModel *account;
 
@@ -72,6 +79,110 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    NSString *placeHolder;
+    NSInteger textFieldTag = 0;
+    NSString *title;
+    
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0:
+            {
+                placeHolder = NSLocalizedString(@"Enter the bank account name", nil);
+                textFieldTag = 1;
+                title = NSLocalizedString(@"Account Name", nil);
+            }
+                break;
+            case 1:
+            {
+                return;
+            }
+                break;
+            case 2:
+            {
+                return;
+            }
+                break;
+            case 3:
+            {
+                placeHolder = NSLocalizedString(@"Enter the inital balance", nil);
+                textFieldTag = 2;
+                title = NSLocalizedString(@"Initial Banlance", nil);
+            }
+                break;
+            default:
+                break;
+        }
+    }
+    else if(indexPath.section == 1) {
+        return;
+    }
+    else if (indexPath.section == 2) {
+        switch (indexPath.row) {
+            case 0:
+            {
+                placeHolder = NSLocalizedString(@"Enter the bank account number", nil);
+                textFieldTag = 3;
+                title = NSLocalizedString(@"Bank Account Number", nil);
+            }
+                break;
+            case 1:
+            {
+                placeHolder = NSLocalizedString(@"Enter the merchant name", nil);
+                textFieldTag = 4;
+                title = NSLocalizedString(@"Merchant Name", nil);
+            }
+                break;
+            case 2:
+            {
+                placeHolder = NSLocalizedString(@"Enter the merchant website", nil);
+                textFieldTag = 5;
+                title = NSLocalizedString(@"Merchant Website", nil);
+            }
+                break;
+            case 3:
+            {
+                placeHolder = NSLocalizedString(@"Enter the merchant contact information", nil);
+                textFieldTag = 6;
+                title = NSLocalizedString(@"Merchant Contanct", nil);
+            }
+                break;
+            case 4:
+            {
+                placeHolder = NSLocalizedString(@"Enter the merchant login information", nil);
+                textFieldTag = 7;
+                title = NSLocalizedString(@"Merchant Login Information", nil);
+                break;
+            }
+            case 5:
+            {
+                EditInfoViewController *vc = [[EditInfoViewController alloc] initWithDelegate:self subject:NSLocalizedString(@"note", nil)];
+                
+                [self.navigationController pushViewController:vc animated:YES];
+                return;
+            }
+                break;
+            default:
+                break;
+        }
+    }
+    
+    SCLAlertView *alert = [[SCLAlertView alloc] init];
+    SCLTextView *textField = [alert addTextField:placeHolder];
+    textField.delegate = self;
+    textField.tag = textFieldTag;
+    if ((indexPath.section == 0 && indexPath.row == 3)||
+        (indexPath.section == 2 && indexPath.row == 3)) {
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+    }
+    alert.showAnimationType = SCLAlertViewShowAnimationFadeIn;
+    alert.hideAnimationType = SCLAlertViewHideAnimationSimplyDisappear;
+    alert.shouldDismissOnTapOutside = YES;
+    [alert addButton:NSLocalizedString(@"Done", nil) actionBlock:^{
+        [textField resignFirstResponder];
+        [self.accountInfoTableView reloadData];
+    }];
+    
+    [alert showEdit:self title:title subTitle:nil closeButtonTitle:nil duration:0.0f];
 }
 
 #pragma mark - UITableViewDataSource
@@ -172,6 +283,73 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 3;
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    switch (textField.tag) {
+        case 1:
+        {
+            NSString *oldName = _account.name;
+            _account.name = textField.text;
+            [[MMEX getAccountMgr] updateBankAccountName:_account.name byOldName:oldName];
+        }
+            break;
+        case 2:
+        {
+            _account.initialCapital = [NSNumber numberWithInteger:[textField.text integerValue]];
+            [[MMEX getAccountMgr] updateBankAccountInitialBalance:_account.initialCapital byName:_account.name];
+        }
+            break;
+        case 3:
+        {
+            _account.merchant.number = textField.text;
+            [[MMEX getAccountMgr] updateBankAccountNumber:_account.merchant.number byName:_account.name];
+        }
+            break;
+        case 4:
+        {
+            _account.merchant.name = textField.text;
+            [[MMEX getAccountMgr] updateBankAccountMerchantName:_account.merchant.name byName:_account.name];
+        }
+            break;
+        case 5:
+        {
+            _account.merchant.webSite = textField.text;
+            [[MMEX getAccountMgr] updateBankAccountMerchantWebsite:_account.merchant.webSite byName:_account.name];
+        }
+            break;
+        case 6:
+        {
+            _account.merchant.telphone = textField.text;
+            [[MMEX getAccountMgr] updateBankAccountMerchantTel:_account.merchant.telphone byName:_account.name];
+        }
+            break;
+        case 7:
+        {
+            _account.merchant.loginInfo = textField.text;
+            [[MMEX getAccountMgr] updateBankAccountMerchantLoginInfo:_account.merchant.loginInfo byName:_account.name];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark - 
+
+- (void)updateEditInfo:(NSString *)info
+{
+    _account.merchant.note = info;
+    [self.accountInfoTableView reloadData];
 }
 
 #pragma mark - actions

@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *mer_number;
 @property (nullable, nonatomic, retain) NSString *mer_note;
 @property (nullable, nonatomic, retain) NSNumber *mer_status;
-@property (nullable, nonatomic, retain) NSNumber *mer_telphone;
+@property (nullable, nonatomic, retain) NSString *mer_telphone;
 @property (nullable, nonatomic, retain) NSString *mer_web_site;
 @property (nullable, nonatomic, retain) Account *accounts;
 
