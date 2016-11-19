@@ -17,6 +17,10 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - FMDBMigrationManager (1.4.1):
+    - FMDBMigrationManager/System (= 1.4.1)
+  - FMDBMigrationManager/System (1.4.1):
+    - FMDB/standard (>= 2.3)
   - IQKeyboardManager (3.3.7)
   - MBProgressHUD (0.9.2)
   - SCLAlertView-Objective-C (1.0.6)
@@ -27,6 +31,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - FMDB
+  - FMDBMigrationManager
   - IQKeyboardManager
   - MBProgressHUD (~> 0.9)
   - SCLAlertView-Objective-C
@@ -35,11 +40,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  FMDBMigrationManager: d52007f328ea0665e8985ca8a33500707aef084f
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   SCLAlertView-Objective-C: ca78280817e66e74366b78579350dee2ff277e23
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: fed7fc6992be842b5a0056f4122112f9d06a6601
+PODFILE CHECKSUM: 4138a4a3279d95c659c98df89372117b227d42d2
 
 COCOAPODS: 1.2.0.beta.1

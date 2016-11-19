@@ -75,6 +75,10 @@
 		BE72884C1D885692007687B5 /* MyBankAccountListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE72884B1D885692007687B5 /* MyBankAccountListViewController.xib */; };
 		BE73F3501DDC90E000F49548 /* EditInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE73F34E1DDC90E000F49548 /* EditInfoViewController.m */; };
 		BE73F3511DDC90E000F49548 /* EditInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE73F34F1DDC90E000F49548 /* EditInfoViewController.xib */; };
+		BE73F3551DDE077200F49548 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE73F3531DDE077200F49548 /* libsqlite3.0.tbd */; };
+		BE73F3561DDE077200F49548 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE73F3541DDE077200F49548 /* libsqlite3.tbd */; };
+		BE73F3591DDE08D700F49548 /* MMEXDBCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE73F3581DDE08D700F49548 /* MMEXDBCenter.m */; };
+		BE73F35B1DDF0E2E00F49548 /* tables_v1.sql in Resources */ = {isa = PBXBuildFile; fileRef = BE73F35A1DDF0E2E00F49548 /* tables_v1.sql */; };
 		BE81634A1DCA37F400BF90EC /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8163491DCA37F400BF90EC /* UIImage+Crop.m */; };
 		BE90096C1D8EC56800A570D6 /* TransactionTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE90096A1D8EC56800A570D6 /* TransactionTypeListViewController.m */; };
 		BE90096D1D8EC56800A570D6 /* TransactionTypeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE90096B1D8EC56800A570D6 /* TransactionTypeListViewController.xib */; };
@@ -263,6 +267,11 @@
 		BE73F34D1DDC90E000F49548 /* EditInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditInfoViewController.h; path = Controller/CommonController/EditInfoViewController.h; sourceTree = "<group>"; };
 		BE73F34E1DDC90E000F49548 /* EditInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditInfoViewController.m; path = Controller/CommonController/EditInfoViewController.m; sourceTree = "<group>"; };
 		BE73F34F1DDC90E000F49548 /* EditInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditInfoViewController.xib; path = Controller/CommonController/EditInfoViewController.xib; sourceTree = "<group>"; };
+		BE73F3531DDE077200F49548 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BE73F3541DDE077200F49548 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BE73F3571DDE08D700F49548 /* MMEXDBCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXDBCenter.h; path = MMEX_SDK/MMEX_DB_Sqlite3/MMEXDBCenter.h; sourceTree = "<group>"; };
+		BE73F3581DDE08D700F49548 /* MMEXDBCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXDBCenter.m; path = MMEX_SDK/MMEX_DB_Sqlite3/MMEXDBCenter.m; sourceTree = "<group>"; };
+		BE73F35A1DDF0E2E00F49548 /* tables_v1.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tables_v1.sql; sourceTree = "<group>"; };
 		BE8163441DCA19D800BF90EC /* EditBasicInfoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditBasicInfoDelegate.h; path = View/Me/BasicInfo/EditBasicInfoDelegate.h; sourceTree = "<group>"; };
 		BE8163481DCA37F400BF90EC /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Crop.h"; path = "Categories/UIImage+Crop.h"; sourceTree = "<group>"; };
 		BE8163491DCA37F400BF90EC /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Crop.m"; path = "Categories/UIImage+Crop.m"; sourceTree = "<group>"; };
@@ -339,6 +348,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE73F3551DDE077200F49548 /* libsqlite3.0.tbd in Frameworks */,
+				BE73F3561DDE077200F49548 /* libsqlite3.tbd in Frameworks */,
 				BE6586771D51FCF50091FC7D /* ImageIO.framework in Frameworks */,
 				6F71157654FE82FBE3E1A07A /* libPods-MoneyManagerEx.a in Frameworks */,
 			);
@@ -364,6 +375,8 @@
 		6B930197299E611DFA23D00A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE73F3531DDE077200F49548 /* libsqlite3.0.tbd */,
+				BE73F3541DDE077200F49548 /* libsqlite3.tbd */,
 				BED92E701DCB7F1800EFD601 /* CoreMedia.framework */,
 				BE6586761D51FCF50091FC7D /* ImageIO.framework */,
 				6526C958DA69351B8CAF55D7 /* libPods-MoneyManagerEx.a */,
@@ -583,6 +596,8 @@
 		BE73F3521DDDC44E00F49548 /* MMEX_DB_Sqlite3 */ = {
 			isa = PBXGroup;
 			children = (
+				BE73F3571DDE08D700F49548 /* MMEXDBCenter.h */,
+				BE73F3581DDE08D700F49548 /* MMEXDBCenter.m */,
 			);
 			name = MMEX_DB_Sqlite3;
 			sourceTree = "<group>";
@@ -692,6 +707,7 @@
 		BE9472B21BE600F4001FF64C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BE73F35A1DDF0E2E00F49548 /* tables_v1.sql */,
 				BE086B581BEDE91D00CEF360 /* Localizable.strings */,
 			);
 			name = Resource;
@@ -1000,6 +1016,7 @@
 				BE086B721BEDF5C900CEF360 /* MMEXAssetsViewController.xib in Resources */,
 				BEB7BA2D1D8ECE6A0065CE2A /* CurrencyTypeListViewController.xib in Resources */,
 				BE0772DD1D914B45000BF953 /* BankAccountEditViewController.xib in Resources */,
+				BE73F35B1DDF0E2E00F49548 /* tables_v1.sql in Resources */,
 				BE086B681BEDF53700CEF360 /* MMEXAddTransactionViewController.xib in Resources */,
 				BEB7BA321D8ED2BB0065CE2A /* BankAccountViewController.xib in Resources */,
 				BE086B5C1BEDEA1F00CEF360 /* Info.plist in Resources */,
@@ -1130,6 +1147,7 @@
 				BE618D871D9698A600984C45 /* CurrentUserBasicInfoViewController.m in Sources */,
 				BE9472C91BE610F7001FF64C /* MMEXCreateFirstAccountGuideViewController.m in Sources */,
 				BEC703B51DD772010012C4E4 /* CreateBankAccountViewController.m in Sources */,
+				BE73F3591DDE08D700F49548 /* MMEXDBCenter.m in Sources */,
 				BE067A7C1C1E703800F8B6F1 /* UIViewController+MoneyManagerEx.m in Sources */,
 				BE3D8D221DDB149700715A81 /* BaseMgr.m in Sources */,
 				BE94727B1BE5F4EE001FF64C /* main.m in Sources */,
